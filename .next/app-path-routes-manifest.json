@@ -1,0 +1,10 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/invite/[token]/route": "/api/invite/[token]",
+  "/api/invite/accept/route": "/api/invite/accept",
+  "/api/okr/[userId]/route": "/api/okr/[userId]",
+  "/dashboard/page": "/dashboard",
+  "/invite/[token]/page": "/invite/[token]",
+  "/page": "/"
+}
