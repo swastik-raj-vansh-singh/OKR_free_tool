@@ -1,13 +1,14 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useOKR } from "@/lib/okr-context"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator, DropdownMenuLabel } from "@/components/ui/dropdown-menu"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Layers, ChevronDown, HelpCircle, Palette } from "lucide-react"
+import { Layers, ChevronDown, HelpCircle, Palette, Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
 
 // Custom SVG Icons to avoid AI-generated look
 const CustomIcon = {
@@ -100,9 +101,16 @@ const themes: Record<Theme, { name: string; primary: string; primaryOklch: strin
 }
 
 export function AppHeader() {
-  const { companyProfile, currentUser } = useOKR()
+  const { companyProfile, currentUser, currentScreen } = useOKR()
   const [showHelp, setShowHelp] = useState(false)
   const [currentTheme, setCurrentTheme] = useState<Theme>("default")
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  // Prevent hydration mismatch
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const applyTheme = (theme: Theme) => {
     setCurrentTheme(theme)
@@ -123,26 +131,35 @@ export function AppHeader() {
     root.style.setProperty('--sidebar-primary', themeConfig.primaryOklch)
     root.style.setProperty('--sidebar-ring', themeConfig.primaryOklch)
 
-    // Update all elements with the old hardcoded red color
-    const allElements = document.querySelectorAll('[class*="DC2626"], [class*="red-600"]')
-    allElements.forEach((el) => {
+    // The CSS variables above will automatically theme most elements
+    // Only update elements that use hardcoded hex colors (not CSS variables)
+    // This prevents text from becoming invisible
+
+    // We don't need to manually update elements since the CSS variables handle it
+    // The --primary, --accent, etc. variables cascade to all components
+
+    // Optional: Clear any previously set inline styles that might interfere
+    document.querySelectorAll('[style*="color"], [style*="background"]').forEach((el) => {
       const htmlEl = el as HTMLElement
-      // Update text color classes
-      if (htmlEl.className.includes('text-[#DC2626]')) {
-        htmlEl.style.color = themeConfig.primary
+      // Don't clear styles from the logo or notification elements
+      if (htmlEl.hasAttribute('data-no-theme') || htmlEl.closest('[data-no-theme]') || htmlEl.hasAttribute('data-notification')) {
+        return
       }
-      // Update background color classes
-      if (htmlEl.className.includes('bg-[#DC2626]')) {
-        htmlEl.style.backgroundColor = themeConfig.primary
+      // Only clear if it was set by previous theme changes
+      if (htmlEl.style.color && htmlEl.style.color.startsWith('#')) {
+        htmlEl.style.color = ''
       }
-      // Update border color classes
-      if (htmlEl.className.includes('border-[#DC2626]')) {
-        htmlEl.style.borderColor = themeConfig.primary
+      if (htmlEl.style.backgroundColor && htmlEl.style.backgroundColor.startsWith('#')) {
+        htmlEl.style.backgroundColor = ''
+      }
+      if (htmlEl.style.borderColor && htmlEl.style.borderColor.startsWith('#')) {
+        htmlEl.style.borderColor = ''
       }
     })
 
     // Show theme change notification with themed color
     const notification = document.createElement('div')
+    notification.setAttribute('data-notification', 'true')
     notification.style.cssText = `
       position: fixed;
       top: 80px;
@@ -170,7 +187,7 @@ export function AppHeader() {
     <header className="border-b border-border/50 bg-card/30 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" data-no-theme>
             <div className="p-1.5 rounded-md bg-[#DC2626]/10">
               <Layers className="w-5 h-5 text-[#DC2626]" />
             </div>
@@ -190,6 +207,28 @@ export function AppHeader() {
             <HelpCircle className="w-4 h-4" />
             <span className="hidden sm:inline">Help</span>
           </Button>
+
+          {/* Dark/Light Mode Toggle */}
+          {mounted && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="gap-2"
+            >
+              {theme === "dark" ? (
+                <>
+                  <Sun className="w-4 h-4" />
+                  <span className="hidden sm:inline">Light</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-4 h-4" />
+                  <span className="hidden sm:inline">Dark</span>
+                </>
+              )}
+            </Button>
+          )}
 
           {/* Theme Switcher */}
           <DropdownMenu>

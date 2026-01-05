@@ -860,9 +860,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$help$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HelpCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-help.js [app-client] (ecmascript) <export default as HelpCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$palette$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Palette$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/palette.js [app-client] (ecmascript) <export default as Palette>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/moon.js [app-client] (ecmascript) <export default as Moon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun.js [app-client] (ecmascript) <export default as Sun>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -885,12 +889,12 @@ const CustomIcon = {
                 d: "M13 10V3L4 14h7v7l9-11h-7z"
             }, void 0, false, {
                 fileName: "[project]/components/okr/app-header.tsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 15,
+            lineNumber: 16,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     Target: ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -906,7 +910,7 @@ const CustomIcon = {
                     r: "10"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -915,7 +919,7 @@ const CustomIcon = {
                     r: "6"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 22,
+                    lineNumber: 23,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -924,13 +928,13 @@ const CustomIcon = {
                     r: "2"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     TrendingUp: ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -945,12 +949,12 @@ const CustomIcon = {
                 d: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
             }, void 0, false, {
                 fileName: "[project]/components/okr/app-header.tsx",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 27,
+            lineNumber: 28,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     Users: ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -966,7 +970,7 @@ const CustomIcon = {
                     d: "M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 33,
+                    lineNumber: 34,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -975,7 +979,7 @@ const CustomIcon = {
                     r: "4"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 34,
+                    lineNumber: 35,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -984,13 +988,13 @@ const CustomIcon = {
                     d: "M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 35,
+                    lineNumber: 36,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     CheckCircle: ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1006,7 +1010,7 @@ const CustomIcon = {
                     r: "10"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1015,13 +1019,13 @@ const CustomIcon = {
                     d: "M9 12l2 2 4-4"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 39,
+            lineNumber: 40,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     Lightbulb: ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1036,12 +1040,12 @@ const CustomIcon = {
                 d: "M9 21h6M15 3a6 6 0 00-6 9.5V18h6v-5.5A6 6 0 0015 3z"
             }, void 0, false, {
                 fileName: "[project]/components/okr/app-header.tsx",
-                lineNumber: 46,
+                lineNumber: 47,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     BookOpen: ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1056,12 +1060,12 @@ const CustomIcon = {
                 d: "M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2V3zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7V3z"
             }, void 0, false, {
                 fileName: "[project]/components/okr/app-header.tsx",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 50,
+            lineNumber: 51,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0)),
     Rocket: ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1077,7 +1081,7 @@ const CustomIcon = {
                     d: "M12 15l-3-3m0 0l-3 3m3-3v12m0 0L4.93 19.07A10 10 0 0112 2a10 10 0 017.07 17.07L12 24z"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 56,
+                    lineNumber: 57,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1086,13 +1090,13 @@ const CustomIcon = {
                     d: "M9 2l3 3-3 3M15 2l-3 3 3 3"
                 }, void 0, false, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/okr/app-header.tsx",
-            lineNumber: 55,
+            lineNumber: 56,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
 };
@@ -1135,9 +1139,17 @@ const themes = {
 };
 function AppHeader() {
     _s();
-    const { companyProfile, currentUser } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"])();
+    const { companyProfile, currentUser, currentScreen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"])();
     const [showHelp, setShowHelp] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [currentTheme, setCurrentTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("default");
+    const { theme, setTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
+    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Prevent hydration mismatch
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "AppHeader.useEffect": ()=>{
+            setMounted(true);
+        }
+    }["AppHeader.useEffect"], []);
     const applyTheme = (theme)=>{
         setCurrentTheme(theme);
         const themeConfig = themes[theme];
@@ -1153,25 +1165,32 @@ function AppHeader() {
         root.style.setProperty('--chart-1', themeConfig.primaryOklch);
         root.style.setProperty('--sidebar-primary', themeConfig.primaryOklch);
         root.style.setProperty('--sidebar-ring', themeConfig.primaryOklch);
-        // Update all elements with the old hardcoded red color
-        const allElements = document.querySelectorAll('[class*="DC2626"], [class*="red-600"]');
-        allElements.forEach((el)=>{
+        // The CSS variables above will automatically theme most elements
+        // Only update elements that use hardcoded hex colors (not CSS variables)
+        // This prevents text from becoming invisible
+        // We don't need to manually update elements since the CSS variables handle it
+        // The --primary, --accent, etc. variables cascade to all components
+        // Optional: Clear any previously set inline styles that might interfere
+        document.querySelectorAll('[style*="color"], [style*="background"]').forEach((el)=>{
             const htmlEl = el;
-            // Update text color classes
-            if (htmlEl.className.includes('text-[#DC2626]')) {
-                htmlEl.style.color = themeConfig.primary;
+            // Don't clear styles from the logo or notification elements
+            if (htmlEl.hasAttribute('data-no-theme') || htmlEl.closest('[data-no-theme]') || htmlEl.hasAttribute('data-notification')) {
+                return;
             }
-            // Update background color classes
-            if (htmlEl.className.includes('bg-[#DC2626]')) {
-                htmlEl.style.backgroundColor = themeConfig.primary;
+            // Only clear if it was set by previous theme changes
+            if (htmlEl.style.color && htmlEl.style.color.startsWith('#')) {
+                htmlEl.style.color = '';
             }
-            // Update border color classes
-            if (htmlEl.className.includes('border-[#DC2626]')) {
-                htmlEl.style.borderColor = themeConfig.primary;
+            if (htmlEl.style.backgroundColor && htmlEl.style.backgroundColor.startsWith('#')) {
+                htmlEl.style.backgroundColor = '';
+            }
+            if (htmlEl.style.borderColor && htmlEl.style.borderColor.startsWith('#')) {
+                htmlEl.style.borderColor = '';
             }
         });
         // Show theme change notification with themed color
         const notification = document.createElement('div');
+        notification.setAttribute('data-notification', 'true');
         notification.style.cssText = `
       position: fixed;
       top: 80px;
@@ -1204,6 +1223,7 @@ function AppHeader() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center gap-2",
+                                "data-no-theme": true,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "p-1.5 rounded-md bg-[#DC2626]/10",
@@ -1211,12 +1231,12 @@ function AppHeader() {
                                             className: "w-5 h-5 text-[#DC2626]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 192,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 191,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1224,13 +1244,13 @@ function AppHeader() {
                                         children: "OKR Autopilot"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 177,
+                                        lineNumber: 194,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/app-header.tsx",
-                                lineNumber: 173,
+                                lineNumber: 190,
                                 columnNumber: 11
                             }, this),
                             companyProfile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1240,7 +1260,7 @@ function AppHeader() {
                                         children: "/"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 181,
+                                        lineNumber: 198,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1248,7 +1268,7 @@ function AppHeader() {
                                         children: companyProfile.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 199,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1256,7 +1276,7 @@ function AppHeader() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/app-header.tsx",
-                        lineNumber: 172,
+                        lineNumber: 189,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1272,7 +1292,7 @@ function AppHeader() {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 190,
+                                        lineNumber: 207,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1280,14 +1300,61 @@ function AppHeader() {
                                         children: "Help"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 191,
+                                        lineNumber: 208,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/app-header.tsx",
-                                lineNumber: 189,
+                                lineNumber: 206,
                                 columnNumber: 11
+                            }, this),
+                            mounted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: "ghost",
+                                size: "sm",
+                                onClick: ()=>setTheme(theme === "dark" ? "light" : "dark"),
+                                className: "gap-2",
+                                children: theme === "dark" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
+                                            className: "w-4 h-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/app-header.tsx",
+                                            lineNumber: 221,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "hidden sm:inline",
+                                            children: "Light"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/app-header.tsx",
+                                            lineNumber: 222,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
+                                            className: "w-4 h-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/app-header.tsx",
+                                            lineNumber: 226,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "hidden sm:inline",
+                                            children: "Dark"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/app-header.tsx",
+                                            lineNumber: 227,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true)
+                            }, void 0, false, {
+                                fileName: "[project]/components/okr/app-header.tsx",
+                                lineNumber: 213,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
                                 children: [
@@ -1302,7 +1369,7 @@ function AppHeader() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/app-header.tsx",
-                                                    lineNumber: 198,
+                                                    lineNumber: 237,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1310,18 +1377,18 @@ function AppHeader() {
                                                     children: "Theme"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/app-header.tsx",
-                                                    lineNumber: 199,
+                                                    lineNumber: 238,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 197,
+                                            lineNumber: 236,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 196,
+                                        lineNumber: 235,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -1332,12 +1399,12 @@ function AppHeader() {
                                                 children: "Choose Theme"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 203,
+                                                lineNumber: 242,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 204,
+                                                lineNumber: 243,
                                                 columnNumber: 15
                                             }, this),
                                             Object.keys(themes).map((themeKey)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -1351,39 +1418,39 @@ function AppHeader() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/app-header.tsx",
-                                                            lineNumber: 211,
+                                                            lineNumber: 250,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: themes[themeKey].name
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/app-header.tsx",
-                                                            lineNumber: 215,
+                                                            lineNumber: 254,
                                                             columnNumber: 19
                                                         }, this),
                                                         currentTheme === themeKey && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomIcon.CheckCircle, {
                                                             className: "w-4 h-4 ml-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/app-header.tsx",
-                                                            lineNumber: 216,
+                                                            lineNumber: 255,
                                                             columnNumber: 49
                                                         }, this)
                                                     ]
                                                 }, themeKey, true, {
                                                     fileName: "[project]/components/okr/app-header.tsx",
-                                                    lineNumber: 206,
+                                                    lineNumber: 245,
                                                     columnNumber: 17
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 202,
+                                        lineNumber: 241,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/app-header.tsx",
-                                lineNumber: 195,
+                                lineNumber: 234,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
@@ -1402,12 +1469,12 @@ function AppHeader() {
                                                         children: currentUser?.name?.charAt(0) || "U"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 227,
+                                                        lineNumber: 266,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/app-header.tsx",
-                                                    lineNumber: 226,
+                                                    lineNumber: 265,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1415,25 +1482,25 @@ function AppHeader() {
                                                     children: currentUser?.name || "User"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/app-header.tsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 270,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                                     className: "w-3 h-3 text-muted-foreground"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/app-header.tsx",
-                                                    lineNumber: 232,
+                                                    lineNumber: 271,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 225,
+                                            lineNumber: 264,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 263,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -1443,7 +1510,7 @@ function AppHeader() {
                                                 children: "Settings"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 236,
+                                                lineNumber: 275,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -1453,50 +1520,50 @@ function AppHeader() {
                                                         className: "w-4 h-4 mr-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 277,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Help & Support"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 237,
+                                                lineNumber: 276,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 241,
+                                                lineNumber: 280,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
                                                 children: "Sign out"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 242,
+                                                lineNumber: 281,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/app-header.tsx",
-                                        lineNumber: 235,
+                                        lineNumber: 274,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/app-header.tsx",
-                                lineNumber: 223,
+                                lineNumber: 262,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/app-header.tsx",
-                        lineNumber: 187,
+                        lineNumber: 204,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/app-header.tsx",
-                lineNumber: 171,
+                lineNumber: 188,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -1514,27 +1581,27 @@ function AppHeader() {
                                             className: "w-6 h-6 text-[#DC2626]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 253,
+                                            lineNumber: 292,
                                             columnNumber: 15
                                         }, this),
                                         "Help & Support"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/app-header.tsx",
-                                    lineNumber: 252,
+                                    lineNumber: 291,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
                                     children: "Everything you need to know about OKRs and using OKR Autopilot powered by Lamatic"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/app-header.tsx",
-                                    lineNumber: 256,
+                                    lineNumber: 295,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/app-header.tsx",
-                            lineNumber: 251,
+                            lineNumber: 290,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tabs"], {
@@ -1549,7 +1616,7 @@ function AppHeader() {
                                             children: "OKR Basics"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 263,
+                                            lineNumber: 302,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
@@ -1557,7 +1624,7 @@ function AppHeader() {
                                             children: "How to Use"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 264,
+                                            lineNumber: 303,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
@@ -1565,7 +1632,7 @@ function AppHeader() {
                                             children: "Best Practices"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 265,
+                                            lineNumber: 304,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
@@ -1573,13 +1640,13 @@ function AppHeader() {
                                             children: "About Lamatic"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 266,
+                                            lineNumber: 305,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/app-header.tsx",
-                                    lineNumber: 262,
+                                    lineNumber: 301,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1598,7 +1665,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 274,
+                                                                lineNumber: 313,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1609,7 +1676,7 @@ function AppHeader() {
                                                                         children: "What are OKRs?"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 276,
+                                                                        lineNumber: 315,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1620,7 +1687,7 @@ function AppHeader() {
                                                                                 children: "Objective"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 279,
+                                                                                lineNumber: 318,
                                                                                 columnNumber: 28
                                                                             }, this),
                                                                             " is a clearly defined goal, and ",
@@ -1628,14 +1695,14 @@ function AppHeader() {
                                                                                 children: "Key Results"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 279,
+                                                                                lineNumber: 318,
                                                                                 columnNumber: 86
                                                                             }, this),
                                                                             " are specific measures used to track the achievement of that goal."
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 277,
+                                                                        lineNumber: 316,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1646,7 +1713,7 @@ function AppHeader() {
                                                                                 children: "Example:"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 282,
+                                                                                lineNumber: 321,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1656,14 +1723,14 @@ function AppHeader() {
                                                                                         children: "Objective:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 283,
+                                                                                        lineNumber: 322,
                                                                                         columnNumber: 62
                                                                                     }, this),
                                                                                     " Become the market leader in customer satisfaction"
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 283,
+                                                                                lineNumber: 322,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1673,14 +1740,14 @@ function AppHeader() {
                                                                                         children: "KR1:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 284,
+                                                                                        lineNumber: 323,
                                                                                         columnNumber: 67
                                                                                     }, this),
                                                                                     " Increase NPS score from 45 to 70"
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 284,
+                                                                                lineNumber: 323,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1690,32 +1757,32 @@ function AppHeader() {
                                                                                         children: "KR2:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 285,
+                                                                                        lineNumber: 324,
                                                                                         columnNumber: 62
                                                                                     }, this),
                                                                                     " Reduce average response time to under 2 hours"
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 285,
+                                                                                lineNumber: 324,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 281,
+                                                                        lineNumber: 320,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 275,
+                                                                lineNumber: 314,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 273,
+                                                        lineNumber: 312,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1725,7 +1792,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 291,
+                                                                lineNumber: 330,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1736,7 +1803,7 @@ function AppHeader() {
                                                                         children: "Why Use OKRs?"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 293,
+                                                                        lineNumber: 332,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1749,7 +1816,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 296,
+                                                                                        lineNumber: 335,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1758,20 +1825,20 @@ function AppHeader() {
                                                                                                 children: "Alignment:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 297,
+                                                                                                lineNumber: 336,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Ensures everyone is working toward the same goals"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 297,
+                                                                                        lineNumber: 336,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 295,
+                                                                                lineNumber: 334,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1781,7 +1848,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 300,
+                                                                                        lineNumber: 339,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1790,20 +1857,20 @@ function AppHeader() {
                                                                                                 children: "Focus:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 301,
+                                                                                                lineNumber: 340,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Helps teams prioritize what matters most"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 301,
+                                                                                        lineNumber: 340,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 299,
+                                                                                lineNumber: 338,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1813,7 +1880,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 304,
+                                                                                        lineNumber: 343,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1822,20 +1889,20 @@ function AppHeader() {
                                                                                                 children: "Transparency:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 305,
+                                                                                                lineNumber: 344,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Makes goals visible across the organization"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 305,
+                                                                                        lineNumber: 344,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 303,
+                                                                                lineNumber: 342,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1845,7 +1912,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 308,
+                                                                                        lineNumber: 347,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1854,20 +1921,20 @@ function AppHeader() {
                                                                                                 children: "Accountability:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 309,
+                                                                                                lineNumber: 348,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Creates clear ownership and measurable outcomes"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 309,
+                                                                                        lineNumber: 348,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 307,
+                                                                                lineNumber: 346,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1877,7 +1944,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 312,
+                                                                                        lineNumber: 351,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1886,38 +1953,38 @@ function AppHeader() {
                                                                                                 children: "Agility:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 313,
+                                                                                                lineNumber: 352,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Enables quick adjustments based on progress"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 313,
+                                                                                        lineNumber: 352,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 311,
+                                                                                lineNumber: 350,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 294,
+                                                                        lineNumber: 333,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 292,
+                                                                lineNumber: 331,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 290,
+                                                        lineNumber: 329,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1927,7 +1994,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 320,
+                                                                lineNumber: 359,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1938,7 +2005,7 @@ function AppHeader() {
                                                                         children: "Who Uses OKRs?"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 322,
+                                                                        lineNumber: 361,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1946,30 +2013,30 @@ function AppHeader() {
                                                                         children: "Companies like Google, LinkedIn, Twitter, Uber, and thousands of others use OKRs to drive growth and alignment. From startups to enterprises, OKRs work for teams of any size."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 323,
+                                                                        lineNumber: 362,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 321,
+                                                                lineNumber: 360,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 319,
+                                                        lineNumber: 358,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 272,
+                                                lineNumber: 311,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 271,
+                                            lineNumber: 310,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -1985,7 +2052,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 336,
+                                                                lineNumber: 375,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1996,7 +2063,7 @@ function AppHeader() {
                                                                         children: "Getting Started with OKR Autopilot"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 338,
+                                                                        lineNumber: 377,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
@@ -2010,7 +2077,7 @@ function AppHeader() {
                                                                                         children: "1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 341,
+                                                                                        lineNumber: 380,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2020,214 +2087,12 @@ function AppHeader() {
                                                                                                 children: "Enter Company Details:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 343,
+                                                                                                lineNumber: 382,
                                                                                                 columnNumber: 29
                                                                                             }, this),
                                                                                             " Provide your company website and planning period. Our AI will analyze your business context."
                                                                                         ]
                                                                                     }, void 0, true, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 342,
-                                                                                        columnNumber: 27
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 340,
-                                                                                columnNumber: 25
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex gap-3",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
-                                                                                        children: "2"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 347,
-                                                                                        columnNumber: 27
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                className: "text-foreground",
-                                                                                                children: "Review Generated OKRs:"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 349,
-                                                                                                columnNumber: 29
-                                                                                            }, this),
-                                                                                            " AI creates strategic objectives aligned with your business goals. Edit and refine them to match your vision."
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 348,
-                                                                                        columnNumber: 27
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 346,
-                                                                                columnNumber: 25
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex gap-3",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
-                                                                                        children: "3"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 353,
-                                                                                        columnNumber: 27
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                className: "text-foreground",
-                                                                                                children: "Invite Your Team:"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 355,
-                                                                                                columnNumber: 29
-                                                                                            }, this),
-                                                                                            " Share OKRs with team members. They'll receive personalized OKRs aligned with your goals."
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 354,
-                                                                                        columnNumber: 27
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 352,
-                                                                                columnNumber: 25
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex gap-3",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
-                                                                                        children: "4"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 359,
-                                                                                        columnNumber: 27
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                className: "text-foreground",
-                                                                                                children: "Track Progress:"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 361,
-                                                                                                columnNumber: 29
-                                                                                            }, this),
-                                                                                            " Monitor team progress through the dashboard. Update metrics weekly for accountability."
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 360,
-                                                                                        columnNumber: 27
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 358,
-                                                                                columnNumber: 25
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex gap-3",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
-                                                                                        children: "5"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 365,
-                                                                                        columnNumber: 27
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                className: "text-foreground",
-                                                                                                children: "Export & Share:"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 367,
-                                                                                                columnNumber: 29
-                                                                                            }, this),
-                                                                                            " Export OKRs in multiple formats (Markdown, CSV, JSON) to share with stakeholders."
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 366,
-                                                                                        columnNumber: 27
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 364,
-                                                                                columnNumber: 25
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 339,
-                                                                        columnNumber: 23
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 337,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 335,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex items-start gap-3 p-4 rounded-lg bg-card border border-border",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomIcon.Lightbulb, {
-                                                                className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 375,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "space-y-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                        className: "font-semibold text-lg",
-                                                                        children: "Tips for Success"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 377,
-                                                                        columnNumber: 23
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                                        className: "space-y-2 text-sm text-muted-foreground",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex items-start gap-2",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[#DC2626] font-bold",
-                                                                                        children: "•"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 380,
-                                                                                        columnNumber: 27
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        children: "Start with 3-5 objectives per person/team - focus on quality over quantity"
-                                                                                    }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
                                                                                         lineNumber: 381,
                                                                                         columnNumber: 27
@@ -2239,67 +2104,63 @@ function AppHeader() {
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex items-start gap-2",
+                                                                                className: "flex gap-3",
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[#DC2626] font-bold",
-                                                                                        children: "•"
+                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
+                                                                                        children: "2"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 384,
+                                                                                        lineNumber: 386,
                                                                                         columnNumber: 27
                                                                                     }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        children: "Make key results measurable with specific numbers and deadlines"
-                                                                                    }, void 0, false, {
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                className: "text-foreground",
+                                                                                                children: "Review Generated OKRs:"
+                                                                                            }, void 0, false, {
+                                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                                lineNumber: 388,
+                                                                                                columnNumber: 29
+                                                                                            }, this),
+                                                                                            " AI creates strategic objectives aligned with your business goals. Edit and refine them to match your vision."
+                                                                                        ]
+                                                                                    }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 385,
+                                                                                        lineNumber: 387,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 383,
+                                                                                lineNumber: 385,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex items-start gap-2",
+                                                                                className: "flex gap-3",
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[#DC2626] font-bold",
-                                                                                        children: "•"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 388,
-                                                                                        columnNumber: 27
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        children: "Review and update progress weekly to maintain momentum"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 389,
-                                                                                        columnNumber: 27
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 387,
-                                                                                columnNumber: 25
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex items-start gap-2",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[#DC2626] font-bold",
-                                                                                        children: "•"
+                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
+                                                                                        children: "3"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
                                                                                         lineNumber: 392,
                                                                                         columnNumber: 27
                                                                                     }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        children: "Set ambitious but achievable goals - aim for 70-80% completion"
-                                                                                    }, void 0, false, {
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                className: "text-foreground",
+                                                                                                children: "Invite Your Team:"
+                                                                                            }, void 0, false, {
+                                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                                lineNumber: 394,
+                                                                                                columnNumber: 29
+                                                                                            }, this),
+                                                                                            " Share OKRs with team members. They'll receive personalized OKRs aligned with your goals."
+                                                                                        ]
+                                                                                    }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
                                                                                         lineNumber: 393,
                                                                                         columnNumber: 27
@@ -2311,27 +2172,71 @@ function AppHeader() {
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                className: "flex items-start gap-2",
+                                                                                className: "flex gap-3",
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[#DC2626] font-bold",
-                                                                                        children: "•"
+                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
+                                                                                        children: "4"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 396,
+                                                                                        lineNumber: 398,
                                                                                         columnNumber: 27
                                                                                     }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        children: "Ensure team OKRs align with and support leadership OKRs"
-                                                                                    }, void 0, false, {
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                className: "text-foreground",
+                                                                                                children: "Track Progress:"
+                                                                                            }, void 0, false, {
+                                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                                lineNumber: 400,
+                                                                                                columnNumber: 29
+                                                                                            }, this),
+                                                                                            " Monitor team progress through the dashboard. Update metrics weekly for accountability."
+                                                                                        ]
+                                                                                    }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 397,
+                                                                                        lineNumber: 399,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 395,
+                                                                                lineNumber: 397,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                className: "flex gap-3",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-[#DC2626]/10 text-[#DC2626] flex items-center justify-center font-semibold text-xs",
+                                                                                        children: "5"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 404,
+                                                                                        columnNumber: 27
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                className: "text-foreground",
+                                                                                                children: "Export & Share:"
+                                                                                            }, void 0, false, {
+                                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                                lineNumber: 406,
+                                                                                                columnNumber: 29
+                                                                                            }, this),
+                                                                                            " Export OKRs in multiple formats (Markdown, CSV, JSON) to share with stakeholders."
+                                                                                        ]
+                                                                                    }, void 0, true, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 405,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                lineNumber: 403,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
@@ -2351,16 +2256,178 @@ function AppHeader() {
                                                         fileName: "[project]/components/okr/app-header.tsx",
                                                         lineNumber: 374,
                                                         columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-start gap-3 p-4 rounded-lg bg-card border border-border",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomIcon.Lightbulb, {
+                                                                className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                lineNumber: 414,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "space-y-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                        className: "font-semibold text-lg",
+                                                                        children: "Tips for Success"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                        lineNumber: 416,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                                        className: "space-y-2 text-sm text-muted-foreground",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                className: "flex items-start gap-2",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "text-[#DC2626] font-bold",
+                                                                                        children: "•"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 419,
+                                                                                        columnNumber: 27
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Start with 3-5 objectives per person/team - focus on quality over quantity"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 420,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                lineNumber: 418,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                className: "flex items-start gap-2",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "text-[#DC2626] font-bold",
+                                                                                        children: "•"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 423,
+                                                                                        columnNumber: 27
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Make key results measurable with specific numbers and deadlines"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 424,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                lineNumber: 422,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                className: "flex items-start gap-2",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "text-[#DC2626] font-bold",
+                                                                                        children: "•"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 427,
+                                                                                        columnNumber: 27
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Review and update progress weekly to maintain momentum"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 428,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                lineNumber: 426,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                className: "flex items-start gap-2",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "text-[#DC2626] font-bold",
+                                                                                        children: "•"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 431,
+                                                                                        columnNumber: 27
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Set ambitious but achievable goals - aim for 70-80% completion"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 432,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                lineNumber: 430,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                className: "flex items-start gap-2",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "text-[#DC2626] font-bold",
+                                                                                        children: "•"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 435,
+                                                                                        columnNumber: 27
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Ensure team OKRs align with and support leadership OKRs"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                                        lineNumber: 436,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                                lineNumber: 434,
+                                                                                columnNumber: 25
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                                        lineNumber: 417,
+                                                                        columnNumber: 23
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/okr/app-header.tsx",
+                                                                lineNumber: 415,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/okr/app-header.tsx",
+                                                        lineNumber: 413,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 334,
+                                                lineNumber: 373,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 333,
+                                            lineNumber: 372,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -2376,7 +2443,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 409,
+                                                                lineNumber: 448,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2387,7 +2454,7 @@ function AppHeader() {
                                                                         children: "Writing Great Objectives"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 411,
+                                                                        lineNumber: 450,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2400,7 +2467,7 @@ function AppHeader() {
                                                                                         children: "✅ Good Objective:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 414,
+                                                                                        lineNumber: 453,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2408,13 +2475,13 @@ function AppHeader() {
                                                                                         children: '"Become the most trusted brand in our industry"'
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 415,
+                                                                                        lineNumber: 454,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 413,
+                                                                                lineNumber: 452,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2424,7 +2491,7 @@ function AppHeader() {
                                                                                         children: "❌ Poor Objective:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 418,
+                                                                                        lineNumber: 457,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2432,13 +2499,13 @@ function AppHeader() {
                                                                                         children: '"Do marketing stuff"'
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 419,
+                                                                                        lineNumber: 458,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 417,
+                                                                                lineNumber: 456,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2449,32 +2516,32 @@ function AppHeader() {
                                                                                         children: "qualitative, inspirational, and time-bound"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 422,
+                                                                                        lineNumber: 461,
                                                                                         columnNumber: 48
                                                                                     }, this),
                                                                                     '. They answer "What do we want to achieve?"'
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 421,
+                                                                                lineNumber: 460,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 412,
+                                                                        lineNumber: 451,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 410,
+                                                                lineNumber: 449,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 408,
+                                                        lineNumber: 447,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2484,7 +2551,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 429,
+                                                                lineNumber: 468,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2495,7 +2562,7 @@ function AppHeader() {
                                                                         children: "Writing Great Key Results"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 431,
+                                                                        lineNumber: 470,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2508,7 +2575,7 @@ function AppHeader() {
                                                                                         children: "✅ Good Key Results:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 434,
+                                                                                        lineNumber: 473,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2516,7 +2583,7 @@ function AppHeader() {
                                                                                         children: "• Increase customer retention from 75% to 90%"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 435,
+                                                                                        lineNumber: 474,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2524,7 +2591,7 @@ function AppHeader() {
                                                                                         children: "• Reduce churn rate from 5% to 2%"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 436,
+                                                                                        lineNumber: 475,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2532,13 +2599,13 @@ function AppHeader() {
                                                                                         children: "• Achieve NPS score of 70+"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 437,
+                                                                                        lineNumber: 476,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 433,
+                                                                                lineNumber: 472,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2548,7 +2615,7 @@ function AppHeader() {
                                                                                         children: "❌ Poor Key Results:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 440,
+                                                                                        lineNumber: 479,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2556,7 +2623,7 @@ function AppHeader() {
                                                                                         children: "• Make customers happy"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 441,
+                                                                                        lineNumber: 480,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2564,13 +2631,13 @@ function AppHeader() {
                                                                                         children: "• Improve retention"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 442,
+                                                                                        lineNumber: 481,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 439,
+                                                                                lineNumber: 478,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2581,32 +2648,32 @@ function AppHeader() {
                                                                                         children: "quantitative, measurable, and verifiable"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 445,
+                                                                                        lineNumber: 484,
                                                                                         columnNumber: 47
                                                                                     }, this),
                                                                                     '. They answer "How will we know if we achieved the objective?"'
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 444,
+                                                                                lineNumber: 483,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 432,
+                                                                        lineNumber: 471,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 430,
+                                                                lineNumber: 469,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 428,
+                                                        lineNumber: 467,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2616,7 +2683,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 452,
+                                                                lineNumber: 491,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2627,7 +2694,7 @@ function AppHeader() {
                                                                         children: "Common Pitfalls to Avoid"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 454,
+                                                                        lineNumber: 493,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2641,7 +2708,7 @@ function AppHeader() {
                                                                                         children: "×"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 457,
+                                                                                        lineNumber: 496,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2650,20 +2717,20 @@ function AppHeader() {
                                                                                                 children: "Setting too many OKRs"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 458,
+                                                                                                lineNumber: 497,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " - Focus on 3-5 per quarter, not 20"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 458,
+                                                                                        lineNumber: 497,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 456,
+                                                                                lineNumber: 495,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2674,7 +2741,7 @@ function AppHeader() {
                                                                                         children: "×"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 461,
+                                                                                        lineNumber: 500,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2683,20 +2750,20 @@ function AppHeader() {
                                                                                                 children: "Making KRs tasks instead of outcomes"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 462,
+                                                                                                lineNumber: 501,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             ' - "Launch feature X" → "Increase engagement by 30%"'
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 462,
+                                                                                        lineNumber: 501,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 460,
+                                                                                lineNumber: 499,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2707,7 +2774,7 @@ function AppHeader() {
                                                                                         children: "×"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 465,
+                                                                                        lineNumber: 504,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2716,20 +2783,20 @@ function AppHeader() {
                                                                                                 children: "Set and forget"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 466,
+                                                                                                lineNumber: 505,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " - Review progress weekly, adjust as needed"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 466,
+                                                                                        lineNumber: 505,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 464,
+                                                                                lineNumber: 503,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2740,7 +2807,7 @@ function AppHeader() {
                                                                                         children: "×"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 469,
+                                                                                        lineNumber: 508,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2749,20 +2816,20 @@ function AppHeader() {
                                                                                                 children: "Making them too easy"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 470,
+                                                                                                lineNumber: 509,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " - 100% achievement means you didn't aim high enough"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 470,
+                                                                                        lineNumber: 509,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 468,
+                                                                                lineNumber: 507,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2773,7 +2840,7 @@ function AppHeader() {
                                                                                         children: "×"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 473,
+                                                                                        lineNumber: 512,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2782,49 +2849,49 @@ function AppHeader() {
                                                                                                 children: "Lack of alignment"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 474,
+                                                                                                lineNumber: 513,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " - Team OKRs should support company OKRs"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 474,
+                                                                                        lineNumber: 513,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 472,
+                                                                                lineNumber: 511,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 455,
+                                                                        lineNumber: 494,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 453,
+                                                                lineNumber: 492,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 451,
+                                                        lineNumber: 490,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 407,
+                                                lineNumber: 446,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 406,
+                                            lineNumber: 445,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -2840,7 +2907,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 486,
+                                                                lineNumber: 525,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2851,7 +2918,7 @@ function AppHeader() {
                                                                         children: "What is Lamatic?"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 488,
+                                                                        lineNumber: 527,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2859,19 +2926,19 @@ function AppHeader() {
                                                                         children: "Lamatic is a powerful AI development platform that helps teams build, deploy, and scale AI applications 10x faster. From AI agents to complex workflows, Lamatic provides the infrastructure you need without the overhead."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 489,
+                                                                        lineNumber: 528,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 487,
+                                                                lineNumber: 526,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 485,
+                                                        lineNumber: 524,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2887,7 +2954,7 @@ function AppHeader() {
                                                                                 className: "w-4 h-4 text-[#DC2626]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 499,
+                                                                                lineNumber: 538,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -2895,13 +2962,13 @@ function AppHeader() {
                                                                                 children: "10x Faster Development"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 500,
+                                                                                lineNumber: 539,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 498,
+                                                                        lineNumber: 537,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2909,13 +2976,13 @@ function AppHeader() {
                                                                         children: "Build AI features in days, not months. Lamatic handles the complexity."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 502,
+                                                                        lineNumber: 541,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 497,
+                                                                lineNumber: 536,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2928,7 +2995,7 @@ function AppHeader() {
                                                                                 className: "w-4 h-4 text-[#DC2626]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 507,
+                                                                                lineNumber: 546,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -2936,13 +3003,13 @@ function AppHeader() {
                                                                                 children: "$30K+ Annual Savings"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 508,
+                                                                                lineNumber: 547,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 506,
+                                                                        lineNumber: 545,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2950,13 +3017,13 @@ function AppHeader() {
                                                                         children: "Smart teams are cutting infrastructure costs significantly."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 510,
+                                                                        lineNumber: 549,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 505,
+                                                                lineNumber: 544,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2969,7 +3036,7 @@ function AppHeader() {
                                                                                 className: "w-4 h-4 text-[#DC2626]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 515,
+                                                                                lineNumber: 554,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -2977,13 +3044,13 @@ function AppHeader() {
                                                                                 children: "Production-Ready AI"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 516,
+                                                                                lineNumber: 555,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 514,
+                                                                        lineNumber: 553,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2991,13 +3058,13 @@ function AppHeader() {
                                                                         children: "Deploy reliable AI with built-in monitoring and optimization."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 518,
+                                                                        lineNumber: 557,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 513,
+                                                                lineNumber: 552,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3010,7 +3077,7 @@ function AppHeader() {
                                                                                 className: "w-4 h-4 text-[#DC2626]"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 523,
+                                                                                lineNumber: 562,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -3018,13 +3085,13 @@ function AppHeader() {
                                                                                 children: "Any LLM, One Platform"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 524,
+                                                                                lineNumber: 563,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 522,
+                                                                        lineNumber: 561,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3032,19 +3099,19 @@ function AppHeader() {
                                                                         children: "Switch between GPT, Claude, Gemini with one line of code."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 526,
+                                                                        lineNumber: 565,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 521,
+                                                                lineNumber: 560,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 496,
+                                                        lineNumber: 535,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3054,7 +3121,7 @@ function AppHeader() {
                                                                 className: "w-5 h-5 text-[#DC2626] mt-1 flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 531,
+                                                                lineNumber: 570,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3065,7 +3132,7 @@ function AppHeader() {
                                                                         children: "Key Features"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 533,
+                                                                        lineNumber: 572,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3078,7 +3145,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 536,
+                                                                                        lineNumber: 575,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3087,20 +3154,20 @@ function AppHeader() {
                                                                                                 children: "AI Agents:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 537,
+                                                                                                lineNumber: 576,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Build autonomous agents that handle complex workflows"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 537,
+                                                                                        lineNumber: 576,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 535,
+                                                                                lineNumber: 574,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3110,7 +3177,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 540,
+                                                                                        lineNumber: 579,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3119,20 +3186,20 @@ function AppHeader() {
                                                                                                 children: "Visual Workflow Builder:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 541,
+                                                                                                lineNumber: 580,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Create AI pipelines with drag-and-drop simplicity"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 541,
+                                                                                        lineNumber: 580,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 539,
+                                                                                lineNumber: 578,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3142,7 +3209,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 544,
+                                                                                        lineNumber: 583,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3151,20 +3218,20 @@ function AppHeader() {
                                                                                                 children: "Smart Caching:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 545,
+                                                                                                lineNumber: 584,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Reduce API costs by up to 80% with intelligent caching"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 545,
+                                                                                        lineNumber: 584,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 543,
+                                                                                lineNumber: 582,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3174,7 +3241,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 548,
+                                                                                        lineNumber: 587,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3183,20 +3250,20 @@ function AppHeader() {
                                                                                                 children: "Built-in Monitoring:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 549,
+                                                                                                lineNumber: 588,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Track performance, costs, and quality in real-time"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 549,
+                                                                                        lineNumber: 588,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 547,
+                                                                                lineNumber: 586,
                                                                                 columnNumber: 25
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3206,7 +3273,7 @@ function AppHeader() {
                                                                                         className: "w-4 h-4 mt-0.5 text-[#DC2626] flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 552,
+                                                                                        lineNumber: 591,
                                                                                         columnNumber: 27
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3215,38 +3282,38 @@ function AppHeader() {
                                                                                                 children: "Easy Integrations:"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                                lineNumber: 553,
+                                                                                                lineNumber: 592,
                                                                                                 columnNumber: 33
                                                                                             }, this),
                                                                                             " Connect to 100+ tools and services out of the box"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                                        lineNumber: 553,
+                                                                                        lineNumber: 592,
                                                                                         columnNumber: 27
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                                lineNumber: 551,
+                                                                                lineNumber: 590,
                                                                                 columnNumber: 25
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 534,
+                                                                        lineNumber: 573,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 532,
+                                                                lineNumber: 571,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 530,
+                                                        lineNumber: 569,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3257,7 +3324,7 @@ function AppHeader() {
                                                                 children: "Learn More"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 560,
+                                                                lineNumber: 599,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3265,7 +3332,7 @@ function AppHeader() {
                                                                 children: "Ready to build your own AI applications? Visit Lamatic to get started for free."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 561,
+                                                                lineNumber: 600,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -3277,66 +3344,67 @@ function AppHeader() {
                                                                         className: "w-4 h-4 mr-2"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                                        lineNumber: 569,
+                                                                        lineNumber: 608,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     "Explore Lamatic Platform"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                                lineNumber: 564,
+                                                                lineNumber: 603,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/app-header.tsx",
-                                                        lineNumber: 559,
+                                                        lineNumber: 598,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/app-header.tsx",
-                                                lineNumber: 484,
+                                                lineNumber: 523,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/app-header.tsx",
-                                            lineNumber: 483,
+                                            lineNumber: 522,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/app-header.tsx",
-                                    lineNumber: 269,
+                                    lineNumber: 308,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/app-header.tsx",
-                            lineNumber: 261,
+                            lineNumber: 300,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/app-header.tsx",
-                    lineNumber: 250,
+                    lineNumber: 289,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/app-header.tsx",
-                lineNumber: 249,
+                lineNumber: 288,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/okr/app-header.tsx",
-        lineNumber: 170,
+        lineNumber: 187,
         columnNumber: 5
     }, this);
 }
-_s(AppHeader, "F5xsIcw5N5LdT7Rh2VblK2kFFIQ=", false, function() {
+_s(AppHeader, "X0YX/c4q1VP4CdXgKSECUcJro+A=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"]
     ];
 });
 _c = AppHeader;
@@ -4515,7 +4583,7 @@ function LoadingWithFacts({ message = "Analyzing and generating OKRs..." }) {
     const [currentStep, setCurrentStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     // Custom icon components
     const getStepIcon = (type, isActive, isPassed)=>{
-        const colorClass = isActive ? 'text-[#DC2626]' : isPassed ? 'text-[#DC2626]' : 'text-muted-foreground';
+        const colorClass = isActive ? 'text-primary' : isPassed ? 'text-primary' : 'text-muted-foreground';
         switch(type){
             case 'research':
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -4867,12 +4935,12 @@ function LoadingWithFacts({ message = "Analyzing and generating OKRs..." }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute top-16 left-[8%] right-[8%] h-0.5 overflow-hidden",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "h-full bg-gradient-to-r from-[#DC2626] to-primary transition-all duration-700 ease-out",
+                                className: "h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-700 ease-out",
                                 style: {
                                     width: `${currentStep / (pipelineSteps.length - 1) * 100}%`
                                 },
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#DC2626] rounded-full shadow-lg shadow-[#DC2626]/50 animate-pulse"
+                                    className: "absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-primary rounded-full shadow-lg shadow-primary/50 animate-pulse"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/loading-with-facts.tsx",
                                     lineNumber: 212,
@@ -4899,11 +4967,11 @@ function LoadingWithFacts({ message = "Analyzing and generating OKRs..." }) {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: `
                     relative flex items-center justify-center w-16 h-16 rounded-full border-2 transition-all duration-500 bg-background
-                    ${isActive ? 'border-[#DC2626] scale-110 shadow-lg shadow-[#DC2626]/30' : isPassed ? 'border-[#DC2626] bg-[#DC2626]/5' : 'border-border/50'}
+                    ${isActive ? 'border-primary scale-110 shadow-lg shadow-primary/30' : isPassed ? 'border-primary bg-primary/5' : 'border-border/50'}
                   `,
                                             children: [
                                                 isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 rounded-full border-2 border-[#DC2626] animate-ping",
+                                                    className: "absolute inset-0 rounded-full border-2 border-primary animate-ping",
                                                     style: {
                                                         animationDuration: '1.5s'
                                                     }
@@ -4915,7 +4983,7 @@ function LoadingWithFacts({ message = "Analyzing and generating OKRs..." }) {
                                                 isPassed && !isActive ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-center justify-center w-full h-full",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        className: "w-8 h-8 text-[#DC2626]",
+                                                        className: "w-8 h-8 text-primary",
                                                         fill: "none",
                                                         viewBox: "0 0 24 24",
                                                         stroke: "currentColor",
@@ -4956,7 +5024,7 @@ function LoadingWithFacts({ message = "Analyzing and generating OKRs..." }) {
                                             className: "text-center px-1",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: `text-xs font-semibold transition-colors duration-300 ${isActive ? 'text-[#DC2626]' : isPassed ? 'text-foreground' : 'text-muted-foreground'}`,
+                                                    className: `text-xs font-semibold transition-colors duration-300 ${isActive ? 'text-primary' : isPassed ? 'text-foreground' : 'text-muted-foreground'}`,
                                                     children: step.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/loading-with-facts.tsx",
@@ -4964,7 +5032,7 @@ function LoadingWithFacts({ message = "Analyzing and generating OKRs..." }) {
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: `text-[10px] transition-colors duration-300 ${isActive ? 'text-[#DC2626]/80' : isPassed ? 'text-foreground/60' : 'text-muted-foreground/60'}`,
+                                                    className: `text-[10px] transition-colors duration-300 ${isActive ? 'text-primary/80' : isPassed ? 'text-foreground/60' : 'text-muted-foreground/60'}`,
                                                     children: step.subtitle
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/loading-with-facts.tsx",
@@ -5190,7 +5258,7 @@ function LoadingWithFacts({ message = "Analyzing and generating OKRs..." }) {
                         children: [
                             "Powered by ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-[#DC2626] font-semibold",
+                                className: "text-primary font-semibold",
                                 children: "Lamatic AI"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/loading-with-facts.tsx",
@@ -6809,7 +6877,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/label.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/textarea.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/card.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/select.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$checkbox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/checkbox.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/badge.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/dialog.tsx [app-client] (ecmascript)");
@@ -6819,7 +6886,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trash-2.js [app-client] (ecmascript) <export default as Trash2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye.js [app-client] (ecmascript) <export default as Eye>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript) <export default as Send>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
@@ -6836,7 +6902,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$okr$2f$loading
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
-;
 ;
 ;
 ;
@@ -6873,7 +6938,6 @@ function Screen2EditInvite() {
     const [showPreviewModal, setShowPreviewModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showSuccessModal, setShowSuccessModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [sentInvites, setSentInvites] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [selectedTemplate, setSelectedTemplate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("direct-report");
     const addInviteEntry = ()=>{
         setInviteEntries([
             ...inviteEntries,
@@ -7209,7 +7273,7 @@ function Screen2EditInvite() {
                 message: "Sending invitations to your team..."
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                lineNumber: 471,
+                lineNumber: 470,
                 columnNumber: 9
             }, this),
             !isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -7230,12 +7294,12 @@ function Screen2EditInvite() {
                                                         className: "w-5 h-5 text-[#DC2626]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 483,
+                                                        lineNumber: 482,
                                                         columnNumber: 17
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 482,
+                                                    lineNumber: 481,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7245,26 +7309,26 @@ function Screen2EditInvite() {
                                                             children: "Your Final OKRs"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 486,
+                                                            lineNumber: 485,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
                                                             children: "Review your objectives before inviting your team."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 487,
+                                                            lineNumber: 486,
                                                             columnNumber: 17
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 485,
+                                                    lineNumber: 484,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 481,
+                                            lineNumber: 480,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
@@ -7280,19 +7344,19 @@ function Screen2EditInvite() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 493,
+                                                                lineNumber: 492,
                                                                 columnNumber: 19
                                                             }, this),
                                                             "Export"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 492,
+                                                        lineNumber: 491,
                                                         columnNumber: 17
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 491,
+                                                    lineNumber: 490,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -7303,12 +7367,12 @@ function Screen2EditInvite() {
                                                             children: "Export Format"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 498,
+                                                            lineNumber: 497,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 499,
+                                                            lineNumber: 498,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -7318,14 +7382,14 @@ function Screen2EditInvite() {
                                                                     className: "w-4 h-4 mr-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                    lineNumber: 501,
+                                                                    lineNumber: 500,
                                                                     columnNumber: 19
                                                                 }, this),
                                                                 "Markdown (.md)"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 500,
+                                                            lineNumber: 499,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -7335,14 +7399,14 @@ function Screen2EditInvite() {
                                                                     className: "w-4 h-4 mr-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                    lineNumber: 505,
+                                                                    lineNumber: 504,
                                                                     columnNumber: 19
                                                                 }, this),
                                                                 "CSV Spreadsheet (.csv)"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 504,
+                                                            lineNumber: 503,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -7352,19 +7416,19 @@ function Screen2EditInvite() {
                                                                     className: "w-4 h-4 mr-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                    lineNumber: 509,
+                                                                    lineNumber: 508,
                                                                     columnNumber: 19
                                                                 }, this),
                                                                 "JSON Data (.json)"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 508,
+                                                            lineNumber: 507,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 512,
+                                                            lineNumber: 511,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -7375,37 +7439,37 @@ function Screen2EditInvite() {
                                                                     className: "w-4 h-4 mr-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                    lineNumber: 514,
+                                                                    lineNumber: 513,
                                                                     columnNumber: 19
                                                                 }, this),
                                                                 "PDF Document (Coming Soon)"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 513,
+                                                            lineNumber: 512,
                                                             columnNumber: 17
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 497,
+                                                    lineNumber: 496,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 490,
+                                            lineNumber: 489,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 480,
+                                    lineNumber: 479,
                                     columnNumber: 11
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                lineNumber: 479,
+                                lineNumber: 478,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -7428,7 +7492,7 @@ function Screen2EditInvite() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 530,
+                                                                lineNumber: 529,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -7436,13 +7500,13 @@ function Screen2EditInvite() {
                                                                 children: objective.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 531,
+                                                                lineNumber: 530,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 529,
+                                                        lineNumber: 528,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7458,7 +7522,7 @@ function Screen2EditInvite() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 536,
+                                                                        lineNumber: 535,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7466,7 +7530,7 @@ function Screen2EditInvite() {
                                                                         children: kr.text
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 537,
+                                                                        lineNumber: 536,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7477,7 +7541,7 @@ function Screen2EditInvite() {
                                                                                 children: kr.target
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                                lineNumber: 539,
+                                                                                lineNumber: 538,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7485,51 +7549,51 @@ function Screen2EditInvite() {
                                                                                 children: kr.unit
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                                lineNumber: 540,
+                                                                                lineNumber: 539,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 538,
+                                                                        lineNumber: 537,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, kr.krId, true, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 535,
+                                                                lineNumber: 534,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 533,
+                                                        lineNumber: 532,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 528,
+                                                lineNumber: 527,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 527,
+                                            lineNumber: 526,
                                             columnNumber: 15
                                         }, this)
                                     }, objective.objectiveId, false, {
                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 523,
+                                        lineNumber: 522,
                                         columnNumber: 13
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                lineNumber: 521,
+                                lineNumber: 520,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                        lineNumber: 478,
+                        lineNumber: 477,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -7545,12 +7609,12 @@ function Screen2EditInvite() {
                                                 className: "w-5 h-5 text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 557,
+                                                lineNumber: 556,
                                                 columnNumber: 15
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 556,
+                                            lineNumber: 555,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7560,107 +7624,36 @@ function Screen2EditInvite() {
                                                     children: "Invite Your Team"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 560,
+                                                    lineNumber: 559,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
                                                     children: "Send personalized invites with draft OKRs for each team member."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 561,
+                                                    lineNumber: 560,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 559,
+                                            lineNumber: 558,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 555,
+                                    lineNumber: 554,
                                     columnNumber: 11
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                lineNumber: 554,
+                                lineNumber: 553,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
                                 className: "space-y-6",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-3 p-3 rounded-lg bg-muted/30 border border-border/50",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
-                                                className: "text-sm font-medium",
-                                                children: "Invite Template:"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 568,
-                                                columnNumber: 13
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                                value: selectedTemplate,
-                                                onValueChange: setSelectedTemplate,
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                                        className: "w-56 bg-background",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
-                                                            fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 571,
-                                                            columnNumber: 17
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 570,
-                                                        columnNumber: 15
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                                value: "direct-report",
-                                                                children: "Direct Report"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 574,
-                                                                columnNumber: 17
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                                value: "peer-review",
-                                                                children: "Peer Review"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 575,
-                                                                columnNumber: 17
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                                value: "executive-summary",
-                                                                children: "Executive Summary"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 576,
-                                                                columnNumber: 17
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 573,
-                                                        columnNumber: 15
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 569,
-                                                columnNumber: 13
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 567,
-                                        columnNumber: 11
-                                    }, this),
                                     inviteEntries.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "space-y-4",
                                         children: inviteEntries.map((entry, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7678,7 +7671,7 @@ function Screen2EditInvite() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 587,
+                                                                lineNumber: 571,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -7690,18 +7683,18 @@ function Screen2EditInvite() {
                                                                     className: "w-3 h-3"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                    lineNumber: 594,
+                                                                    lineNumber: 578,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 588,
+                                                                lineNumber: 572,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 586,
+                                                        lineNumber: 570,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7714,7 +7707,7 @@ function Screen2EditInvite() {
                                                                         children: "Name"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 599,
+                                                                        lineNumber: 583,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -7723,13 +7716,13 @@ function Screen2EditInvite() {
                                                                         onChange: (e)=>updateInviteEntry(entry.id, "name", e.target.value)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 600,
+                                                                        lineNumber: 584,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 598,
+                                                                lineNumber: 582,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7739,7 +7732,7 @@ function Screen2EditInvite() {
                                                                         children: "Email Address"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 607,
+                                                                        lineNumber: 591,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -7750,7 +7743,7 @@ function Screen2EditInvite() {
                                                                         className: entry.email.trim() !== "" && !isValidEmail(entry.email) ? "border-destructive focus-visible:ring-destructive" : ""
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 608,
+                                                                        lineNumber: 592,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     entry.email.trim() !== "" && !isValidEmail(entry.email) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7758,13 +7751,13 @@ function Screen2EditInvite() {
                                                                         children: "Please enter a valid email address"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 616,
+                                                                        lineNumber: 600,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 606,
+                                                                lineNumber: 590,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7774,7 +7767,7 @@ function Screen2EditInvite() {
                                                                         children: "Role / Title"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 620,
+                                                                        lineNumber: 604,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -7783,19 +7776,19 @@ function Screen2EditInvite() {
                                                                         onChange: (e)=>updateInviteEntry(entry.id, "roleTitle", e.target.value)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 621,
+                                                                        lineNumber: 605,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 619,
+                                                                lineNumber: 603,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 597,
+                                                        lineNumber: 581,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7805,7 +7798,7 @@ function Screen2EditInvite() {
                                                                 children: "Personal Message (optional)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 629,
+                                                                lineNumber: 613,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -7816,13 +7809,13 @@ function Screen2EditInvite() {
                                                                 className: "resize-none"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 630,
+                                                                lineNumber: 614,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 628,
+                                                        lineNumber: 612,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7837,7 +7830,7 @@ function Screen2EditInvite() {
                                                                         onCheckedChange: (checked)=>updateInviteEntry(entry.id, "includeDraftOKRs", checked)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 640,
+                                                                        lineNumber: 624,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
@@ -7846,13 +7839,13 @@ function Screen2EditInvite() {
                                                                         children: "Include draft OKRs for this role"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                        lineNumber: 647,
+                                                                        lineNumber: 631,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 639,
+                                                                lineNumber: 623,
                                                                 columnNumber: 21
                                                             }, this),
                                                             entry.draftOKRs && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -7861,24 +7854,24 @@ function Screen2EditInvite() {
                                                                 children: "Draft ready"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 652,
+                                                                lineNumber: 636,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 638,
+                                                        lineNumber: 622,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, entry.id, true, {
                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 585,
+                                                lineNumber: 569,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 583,
+                                        lineNumber: 567,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -7890,14 +7883,14 @@ function Screen2EditInvite() {
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 664,
+                                                lineNumber: 648,
                                                 columnNumber: 13
                                             }, this),
                                             "Add Team Member"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 663,
+                                        lineNumber: 647,
                                         columnNumber: 11
                                     }, this),
                                     inviteEntries.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7912,38 +7905,20 @@ function Screen2EditInvite() {
                                                         className: "w-4 h-4 mr-2 animate-spin"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 676,
+                                                        lineNumber: 660,
                                                         columnNumber: 30
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
                                                         className: "w-4 h-4 mr-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 676,
+                                                        lineNumber: 660,
                                                         columnNumber: 82
                                                     }, this),
                                                     "Generate Draft OKRs for Invites"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 671,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                variant: "outline",
-                                                onClick: ()=>setShowPreviewModal(true),
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
-                                                        className: "w-4 h-4 mr-2"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 680,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    "Preview Invite Email"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 679,
+                                                lineNumber: 655,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -7955,38 +7930,38 @@ function Screen2EditInvite() {
                                                         className: "w-4 h-4 mr-2 animate-spin"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 688,
+                                                        lineNumber: 668,
                                                         columnNumber: 30
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
                                                         className: "w-4 h-4 mr-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                        lineNumber: 688,
+                                                        lineNumber: 668,
                                                         columnNumber: 82
                                                     }, this),
                                                     "Send Invites"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 683,
+                                                lineNumber: 663,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 670,
+                                        lineNumber: 654,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                lineNumber: 565,
+                                lineNumber: 564,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                        lineNumber: 553,
+                        lineNumber: 552,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8000,14 +7975,14 @@ function Screen2EditInvite() {
                                         className: "w-4 h-4 mr-2"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 699,
+                                        lineNumber: 679,
                                         columnNumber: 11
                                     }, this),
                                     "Back to Edit OKRs"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                lineNumber: 698,
+                                lineNumber: 678,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -8018,19 +7993,19 @@ function Screen2EditInvite() {
                                         className: "w-4 h-4 ml-2"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 704,
+                                        lineNumber: 684,
                                         columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                lineNumber: 702,
+                                lineNumber: 682,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                        lineNumber: 697,
+                        lineNumber: 677,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -8045,20 +8020,20 @@ function Screen2EditInvite() {
                                             children: "Email Preview"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 712,
+                                            lineNumber: 692,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
                                             children: "This is how your invite email will appear to recipients."
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 713,
+                                            lineNumber: 693,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 711,
+                                    lineNumber: 691,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8074,7 +8049,7 @@ function Screen2EditInvite() {
                                                             children: "From:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 718,
+                                                            lineNumber: 698,
                                                             columnNumber: 17
                                                         }, this),
                                                         " ",
@@ -8082,7 +8057,7 @@ function Screen2EditInvite() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 717,
+                                                    lineNumber: 697,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8092,7 +8067,7 @@ function Screen2EditInvite() {
                                                             children: "Subject:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 721,
+                                                            lineNumber: 701,
                                                             columnNumber: 17
                                                         }, this),
                                                         " ",
@@ -8100,13 +8075,13 @@ function Screen2EditInvite() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 720,
+                                                    lineNumber: 700,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 716,
+                                            lineNumber: 696,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8117,7 +8092,7 @@ function Screen2EditInvite() {
                                                     children: "Hi [Name],"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 725,
+                                                    lineNumber: 705,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8131,7 +8106,7 @@ function Screen2EditInvite() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 726,
+                                                    lineNumber: 706,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8139,7 +8114,7 @@ function Screen2EditInvite() {
                                                     children: "Click the button below to access your personalized workspace with suggested OKRs based on your role."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 730,
+                                                    lineNumber: 710,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -8150,14 +8125,14 @@ function Screen2EditInvite() {
                                                             className: "w-4 h-4 mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 734,
+                                                            lineNumber: 714,
                                                             columnNumber: 17
                                                         }, this),
                                                         "Review & Edit OKRs"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 733,
+                                                    lineNumber: 713,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8165,19 +8140,19 @@ function Screen2EditInvite() {
                                                     children: "This link expires in 7 days."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 737,
+                                                    lineNumber: 717,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 724,
+                                            lineNumber: 704,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 715,
+                                    lineNumber: 695,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -8187,23 +8162,23 @@ function Screen2EditInvite() {
                                         children: "Close"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                        lineNumber: 741,
+                                        lineNumber: 721,
                                         columnNumber: 13
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 740,
+                                    lineNumber: 720,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                            lineNumber: 710,
+                            lineNumber: 690,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                        lineNumber: 709,
+                        lineNumber: 689,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -8219,12 +8194,12 @@ function Screen2EditInvite() {
                                                 className: "w-8 h-8 text-accent"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                lineNumber: 753,
+                                                lineNumber: 733,
                                                 columnNumber: 15
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 752,
+                                            lineNumber: 732,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
@@ -8232,7 +8207,7 @@ function Screen2EditInvite() {
                                             children: "Invites Sent!"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 755,
+                                            lineNumber: 735,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -8245,13 +8220,13 @@ function Screen2EditInvite() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 756,
+                                            lineNumber: 736,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 751,
+                                    lineNumber: 731,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8270,7 +8245,7 @@ function Screen2EditInvite() {
                                                                     children: invite.name || invite.email
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                    lineNumber: 766,
+                                                                    lineNumber: 746,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8278,13 +8253,13 @@ function Screen2EditInvite() {
                                                                     children: invite.email
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                    lineNumber: 767,
+                                                                    lineNumber: 747,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 765,
+                                                            lineNumber: 745,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -8293,13 +8268,13 @@ function Screen2EditInvite() {
                                                             children: invite.status
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 769,
+                                                            lineNumber: 749,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 764,
+                                                    lineNumber: 744,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8311,7 +8286,7 @@ function Screen2EditInvite() {
                                                             className: "text-xs font-mono h-8"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 774,
+                                                            lineNumber: 754,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -8326,18 +8301,18 @@ function Screen2EditInvite() {
                                                                 className: "w-3 h-3"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                                lineNumber: 788,
+                                                                lineNumber: 768,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                            lineNumber: 779,
+                                                            lineNumber: 759,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 773,
+                                                    lineNumber: 753,
                                                     columnNumber: 17
                                                 }, this),
                                                 invite.objectivesCount !== undefined && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8350,18 +8325,18 @@ function Screen2EditInvite() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                                    lineNumber: 792,
+                                                    lineNumber: 772,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, invite.inviteId, true, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 763,
+                                            lineNumber: 743,
                                             columnNumber: 15
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 761,
+                                    lineNumber: 741,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -8374,7 +8349,7 @@ function Screen2EditInvite() {
                                             children: "Add More Invites"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 800,
+                                            lineNumber: 780,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -8386,24 +8361,24 @@ function Screen2EditInvite() {
                                             children: "View Dashboard"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                            lineNumber: 803,
+                                            lineNumber: 783,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                                    lineNumber: 799,
+                                    lineNumber: 779,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                            lineNumber: 750,
+                            lineNumber: 730,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-                        lineNumber: 749,
+                        lineNumber: 729,
                         columnNumber: 7
                     }, this)
                 ]
@@ -8411,11 +8386,11 @@ function Screen2EditInvite() {
         ]
     }, void 0, true, {
         fileName: "[project]/components/okr/screen-2-edit-invite.tsx",
-        lineNumber: 468,
+        lineNumber: 467,
         columnNumber: 5
     }, this);
 }
-_s(Screen2EditInvite, "eLtoX9fk1P0AOjfyvdIepcPvbPs=", false, function() {
+_s(Screen2EditInvite, "tAE4lPkaCapYvwgdpjUUDQecXKg=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"]
     ];
@@ -9358,6 +9333,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.js [app-client] (ecmascript) <export default as ArrowLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$table$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Table$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/table.js [app-client] (ecmascript) <export default as Table>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/code.js [app-client] (ecmascript) <export default as Code>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-down.js [app-client] (ecmascript) <export default as FileDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/dropdown-menu.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -9374,13 +9354,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 const generateId = ()=>Math.random().toString(36).substring(2, 9);
 function Screen4Dashboard() {
     _s();
-    const { leaderOKRs, setLeaderOKRs, companyProfile, weeklyUpdates, addWeeklyUpdate, updateSchedules, addUpdateSchedule, setToastMessage, setCurrentScreen, isLoading, setIsLoading, invites } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"])();
+    const { leaderOKRs, setLeaderOKRs, companyProfile, weeklyUpdates, addWeeklyUpdate, updateSchedules, addUpdateSchedule, setToastMessage, setCurrentScreen, isLoading, setIsLoading, invites, shareableSummary, planningPeriod } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"])();
     const [showUpdateModal, setShowUpdateModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showScheduleModal, setShowScheduleModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showAgentModal, setShowAgentModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [showShareModal, setShowShareModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [selectedKR, setSelectedKR] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [updateForm, setUpdateForm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         actualValue: "",
@@ -9484,8 +9466,151 @@ function Screen4Dashboard() {
         setShowAgentModal(false);
         setToastMessage("Agent provisioning started. We'll notify you when it's ready.");
     };
+    const handleShareDashboard = ()=>{
+        const dashboardUrl = `${window.location.origin}/dashboard/shared/${generateId()}`;
+        navigator.clipboard.writeText(dashboardUrl);
+        setToastMessage("Dashboard link copied to clipboard!");
+        setShowShareModal(true);
+    };
     // Overall progress
     const overallProgress = leaderOKRs.length > 0 ? Math.round(leaderOKRs.reduce((sum, obj)=>sum + getObjectiveProgress(obj), 0) / leaderOKRs.length) : 0;
+    // Export handlers (same as Screen2)
+    const exportAsPDF = ()=>{
+        const content = generateExportContent();
+        const blob = new Blob([
+            content
+        ], {
+            type: 'text/plain'
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        setToastMessage('OKRs exported as text file (PDF generation coming soon)');
+    };
+    const exportAsCSV = ()=>{
+        let csv = 'Objective Number,Objective Title,KR Number,Key Result,Target,Unit\n';
+        leaderOKRs.forEach((obj, objIndex)=>{
+            obj.keyResults.forEach((kr, krIndex)=>{
+                const row = [
+                    `O${objIndex + 1}`,
+                    `"${obj.title.replace(/"/g, '""')}"`,
+                    `KR${krIndex + 1}`,
+                    `"${kr.text.replace(/"/g, '""')}"`,
+                    kr.target,
+                    kr.unit
+                ].join(',');
+                csv += row + '\n';
+            });
+        });
+        const blob = new Blob([
+            csv
+        ], {
+            type: 'text/csv'
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.csv`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        setToastMessage('OKRs exported as CSV');
+    };
+    const exportAsJSON = ()=>{
+        const data = {
+            company: companyProfile?.name,
+            planningPeriod: planningPeriod,
+            exportDate: new Date().toISOString(),
+            strategicSummary: shareableSummary?.text,
+            objectives: leaderOKRs.map((obj, objIndex)=>({
+                    objectiveNumber: objIndex + 1,
+                    title: obj.title,
+                    description: obj.description,
+                    keyResults: obj.keyResults.map((kr, krIndex)=>({
+                            krNumber: krIndex + 1,
+                            text: kr.text,
+                            target: kr.target,
+                            unit: kr.unit,
+                            actual: kr.actual,
+                            progress: kr.progress
+                        }))
+                }))
+        };
+        const blob = new Blob([
+            JSON.stringify(data, null, 2)
+        ], {
+            type: 'application/json'
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        setToastMessage('OKRs exported as JSON');
+    };
+    const exportAsMarkdown = ()=>{
+        let markdown = `# OKRs for ${companyProfile?.name || 'Organization'}\n\n`;
+        markdown += `**Planning Period:** ${planningPeriod}\n`;
+        markdown += `**Export Date:** ${new Date().toLocaleDateString()}\n\n`;
+        if (shareableSummary?.text) {
+            markdown += `## Strategic Summary\n\n${shareableSummary.text}\n\n`;
+        }
+        markdown += `## Objectives and Key Results\n\n`;
+        leaderOKRs.forEach((obj, objIndex)=>{
+            markdown += `### O${objIndex + 1}: ${obj.title}\n\n`;
+            if (obj.description) {
+                markdown += `${obj.description}\n\n`;
+            }
+            markdown += `**Key Results:**\n\n`;
+            obj.keyResults.forEach((kr, krIndex)=>{
+                markdown += `- **KR${krIndex + 1}:** ${kr.text} (Target: ${kr.target} ${kr.unit})\n`;
+            });
+            markdown += '\n';
+        });
+        const blob = new Blob([
+            markdown
+        ], {
+            type: 'text/markdown'
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.md`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        setToastMessage('OKRs exported as Markdown');
+    };
+    const generateExportContent = ()=>{
+        let content = `OKRs for ${companyProfile?.name || 'Organization'}\n`;
+        content += `Planning Period: ${planningPeriod}\n`;
+        content += `Export Date: ${new Date().toLocaleDateString()}\n\n`;
+        if (shareableSummary?.text) {
+            content += `Strategic Summary:\n${shareableSummary.text}\n\n`;
+        }
+        content += `Objectives and Key Results:\n\n`;
+        leaderOKRs.forEach((obj, objIndex)=>{
+            content += `O${objIndex + 1}: ${obj.title}\n`;
+            if (obj.description) {
+                content += `   ${obj.description}\n`;
+            }
+            obj.keyResults.forEach((kr, krIndex)=>{
+                content += `   KR${krIndex + 1}: ${kr.text} (Target: ${kr.target} ${kr.unit})\n`;
+            });
+            content += '\n';
+        });
+        return content;
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "max-w-5xl mx-auto space-y-8",
         children: [
@@ -9499,7 +9624,7 @@ function Screen4Dashboard() {
                                 children: "Plan vs. Actuals Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 203,
+                                lineNumber: 362,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9512,13 +9637,13 @@ function Screen4Dashboard() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 204,
+                                lineNumber: 363,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 202,
+                        lineNumber: 361,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9532,25 +9657,25 @@ function Screen4Dashboard() {
                                     className: "w-4 h-4 mr-2"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 210,
+                                    lineNumber: 369,
                                     columnNumber: 13
                                 }, this),
                                 "Back to Edit"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 209,
+                            lineNumber: 368,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 208,
+                        lineNumber: 367,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 201,
+                lineNumber: 360,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9571,7 +9696,7 @@ function Screen4Dashboard() {
                                                     children: "Overall Progress"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 381,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9582,13 +9707,13 @@ function Screen4Dashboard() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 223,
+                                                    lineNumber: 382,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 221,
+                                            lineNumber: 380,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9597,18 +9722,18 @@ function Screen4Dashboard() {
                                                 className: "w-6 h-6 text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 226,
+                                                lineNumber: 385,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 225,
+                                            lineNumber: 384,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 220,
+                                    lineNumber: 379,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
@@ -9616,18 +9741,18 @@ function Screen4Dashboard() {
                                     className: "mt-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 229,
+                                    lineNumber: 388,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 219,
+                            lineNumber: 378,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 218,
+                        lineNumber: 377,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -9645,7 +9770,7 @@ function Screen4Dashboard() {
                                                     children: "Team Members"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 395,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9653,13 +9778,13 @@ function Screen4Dashboard() {
                                                     children: invites.length || 0
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 237,
+                                                    lineNumber: 396,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 235,
+                                            lineNumber: 394,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9668,18 +9793,18 @@ function Screen4Dashboard() {
                                                 className: "w-6 h-6 text-accent"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 240,
+                                                lineNumber: 399,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 239,
+                                            lineNumber: 398,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 234,
+                                    lineNumber: 393,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9690,18 +9815,18 @@ function Screen4Dashboard() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 243,
+                                    lineNumber: 402,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 233,
+                            lineNumber: 392,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 232,
+                        lineNumber: 391,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -9719,7 +9844,7 @@ function Screen4Dashboard() {
                                                     children: "Updates This Week"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 252,
+                                                    lineNumber: 411,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9727,13 +9852,13 @@ function Screen4Dashboard() {
                                                     children: weeklyUpdates.length
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 253,
+                                                    lineNumber: 412,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 251,
+                                            lineNumber: 410,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9742,18 +9867,18 @@ function Screen4Dashboard() {
                                                 className: "w-6 h-6 text-chart-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 256,
+                                                lineNumber: 415,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 255,
+                                            lineNumber: 414,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 250,
+                                    lineNumber: 409,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9761,24 +9886,24 @@ function Screen4Dashboard() {
                                     children: updateSchedules.length > 0 ? `Next scheduled: ${updateSchedules[0].dayOfWeek}` : "No schedule set"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 259,
+                                    lineNumber: 418,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 249,
+                            lineNumber: 408,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 248,
+                        lineNumber: 407,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 217,
+                lineNumber: 376,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tabs"], {
@@ -9792,7 +9917,7 @@ function Screen4Dashboard() {
                                 children: "Objectives"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 269,
+                                lineNumber: 428,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
@@ -9800,13 +9925,13 @@ function Screen4Dashboard() {
                                 children: "Activity Feed"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 270,
+                                lineNumber: 429,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 268,
+                        lineNumber: 427,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -9831,7 +9956,7 @@ function Screen4Dashboard() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 279,
+                                                            lineNumber: 438,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -9839,13 +9964,13 @@ function Screen4Dashboard() {
                                                             children: objective.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 280,
+                                                            lineNumber: 439,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 278,
+                                                    lineNumber: 437,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9859,7 +9984,7 @@ function Screen4Dashboard() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 283,
+                                                            lineNumber: 442,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
@@ -9867,24 +9992,24 @@ function Screen4Dashboard() {
                                                             className: "w-24"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 284,
+                                                            lineNumber: 443,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 282,
+                                                    lineNumber: 441,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 277,
+                                            lineNumber: 436,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 276,
+                                        lineNumber: 435,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -9904,7 +10029,7 @@ function Screen4Dashboard() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 299,
+                                                            lineNumber: 458,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9915,7 +10040,7 @@ function Screen4Dashboard() {
                                                                     children: kr.text
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 301,
+                                                                    lineNumber: 460,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9932,7 +10057,7 @@ function Screen4Dashboard() {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 303,
+                                                                            lineNumber: 462,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
@@ -9940,19 +10065,19 @@ function Screen4Dashboard() {
                                                                             className: "w-32 h-1.5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 306,
+                                                                            lineNumber: 465,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 302,
+                                                                    lineNumber: 461,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 300,
+                                                            lineNumber: 459,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9966,14 +10091,14 @@ function Screen4Dashboard() {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 312,
+                                                                            lineNumber: 471,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         "On track"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 311,
+                                                                    lineNumber: 470,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 status === "at-risk" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -9984,14 +10109,14 @@ function Screen4Dashboard() {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 318,
+                                                                            lineNumber: 477,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         "At risk"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 317,
+                                                                    lineNumber: 476,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 status === "off-track" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -10002,14 +10127,14 @@ function Screen4Dashboard() {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 324,
+                                                                            lineNumber: 483,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         "Off track"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 323,
+                                                                    lineNumber: 482,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10019,41 +10144,41 @@ function Screen4Dashboard() {
                                                                     children: "Update"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 328,
+                                                                    lineNumber: 487,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 309,
+                                                            lineNumber: 468,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, kr.krId, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 295,
+                                                    lineNumber: 454,
                                                     columnNumber: 23
                                                 }, this);
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 289,
+                                            lineNumber: 448,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 288,
+                                        lineNumber: 447,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, objective.objectiveId, true, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 275,
+                                lineNumber: 434,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 273,
+                        lineNumber: 432,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -10074,12 +10199,12 @@ function Screen4Dashboard() {
                                                         className: "w-4 h-4 text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 353,
+                                                        lineNumber: 512,
                                                         columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 352,
+                                                    lineNumber: 511,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10093,13 +10218,13 @@ function Screen4Dashboard() {
                                                                     children: update.actualValue
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 357,
+                                                                    lineNumber: 516,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 356,
+                                                            lineNumber: 515,
                                                             columnNumber: 25
                                                         }, this),
                                                         update.notes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10107,7 +10232,7 @@ function Screen4Dashboard() {
                                                             children: update.notes
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 359,
+                                                            lineNumber: 518,
                                                             columnNumber: 42
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10115,24 +10240,24 @@ function Screen4Dashboard() {
                                                             children: new Date(update.createdAt).toLocaleString()
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 360,
+                                                            lineNumber: 519,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 355,
+                                                    lineNumber: 514,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, update.updateId, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 351,
+                                            lineNumber: 510,
                                             columnNumber: 21
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 349,
+                                    lineNumber: 508,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center py-8 text-muted-foreground",
@@ -10141,41 +10266,41 @@ function Screen4Dashboard() {
                                             className: "w-8 h-8 mx-auto mb-2 opacity-50"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 369,
+                                            lineNumber: 528,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "No updates yet. Start tracking progress by updating your key results."
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 370,
+                                            lineNumber: 529,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 368,
+                                    lineNumber: 527,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 347,
+                                lineNumber: 506,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 346,
+                            lineNumber: 505,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 345,
+                        lineNumber: 504,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 267,
+                lineNumber: 426,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10189,14 +10314,14 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 381,
+                                lineNumber: 540,
                                 columnNumber: 11
                             }, this),
                             "Schedule Updates"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 380,
+                        lineNumber: 539,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10206,14 +10331,14 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 385,
+                                lineNumber: 544,
                                 columnNumber: 11
                             }, this),
                             "Copy Weekly Update"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 384,
+                        lineNumber: 543,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10223,48 +10348,162 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 389,
+                                lineNumber: 548,
                                 columnNumber: 11
                             }, this),
                             "Post to Slack"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 388,
+                        lineNumber: 547,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                         variant: "outline",
+                        onClick: handleShareDashboard,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link2$3e$__["Link2"], {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 393,
+                                lineNumber: 552,
                                 columnNumber: 11
                             }, this),
                             "Share Dashboard Link"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 392,
+                        lineNumber: 551,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                        variant: "outline",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
-                                className: "w-4 h-4 mr-2"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuTrigger"], {
+                                asChild: true,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    variant: "outline",
+                                    size: "sm",
+                                    className: "gap-2 border-primary/50 hover:border-primary hover:bg-primary/10 dark:border-primary/30 dark:hover:border-primary/50 dark:hover:bg-primary/20",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
+                                            className: "w-4 h-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                            lineNumber: 558,
+                                            columnNumber: 15
+                                        }, this),
+                                        "Export"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 557,
+                                    columnNumber: 13
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 397,
+                                lineNumber: 556,
                                 columnNumber: 11
                             }, this),
-                            "Export"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
+                                align: "end",
+                                className: "w-56",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuLabel"], {
+                                        children: "Export Format"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 563,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 564,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                        onClick: exportAsMarkdown,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                                className: "w-4 h-4 mr-2"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                lineNumber: 566,
+                                                columnNumber: 15
+                                            }, this),
+                                            "Markdown (.md)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 565,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                        onClick: exportAsCSV,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$table$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Table$3e$__["Table"], {
+                                                className: "w-4 h-4 mr-2"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                lineNumber: 570,
+                                                columnNumber: 15
+                                            }, this),
+                                            "CSV Spreadsheet (.csv)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 569,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                        onClick: exportAsJSON,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__["Code"], {
+                                                className: "w-4 h-4 mr-2"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                lineNumber: 574,
+                                                columnNumber: 15
+                                            }, this),
+                                            "JSON Data (.json)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 573,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 577,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                        onClick: exportAsPDF,
+                                        className: "text-muted-foreground",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileDown$3e$__["FileDown"], {
+                                                className: "w-4 h-4 mr-2"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                lineNumber: 579,
+                                                columnNumber: 15
+                                            }, this),
+                                            "PDF Document (Coming Soon)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 578,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                lineNumber: 562,
+                                columnNumber: 11
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 396,
+                        lineNumber: 555,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10275,20 +10514,20 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 404,
+                                lineNumber: 588,
                                 columnNumber: 11
                             }, this),
                             "Deploy Agent to Auto-Track"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 400,
+                        lineNumber: 584,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 379,
+                lineNumber: 538,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -10302,20 +10541,20 @@ function Screen4Dashboard() {
                                     children: "Update Progress"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 413,
+                                    lineNumber: 597,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
                                     children: selectedKR?.text
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 414,
+                                    lineNumber: 598,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 412,
+                            lineNumber: 596,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10328,7 +10567,7 @@ function Screen4Dashboard() {
                                             children: "Actual Value"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 418,
+                                            lineNumber: 602,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -10341,13 +10580,13 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 419,
+                                            lineNumber: 603,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 417,
+                                    lineNumber: 601,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10357,7 +10596,7 @@ function Screen4Dashboard() {
                                             children: "Notes"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 427,
+                                            lineNumber: 611,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -10370,13 +10609,13 @@ function Screen4Dashboard() {
                                             rows: 3
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 428,
+                                            lineNumber: 612,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 426,
+                                    lineNumber: 610,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10386,7 +10625,7 @@ function Screen4Dashboard() {
                                             children: "Evidence Link (optional)"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 436,
+                                            lineNumber: 620,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -10399,19 +10638,19 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 437,
+                                            lineNumber: 621,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 435,
+                                    lineNumber: 619,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 416,
+                            lineNumber: 600,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -10422,7 +10661,7 @@ function Screen4Dashboard() {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 446,
+                                    lineNumber: 630,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10433,31 +10672,31 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4 mr-2 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 450,
+                                            lineNumber: 634,
                                             columnNumber: 28
                                         }, this) : null,
                                         "Save Update"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 449,
+                                    lineNumber: 633,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 445,
+                            lineNumber: 629,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                    lineNumber: 411,
+                    lineNumber: 595,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 410,
+                lineNumber: 594,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -10471,20 +10710,20 @@ function Screen4Dashboard() {
                                     children: "Schedule Updates"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 461,
+                                    lineNumber: 645,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
                                     children: "Set up recurring reminders for your team to update progress."
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 462,
+                                    lineNumber: 646,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 460,
+                            lineNumber: 644,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10497,7 +10736,7 @@ function Screen4Dashboard() {
                                             children: "Schedule Name"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 466,
+                                            lineNumber: 650,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -10508,13 +10747,13 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 467,
+                                            lineNumber: 651,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 465,
+                                    lineNumber: 649,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10527,7 +10766,7 @@ function Screen4Dashboard() {
                                                     children: "Cadence"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 474,
+                                                    lineNumber: 658,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -10540,12 +10779,12 @@ function Screen4Dashboard() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                lineNumber: 480,
+                                                                lineNumber: 664,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 479,
+                                                            lineNumber: 663,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -10555,7 +10794,7 @@ function Screen4Dashboard() {
                                                                     children: "Weekly"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 483,
+                                                                    lineNumber: 667,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10563,7 +10802,7 @@ function Screen4Dashboard() {
                                                                     children: "Bi-weekly"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 484,
+                                                                    lineNumber: 668,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10571,25 +10810,25 @@ function Screen4Dashboard() {
                                                                     children: "Monthly"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 485,
+                                                                    lineNumber: 669,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 482,
+                                                            lineNumber: 666,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 475,
+                                                    lineNumber: 659,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 473,
+                                            lineNumber: 657,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10599,7 +10838,7 @@ function Screen4Dashboard() {
                                                     children: "Day"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 490,
+                                                    lineNumber: 674,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -10612,12 +10851,12 @@ function Screen4Dashboard() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                lineNumber: 496,
+                                                                lineNumber: 680,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 495,
+                                                            lineNumber: 679,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -10627,7 +10866,7 @@ function Screen4Dashboard() {
                                                                     children: "Monday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 499,
+                                                                    lineNumber: 683,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10635,7 +10874,7 @@ function Screen4Dashboard() {
                                                                     children: "Tuesday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 500,
+                                                                    lineNumber: 684,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10643,7 +10882,7 @@ function Screen4Dashboard() {
                                                                     children: "Wednesday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 501,
+                                                                    lineNumber: 685,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10651,7 +10890,7 @@ function Screen4Dashboard() {
                                                                     children: "Thursday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 502,
+                                                                    lineNumber: 686,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10659,37 +10898,37 @@ function Screen4Dashboard() {
                                                                     children: "Friday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 503,
+                                                                    lineNumber: 687,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 498,
+                                                            lineNumber: 682,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 491,
+                                                    lineNumber: 675,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 489,
+                                            lineNumber: 673,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 472,
+                                    lineNumber: 656,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 464,
+                            lineNumber: 648,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -10700,7 +10939,7 @@ function Screen4Dashboard() {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 510,
+                                    lineNumber: 694,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10711,31 +10950,31 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4 mr-2 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 514,
+                                            lineNumber: 698,
                                             columnNumber: 28
                                         }, this) : null,
                                         "Create Schedule"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 513,
+                                    lineNumber: 697,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 509,
+                            lineNumber: 693,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                    lineNumber: 459,
+                    lineNumber: 643,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 458,
+                lineNumber: 642,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -10751,12 +10990,12 @@ function Screen4Dashboard() {
                                         className: "w-8 h-8 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 526,
+                                        lineNumber: 710,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 525,
+                                    lineNumber: 709,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
@@ -10764,7 +11003,7 @@ function Screen4Dashboard() {
                                     children: "Deploy Lamatic Agent"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 528,
+                                    lineNumber: 712,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -10772,13 +11011,13 @@ function Screen4Dashboard() {
                                     children: "Automatically track KR progress by connecting to your data sources."
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 529,
+                                    lineNumber: 713,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 524,
+                            lineNumber: 708,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10791,7 +11030,7 @@ function Screen4Dashboard() {
                                             children: "Agent Name"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 535,
+                                            lineNumber: 719,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -10803,13 +11042,13 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 536,
+                                            lineNumber: 720,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 534,
+                                    lineNumber: 718,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10819,7 +11058,7 @@ function Screen4Dashboard() {
                                             children: "Data Source"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 543,
+                                            lineNumber: 727,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -10834,12 +11073,12 @@ function Screen4Dashboard() {
                                                         placeholder: "Select a connector"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 549,
+                                                        lineNumber: 733,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 548,
+                                                    lineNumber: 732,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -10849,7 +11088,7 @@ function Screen4Dashboard() {
                                                             children: "Google Analytics"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 552,
+                                                            lineNumber: 736,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10857,7 +11096,7 @@ function Screen4Dashboard() {
                                                             children: "HubSpot"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 553,
+                                                            lineNumber: 737,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10865,7 +11104,7 @@ function Screen4Dashboard() {
                                                             children: "Salesforce"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 554,
+                                                            lineNumber: 738,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10873,7 +11112,7 @@ function Screen4Dashboard() {
                                                             children: "Slack"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 555,
+                                                            lineNumber: 739,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10881,25 +11120,25 @@ function Screen4Dashboard() {
                                                             children: "Snowflake"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 556,
+                                                            lineNumber: 740,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 551,
+                                                    lineNumber: 735,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 544,
+                                            lineNumber: 728,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 542,
+                                    lineNumber: 726,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10911,7 +11150,7 @@ function Screen4Dashboard() {
                                                 className: "w-5 h-5 text-accent shrink-0 mt-0.5"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 562,
+                                                lineNumber: 746,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10921,7 +11160,7 @@ function Screen4Dashboard() {
                                                         children: "Powered by Lamatic"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 564,
+                                                        lineNumber: 748,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10929,30 +11168,30 @@ function Screen4Dashboard() {
                                                         children: "Your agent will poll data every 15 minutes and automatically update your KR actuals."
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 565,
+                                                        lineNumber: 749,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 563,
+                                                lineNumber: 747,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 561,
+                                        lineNumber: 745,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 560,
+                                    lineNumber: 744,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 533,
+                            lineNumber: 717,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -10963,7 +11202,7 @@ function Screen4Dashboard() {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 573,
+                                    lineNumber: 757,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10975,47 +11214,298 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4 mr-2 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 581,
+                                            lineNumber: 765,
                                             columnNumber: 28
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
                                             className: "w-4 h-4 mr-2"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 581,
+                                            lineNumber: 765,
                                             columnNumber: 80
                                         }, this),
                                         "Deploy Agent"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 576,
+                                    lineNumber: 760,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 572,
+                            lineNumber: 756,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                    lineNumber: 523,
+                    lineNumber: 707,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 522,
+                lineNumber: 706,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
+                open: showShareModal,
+                onOpenChange: setShowShareModal,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogContent"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mx-auto p-3 rounded-full bg-primary/10 w-fit mb-4",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link2$3e$__["Link2"], {
+                                        className: "w-8 h-8 text-primary"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                        lineNumber: 777,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 776,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                    className: "text-center",
+                                    children: "Share Dashboard"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 779,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
+                                    className: "text-center",
+                                    children: "Share this dashboard with stakeholders for read-only access to your OKR progress."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 780,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                            lineNumber: 775,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-lg bg-secondary/30 border border-border/50",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                            className: "text-sm font-medium mb-2 block",
+                                            children: "Shareable Link"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                            lineNumber: 786,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    readOnly: true,
+                                                    value: `${("TURBOPACK compile-time truthy", 1) ? window.location.origin : "TURBOPACK unreachable"}/dashboard/shared/${generateId()}`,
+                                                    className: "font-mono text-sm"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                    lineNumber: 788,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                    size: "sm",
+                                                    variant: "outline",
+                                                    onClick: ()=>{
+                                                        const url = `${window.location.origin}/dashboard/shared/${generateId()}`;
+                                                        navigator.clipboard.writeText(url);
+                                                        setToastMessage("Link copied to clipboard!");
+                                                    },
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$copy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Copy$3e$__["Copy"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                        lineNumber: 802,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                    lineNumber: 793,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                            lineNumber: 787,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 785,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-lg bg-muted/50",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                            className: "text-sm font-medium mb-2",
+                                            children: "Access Details"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                            lineNumber: 807,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                            className: "space-y-2 text-sm text-muted-foreground",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
+                                                            className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                            lineNumber: 810,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: "Read-only access to all objectives and key results"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                            lineNumber: 811,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                    lineNumber: 809,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
+                                                            className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                            lineNumber: 814,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: "Real-time progress updates visible to viewers"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                            lineNumber: 815,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                    lineNumber: 813,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
+                                                            className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                            lineNumber: 818,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: "Link never expires and can be shared multiple times"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                            lineNumber: 819,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                                    lineNumber: 817,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                            lineNumber: 808,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 806,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                            lineNumber: 784,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    variant: "outline",
+                                    onClick: ()=>setShowShareModal(false),
+                                    children: "Close"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 825,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    onClick: ()=>{
+                                        const url = `${window.location.origin}/dashboard/shared/${generateId()}`;
+                                        navigator.clipboard.writeText(url);
+                                        setToastMessage("Link copied to clipboard!");
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$copy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Copy$3e$__["Copy"], {
+                                            className: "w-4 h-4 mr-2"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                            lineNumber: 835,
+                                            columnNumber: 15
+                                        }, this),
+                                        "Copy Link"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                                    lineNumber: 828,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                            lineNumber: 824,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                    lineNumber: 774,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/okr/screen-4-dashboard.tsx",
+                lineNumber: 773,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-        lineNumber: 199,
+        lineNumber: 358,
         columnNumber: 5
     }, this);
 }
-_s(Screen4Dashboard, "tzOQ57B7DtLj5WVBpy5SYC39qVI=", false, function() {
+_s(Screen4Dashboard, "e09K7qSf2hVBruuQUPJgOekOUHE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"]
     ];

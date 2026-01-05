@@ -34,7 +34,19 @@ import {
   ArrowLeft,
   Loader2,
   CheckCircle,
+  FileText,
+  Table,
+  Code,
+  FileDown,
 } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+} from "@/components/ui/dropdown-menu"
 import type { Objective, WeeklyUpdate, UpdateSchedule } from "@/lib/types"
 
 const generateId = () => Math.random().toString(36).substring(2, 9)
@@ -53,11 +65,14 @@ export function Screen4Dashboard() {
     isLoading,
     setIsLoading,
     invites,
+    shareableSummary,
+    planningPeriod,
   } = useOKR()
 
   const [showUpdateModal, setShowUpdateModal] = useState(false)
   const [showScheduleModal, setShowScheduleModal] = useState(false)
   const [showAgentModal, setShowAgentModal] = useState(false)
+  const [showShareModal, setShowShareModal] = useState(false)
   const [selectedKR, setSelectedKR] = useState<{ objectiveId: string; krId: string; text: string } | null>(null)
 
   const [updateForm, setUpdateForm] = useState({
@@ -189,11 +204,155 @@ export function Screen4Dashboard() {
     setToastMessage("Agent provisioning started. We'll notify you when it's ready.")
   }
 
+  const handleShareDashboard = () => {
+    const dashboardUrl = `${window.location.origin}/dashboard/shared/${generateId()}`
+    navigator.clipboard.writeText(dashboardUrl)
+    setToastMessage("Dashboard link copied to clipboard!")
+    setShowShareModal(true)
+  }
+
   // Overall progress
   const overallProgress =
     leaderOKRs.length > 0
       ? Math.round(leaderOKRs.reduce((sum, obj) => sum + getObjectiveProgress(obj), 0) / leaderOKRs.length)
       : 0
+
+  // Export handlers (same as Screen2)
+  const exportAsPDF = () => {
+    const content = generateExportContent()
+    const blob = new Blob([content], { type: 'text/plain' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.txt`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+    setToastMessage('OKRs exported as text file (PDF generation coming soon)')
+  }
+
+  const exportAsCSV = () => {
+    let csv = 'Objective Number,Objective Title,KR Number,Key Result,Target,Unit\n'
+
+    leaderOKRs.forEach((obj, objIndex) => {
+      obj.keyResults.forEach((kr, krIndex) => {
+        const row = [
+          `O${objIndex + 1}`,
+          `"${obj.title.replace(/"/g, '""')}"`,
+          `KR${krIndex + 1}`,
+          `"${kr.text.replace(/"/g, '""')}"`,
+          kr.target,
+          kr.unit
+        ].join(',')
+        csv += row + '\n'
+      })
+    })
+
+    const blob = new Blob([csv], { type: 'text/csv' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.csv`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+    setToastMessage('OKRs exported as CSV')
+  }
+
+  const exportAsJSON = () => {
+    const data = {
+      company: companyProfile?.name,
+      planningPeriod: planningPeriod,
+      exportDate: new Date().toISOString(),
+      strategicSummary: shareableSummary?.text,
+      objectives: leaderOKRs.map((obj, objIndex) => ({
+        objectiveNumber: objIndex + 1,
+        title: obj.title,
+        description: obj.description,
+        keyResults: obj.keyResults.map((kr, krIndex) => ({
+          krNumber: krIndex + 1,
+          text: kr.text,
+          target: kr.target,
+          unit: kr.unit,
+          actual: kr.actual,
+          progress: kr.progress
+        }))
+      }))
+    }
+
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.json`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+    setToastMessage('OKRs exported as JSON')
+  }
+
+  const exportAsMarkdown = () => {
+    let markdown = `# OKRs for ${companyProfile?.name || 'Organization'}\n\n`
+    markdown += `**Planning Period:** ${planningPeriod}\n`
+    markdown += `**Export Date:** ${new Date().toLocaleDateString()}\n\n`
+
+    if (shareableSummary?.text) {
+      markdown += `## Strategic Summary\n\n${shareableSummary.text}\n\n`
+    }
+
+    markdown += `## Objectives and Key Results\n\n`
+
+    leaderOKRs.forEach((obj, objIndex) => {
+      markdown += `### O${objIndex + 1}: ${obj.title}\n\n`
+      if (obj.description) {
+        markdown += `${obj.description}\n\n`
+      }
+      markdown += `**Key Results:**\n\n`
+      obj.keyResults.forEach((kr, krIndex) => {
+        markdown += `- **KR${krIndex + 1}:** ${kr.text} (Target: ${kr.target} ${kr.unit})\n`
+      })
+      markdown += '\n'
+    })
+
+    const blob = new Blob([markdown], { type: 'text/markdown' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `okrs-${companyProfile?.name || 'export'}-${new Date().toISOString().split('T')[0]}.md`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+    setToastMessage('OKRs exported as Markdown')
+  }
+
+  const generateExportContent = () => {
+    let content = `OKRs for ${companyProfile?.name || 'Organization'}\n`
+    content += `Planning Period: ${planningPeriod}\n`
+    content += `Export Date: ${new Date().toLocaleDateString()}\n\n`
+
+    if (shareableSummary?.text) {
+      content += `Strategic Summary:\n${shareableSummary.text}\n\n`
+    }
+
+    content += `Objectives and Key Results:\n\n`
+
+    leaderOKRs.forEach((obj, objIndex) => {
+      content += `O${objIndex + 1}: ${obj.title}\n`
+      if (obj.description) {
+        content += `   ${obj.description}\n`
+      }
+      obj.keyResults.forEach((kr, krIndex) => {
+        content += `   KR${krIndex + 1}: ${kr.text} (Target: ${kr.target} ${kr.unit})\n`
+      })
+      content += '\n'
+    })
+
+    return content
+  }
 
   return (
     <div className="max-w-5xl mx-auto space-y-8">
@@ -389,14 +548,39 @@ export function Screen4Dashboard() {
           <MessageSquare className="w-4 h-4 mr-2" />
           Post to Slack
         </Button>
-        <Button variant="outline">
+        <Button variant="outline" onClick={handleShareDashboard}>
           <Link2 className="w-4 h-4 mr-2" />
           Share Dashboard Link
         </Button>
-        <Button variant="outline">
-          <Download className="w-4 h-4 mr-2" />
-          Export
-        </Button>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="sm" className="gap-2 border-primary/50 hover:border-primary hover:bg-primary/10 dark:border-primary/30 dark:hover:border-primary/50 dark:hover:bg-primary/20">
+              <Download className="w-4 h-4" />
+              Export
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-56">
+            <DropdownMenuLabel>Export Format</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={exportAsMarkdown}>
+              <FileText className="w-4 h-4 mr-2" />
+              Markdown (.md)
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={exportAsCSV}>
+              <Table className="w-4 h-4 mr-2" />
+              CSV Spreadsheet (.csv)
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={exportAsJSON}>
+              <Code className="w-4 h-4 mr-2" />
+              JSON Data (.json)
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={exportAsPDF} className="text-muted-foreground">
+              <FileDown className="w-4 h-4 mr-2" />
+              PDF Document (Coming Soon)
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
         <Button
           onClick={() => setShowAgentModal(true)}
           className="ml-auto bg-gradient-to-r from-primary to-accent text-primary-foreground"
@@ -580,6 +764,76 @@ export function Screen4Dashboard() {
             >
               {isLoading ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Bot className="w-4 h-4 mr-2" />}
               Deploy Agent
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Share Dashboard Modal */}
+      <Dialog open={showShareModal} onOpenChange={setShowShareModal}>
+        <DialogContent>
+          <DialogHeader>
+            <div className="mx-auto p-3 rounded-full bg-primary/10 w-fit mb-4">
+              <Link2 className="w-8 h-8 text-primary" />
+            </div>
+            <DialogTitle className="text-center">Share Dashboard</DialogTitle>
+            <DialogDescription className="text-center">
+              Share this dashboard with stakeholders for read-only access to your OKR progress.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div className="p-4 rounded-lg bg-secondary/30 border border-border/50">
+              <Label className="text-sm font-medium mb-2 block">Shareable Link</Label>
+              <div className="flex items-center gap-2">
+                <Input
+                  readOnly
+                  value={`${typeof window !== 'undefined' ? window.location.origin : ''}/dashboard/shared/${generateId()}`}
+                  className="font-mono text-sm"
+                />
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={() => {
+                    const url = `${window.location.origin}/dashboard/shared/${generateId()}`
+                    navigator.clipboard.writeText(url)
+                    setToastMessage("Link copied to clipboard!")
+                  }}
+                >
+                  <Copy className="w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+            <div className="p-4 rounded-lg bg-muted/50">
+              <h4 className="text-sm font-medium mb-2">Access Details</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                  <span>Read-only access to all objectives and key results</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                  <span>Real-time progress updates visible to viewers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+                  <span>Link never expires and can be shared multiple times</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setShowShareModal(false)}>
+              Close
+            </Button>
+            <Button
+              onClick={() => {
+                const url = `${window.location.origin}/dashboard/shared/${generateId()}`
+                navigator.clipboard.writeText(url)
+                setToastMessage("Link copied to clipboard!")
+              }}
+            >
+              <Copy className="w-4 h-4 mr-2" />
+              Copy Link
             </Button>
           </DialogFooter>
         </DialogContent>

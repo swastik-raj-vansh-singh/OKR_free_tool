@@ -54,7 +54,7 @@ export function LoadingWithFacts({ message = "Analyzing and generating OKRs..." 
 
   // Custom icon components
   const getStepIcon = (type: string, isActive: boolean, isPassed: boolean) => {
-    const colorClass = isActive ? 'text-[#DC2626]' : isPassed ? 'text-[#DC2626]' : 'text-muted-foreground'
+    const colorClass = isActive ? 'text-primary' : isPassed ? 'text-primary' : 'text-muted-foreground'
 
     switch(type) {
       case 'research':
@@ -203,13 +203,13 @@ export function LoadingWithFacts({ message = "Analyzing and generating OKRs..." 
           {/* Animated flowing line that fills as steps complete */}
           <div className="absolute top-16 left-[8%] right-[8%] h-0.5 overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-[#DC2626] to-primary transition-all duration-700 ease-out"
+              className="h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-700 ease-out"
               style={{
                 width: `${(currentStep / (pipelineSteps.length - 1)) * 100}%`,
               }}
             >
               {/* Glowing tip of the flowing line */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#DC2626] rounded-full shadow-lg shadow-[#DC2626]/50 animate-pulse" />
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-primary rounded-full shadow-lg shadow-primary/50 animate-pulse" />
             </div>
           </div>
 
@@ -225,22 +225,22 @@ export function LoadingWithFacts({ message = "Analyzing and generating OKRs..." 
                   <div className={`
                     relative flex items-center justify-center w-16 h-16 rounded-full border-2 transition-all duration-500 bg-background
                     ${isActive
-                      ? 'border-[#DC2626] scale-110 shadow-lg shadow-[#DC2626]/30'
+                      ? 'border-primary scale-110 shadow-lg shadow-primary/30'
                       : isPassed
-                        ? 'border-[#DC2626] bg-[#DC2626]/5'
+                        ? 'border-primary bg-primary/5'
                         : 'border-border/50'
                     }
                   `}>
                     {/* Pulsing ring for active step */}
                     {isActive && (
-                      <div className="absolute inset-0 rounded-full border-2 border-[#DC2626] animate-ping"
+                      <div className="absolute inset-0 rounded-full border-2 border-primary animate-ping"
                            style={{ animationDuration: '1.5s' }} />
                     )}
 
                     {/* Icon or Checkmark */}
                     {isPassed && !isActive ? (
                       <div className="flex items-center justify-center w-full h-full">
-                        <svg className="w-8 h-8 text-[#DC2626]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
@@ -254,12 +254,12 @@ export function LoadingWithFacts({ message = "Analyzing and generating OKRs..." 
                   {/* Step label */}
                   <div className="text-center px-1">
                     <p className={`text-xs font-semibold transition-colors duration-300 ${
-                      isActive ? 'text-[#DC2626]' : isPassed ? 'text-foreground' : 'text-muted-foreground'
+                      isActive ? 'text-primary' : isPassed ? 'text-foreground' : 'text-muted-foreground'
                     }`}>
                       {step.label}
                     </p>
                     <p className={`text-[10px] transition-colors duration-300 ${
-                      isActive ? 'text-[#DC2626]/80' : isPassed ? 'text-foreground/60' : 'text-muted-foreground/60'
+                      isActive ? 'text-primary/80' : isPassed ? 'text-foreground/60' : 'text-muted-foreground/60'
                     }`}>
                       {step.subtitle}
                     </p>
@@ -338,7 +338,7 @@ export function LoadingWithFacts({ message = "Analyzing and generating OKRs..." 
       <div className="mt-8 flex items-center gap-2 px-4 py-2 rounded-full bg-muted/30 border border-border/50">
         <Sparkles className="w-3 h-3 text-primary" />
         <p className="text-xs font-medium text-muted-foreground">
-          Powered by <span className="text-[#DC2626] font-semibold">Lamatic AI</span>
+          Powered by <span className="text-primary font-semibold">Lamatic AI</span>
         </p>
       </div>
     </div>

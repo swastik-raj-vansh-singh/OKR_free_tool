@@ -102,7 +102,6 @@ export function Screen2EditInvite() {
   const [showPreviewModal, setShowPreviewModal] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
   const [sentInvites, setSentInvites] = useState<Invite[]>([])
-  const [selectedTemplate, setSelectedTemplate] = useState("direct-report")
 
   const addInviteEntry = () => {
     setInviteEntries([
@@ -563,21 +562,6 @@ export function Screen2EditInvite() {
           </div>
         </CardHeader>
         <CardContent className="space-y-6">
-          {/* Template Selection */}
-          <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 border border-border/50">
-            <Label className="text-sm font-medium">Invite Template:</Label>
-            <Select value={selectedTemplate} onValueChange={setSelectedTemplate}>
-              <SelectTrigger className="w-56 bg-background">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="direct-report">Direct Report</SelectItem>
-                <SelectItem value="peer-review">Peer Review</SelectItem>
-                <SelectItem value="executive-summary">Executive Summary</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
           {/* Invite Entries */}
           {inviteEntries.length > 0 && (
             <div className="space-y-4">
@@ -675,10 +659,6 @@ export function Screen2EditInvite() {
               >
                 {isLoading ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Sparkles className="w-4 h-4 mr-2" />}
                 Generate Draft OKRs for Invites
-              </Button>
-              <Button variant="outline" onClick={() => setShowPreviewModal(true)}>
-                <Eye className="w-4 h-4 mr-2" />
-                Preview Invite Email
               </Button>
               <Button
                 onClick={handleSendInvites}
