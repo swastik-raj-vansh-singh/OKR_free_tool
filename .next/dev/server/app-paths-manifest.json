@@ -1,4 +1,5 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/invite/[token]/route": "app/api/invite/[token]/route.js",
   "/api/invite/accept/route": "app/api/invite/accept/route.js",
   "/api/okr/[userId]/route": "app/api/okr/[userId]/route.js",

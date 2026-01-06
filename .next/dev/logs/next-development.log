@@ -554,3 +554,75 @@ https://nextjs.org/docs/messages/module-not-found
 [00:07:03.554] Browser LOG     🎉 Database save successful! Check Supabase for user_id: 72dd80d8-7571-4212-8dad-1ef3fc1d8997
 [00:07:14.680] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704556814}
 [00:11:37.206] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/edit color: rgb(120, 120, 120) color: inherit {"dp":"/edit","o":"http://localhost:3000/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704819399}
+[00:14:57.847] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:57.847] Browser ERROR   uncaughtError: SyntaxError: Cannot use import statement outside a module
+[00:14:57.901] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:58.146] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <div className="max-w-6xl ...">
+      <div>
+      <Screen2EditInvite>
+        <div className="max-w-4xl ...">
+          <Card>
+          <Card className="border-bor...">
+            <div data-slot="card" className="text-card-...">
+              <CardHeader>
+              <CardContent className="space-y-6">
+                <div data-slot="card-content" className="px-6 space...">
+                  <div className="space-y-4">
+                    <div className="p-4 rounde...">
+                      <div>
+                      <div>
+                      <div>
+                      <div className="flex items...">
+                        <div className="flex items...">
+                          ...
+                            <CheckboxProvider scope={undefined} state={true} disabled={undefined}>
+                              <Primitive.button type="button" role="checkbox" aria-checked={true} ...>
+                                <button
+                                  type="button"
+                                  role="checkbox"
+                                  aria-checked={true}
+                                  aria-required={undefined}
+                                  data-state="checked"
+                                  data-disabled={undefined}
+                                  disabled={undefined}
+                                  value="on"
+                                  data-slot="checkbox"
+                                  className="peer border-input dark:bg-input/30 data-[state=checked]:bg-primary data-[..."
++                                 id="includeDraft-412ef65"
+-                                 id="includeDraft-e9fpne7"
+                                  onKeyDown={function handleEvent}
+                                  onClick={function handleEvent}
+                                  ref={function}
+                                >
+                              ...
+                          <Label htmlFor="includeDra..." className="text-sm cu...">
+                            <Label data-slot="label" className="flex items..." htmlFor="includeDra...">
+                              <Primitive.label data-slot="label" className="flex items..." htmlFor="includeDra..." ...>
+                                <label
+                                  data-slot="label"
+                                  className="flex items-center gap-2 font-medium select-none group-data-[disabled=true..."
++                                 htmlFor="includeDraft-412ef65"
+-                                 htmlFor="includeDraft-e9fpne7"
+                                  onMouseDown={function onMouseDown}
+                                  ref={null}
+                                >
++                                 Include draft OKRs for this role
+                  ...
+          ...
+
+[00:14:58.146] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:58.146] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/edit","route":"/edit"}
+[00:14:58.146] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/edit color: rgb(120, 120, 120) color: inherit {"dp":"/edit","o":"http://localhost:3000/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767705020344}
