@@ -1,10 +1,5 @@
-import { OKRProvider } from "@/lib/okr-context"
-import { OKRWizard } from "@/components/okr/okr-wizard"
+import { redirect } from 'next/navigation'
 
 export default function Home() {
-  return (
-    <OKRProvider>
-      <OKRWizard />
-    </OKRProvider>
-  )
+  redirect('/generate')
 }

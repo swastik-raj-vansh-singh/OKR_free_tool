@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { useOKR } from "@/lib/okr-context"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -76,6 +77,7 @@ interface InviteEntry {
 }
 
 export function Screen2EditInvite() {
+  const router = useRouter()
   const {
     leaderOKRs,
     shareableSummary,
@@ -675,11 +677,11 @@ export function Screen2EditInvite() {
 
       {/* Navigation */}
       <div className="flex justify-between">
-        <Button variant="outline" onClick={() => setCurrentScreen("kickoff")}>
+        <Button variant="outline" onClick={() => router.push('/generate')}>
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Edit OKRs
         </Button>
-        <Button onClick={() => setCurrentScreen("dashboard")}>
+        <Button onClick={() => router.push('/dashboard')}>
           Continue to Dashboard
           <ArrowRight className="w-4 h-4 ml-2" />
         </Button>
@@ -783,7 +785,7 @@ export function Screen2EditInvite() {
             <Button
               onClick={() => {
                 setShowSuccessModal(false)
-                setCurrentScreen("dashboard")
+                router.push('/dashboard')
               }}
               className="w-full sm:w-auto"
             >

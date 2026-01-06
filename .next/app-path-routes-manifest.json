@@ -1,10 +1,15 @@
 {
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
+  "/api/cron/send-okr-reminders/route": "/api/cron/send-okr-reminders",
   "/api/invite/[token]/route": "/api/invite/[token]",
   "/api/invite/accept/route": "/api/invite/accept",
   "/api/okr/[userId]/route": "/api/okr/[userId]",
+  "/api/user/reminder-settings/route": "/api/user/reminder-settings",
   "/dashboard/page": "/dashboard",
+  "/edit/page": "/edit",
+  "/generate/page": "/generate",
   "/invite/[token]/page": "/invite/[token]",
-  "/page": "/"
+  "/page": "/",
+  "/workspace/page": "/workspace"
 }

@@ -65,16 +65,46 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/api/cron/send-okr-reminders",
+      "regex": "^/api/cron/send\\-okr\\-reminders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/cron/send\\-okr\\-reminders(?:/)?$"
+    },
+    {
       "page": "/api/invite/accept",
       "regex": "^/api/invite/accept(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/invite/accept(?:/)?$"
     },
     {
+      "page": "/api/user/reminder-settings",
+      "regex": "^/api/user/reminder\\-settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/user/reminder\\-settings(?:/)?$"
+    },
+    {
       "page": "/dashboard",
       "regex": "^/dashboard(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/edit",
+      "regex": "^/edit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/edit(?:/)?$"
+    },
+    {
+      "page": "/generate",
+      "regex": "^/generate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/generate(?:/)?$"
+    },
+    {
+      "page": "/workspace",
+      "regex": "^/workspace(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/workspace(?:/)?$"
     }
   ],
   "dataRoutes": [],

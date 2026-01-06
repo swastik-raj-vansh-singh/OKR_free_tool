@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { useOKR } from "@/lib/okr-context"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -52,6 +53,7 @@ import type { Objective, WeeklyUpdate, UpdateSchedule } from "@/lib/types"
 const generateId = () => Math.random().toString(36).substring(2, 9)
 
 export function Screen4Dashboard() {
+  const router = useRouter()
   const {
     currentUser,
     leaderOKRs,
@@ -396,7 +398,7 @@ export function Screen4Dashboard() {
           </p>
         </div>
         <div className="flex gap-2">
-          <Button variant="outline" size="sm" onClick={() => setCurrentScreen("edit-invite")}>
+          <Button variant="outline" size="sm" onClick={() => router.push('/edit')}>
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Edit
           </Button>

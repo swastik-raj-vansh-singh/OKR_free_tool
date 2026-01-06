@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState, useRef } from "react"
+import { useRouter } from "next/navigation"
 import { useOKR } from "@/lib/okr-context"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -72,6 +73,7 @@ const getPersistentUserId = (): string => {
 }
 
 export function Screen1Kickoff() {
+  const router = useRouter()
   const {
     setCompanyProfile,
     companyProfile,
@@ -455,7 +457,7 @@ export function Screen1Kickoff() {
   }
 
   const handleContinue = () => {
-    setCurrentScreen("edit-invite")
+    router.push('/edit')
   }
 
   return (

@@ -1,4 +1,10 @@
 {
-  "/api/user/reminder-settings/route": "app/api/user/reminder-settings/route.js",
+  "/api/invite/[token]/route": "app/api/invite/[token]/route.js",
+  "/api/invite/accept/route": "app/api/invite/accept/route.js",
+  "/api/okr/[userId]/route": "app/api/okr/[userId]/route.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/edit/page": "app/edit/page.js",
+  "/generate/page": "app/generate/page.js",
+  "/invite/[token]/page": "app/invite/[token]/page.js",
   "/page": "app/page.js"
 }

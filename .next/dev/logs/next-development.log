@@ -1,637 +1,556 @@
-[00:00:00.447] Server  LOG      ✓ Ready in 296ms
-[00:00:03.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.567] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:03.567] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:03.567] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767700636341}
-[00:00:11.910] Browser LOG     🔵 Lamatic API Request: {"endpoint":"https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql","variables":"{\n  \"workflowId\": \"8f4c3c15-6ee5-4ca6-b773-926205ded262\",\n  \"website_url\": \"https://thedermaco.com\"\n}","workflowId":"8f4c3c15-6ee5-4ca6-b773-926205ded262"}
-[00:00:18.057] Browser LOG     🟢 Lamatic API Response: {
-  "data": {
-    "executeWorkflow": {
-      "status": "success",
-      "result": {
-        "website_url": "https://thedermaco.com",
-        "company_profile": {
-          "company_name": "The Derma Co.",
-          "industry": "Skincare and Beauty",
-          "products": [
-            "Active ingredient-based skincare formulations",
-            "Customized skin & hair care products",
-            "Makeup products",
-            "Body care products"
-          ],
-          "mission": "The Derma Co brings active ingredient-based skincare formulations that effectively resolve skin concerns. Our products have Science at their core.",
-          "employee_count": "Unknown",
-          "headquarters": "Unknown",
-          "founded_year": "Unknown",
-          "key_features": [
-            "Science-backed solutions",
-            "Customized skincare and hair care",
-            "Suitability for both men and women",
-            "Focus on resolving specific skin concerns",
-            "Active ingredient-based formulations"
-          ]
-        },
-        "requestId": "3708b7a8-3723-4cce-mk2jbncx-huvtimo3"
-      }
-    }
-  }
-}
-[00:00:18.057] Browser LOG     🟡 Workflow Status: success
-[00:00:18.057] Browser LOG     🟡 Raw Result: {"company_profile":{"company_name":"The Derma Co.","employee_count":"Unknown","founded_year":"Unknown","headquarters":"Unknown","industry":"Skincare and Beauty","key_features":["Science-backed solutions","Customized skincare and hair care","Suitability for both men and women","Focus on resolving specific skin concerns","Active ingredient-based formulations"],"mission":"The Derma Co brings active ingredient-based skincare formulations that effectively resolve skin concerns. Our products have Science at their core.","products":["Active ingredient-based skincare formulations","Customized skin & hair care products","Makeup products","Body care products"]},"requestId":"3708b7a8-3723-4cce-mk2jbncx-huvtimo3","website_url":"https://thedermaco.com"}
-[00:00:18.058] Browser LOG     🟢 Parsed Result: {
-  "website_url": "https://thedermaco.com",
-  "company_profile": {
-    "company_name": "The Derma Co.",
-    "industry": "Skincare and Beauty",
-    "products": [
-      "Active ingredient-based skincare formulations",
-      "Customized skin & hair care products",
-      "Makeup products",
-      "Body care products"
-    ],
-    "mission": "The Derma Co brings active ingredient-based skincare formulations that effectively resolve skin concerns. Our products have Science at their core.",
-    "employee_count": "Unknown",
-    "headquarters": "Unknown",
-    "founded_year": "Unknown",
-    "key_features": [
-      "Science-backed solutions",
-      "Customized skincare and hair care",
-      "Suitability for both men and women",
-      "Focus on resolving specific skin concerns",
-      "Active ingredient-based formulations"
-    ]
-  },
-  "requestId": "3708b7a8-3723-4cce-mk2jbncx-huvtimo3"
-}
-[00:00:18.058] Browser LOG     ♻️ Retrieved existing user ID: 83f67387-7766-4117-9539-ff2bc90bdaf4
-[00:00:18.058] Browser LOG     👤 User created with persistent ID: {"email":"leader@thedermaco.com","role":"CEO of the company","userId":"83f67387-7766-4117-9539-ff2bc90bdaf4"}
-[00:00:18.058] Browser LOG     🔵 Lamatic API Request: {"endpoint":"https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql","variables":"{\n  \"workflowId\": \"01e84485-b896-437d-91ce-2665329acad1\",\n  \"company_profile_company_name\": \"The Derma Co.\",\n  \"company_profile_industry\": \"Skincare and Beauty\",\n  \"company_profile_products\": [\n    \"Active ingredient-based skincare formulations\",\n    \"Customized skin & hair care products\",\n    \"Makeup products\",\n    \"Body care products\"\n  ],\n  \"company_profile_mission\": \"The Derma Co brings active ingredient-based skincare formulations that effectively resolve skin concerns. Our products have Science at their core.\",\n  \"company_profile_employee_count\": \"Unknown\",\n  \"company_profile_headquarters\": \"Unknown\",\n  \"company_profile_founded_year\": \"Unknown\",\n  \"company_profile_key_features\": [\n    \"Science-backed solutions\",\n    \"Customized skincare and hair care\",\n    \"Suitability for both men and women\",\n    \"Focus on resolving specific skin concerns\",\n    \"Active ingredient-based formulations\"\n  ],\n  \"user_role\": \"CEO of the company\",\n  \"user_goals\": \"Want to increase the sales of the company\",\n  \"planning_period\": \"H1 2026\",\n  \"website_data\": \"\"\n}","workflowId":"01e84485-b896-437d-91ce-2665329acad1"}
-[00:00:45.163] Browser LOG     🟢 Lamatic API Response: {
-  "data": {
-    "executeWorkflow": {
-      "status": "success",
-      "result": {
-        "success": true,
-        "okr_plan": {
-          "strategic_narrative": "As the CEO of The Derma Co., my role aligns directly with our mission to provide scientifically-backed skincare solutions that cater to the diverse needs of our consumers. In H1 2026, my focus will be to drive exponential growth in sales by leveraging our unique formulations and product variety, ensuring that every product directly addresses consumer skin concerns while promoting our commitment to innovation and science. \n\nTo achieve these aims, I will prioritize expanding our market reach, enhancing brand visibility, and optimizing our sales channels for better customer engagement. By integrating data-driven strategies and fostering a culture of excellence and innovation, we aim to solidify our position in the skincare industry, thereby reflecting our mission in every aspect of our operations.\n\nOur OKRs for this period are designed to align closely with these priorities, focusing on market expansion, product enhancement, and customer satisfaction. These objectives are not only set to increase sales but also to elevate our brand's impact globally, ensuring that The Derma Co. continues to lead in the science-driven skincare market.",
-          "objectives": [
-            {
-              "title": "Expand Market Reach",
-              "description": "Increase the presence of The Derma Co. in new and existing markets to drive sales growth and enhance brand visibility.",
-              "order_index": "1",
-              "key_results": [
-                {
-                  "title": "Increase market penetration by launching in 3 new regions",
-                  "baseline_value": 0,
-                  "target_value": 3,
-                  "unit": "regions",
-                  "order_index": "1"
-                },
-                {
-                  "title": "Grow e-commerce sales by 40%",
-                  "baseline_value": 1000000,
-                  "target_value": 1400000,
-                  "unit": "$",
-                  "order_index": "2"
-                },
-                {
-                  "title": "Increase the number of retail partners by 30%",
-                  "baseline_value": 100,
-                  "target_value": 130,
-                  "unit": "partners",
-                  "order_index": "3"
-                }
-              ]
-            },
-            {
-              "title": "Enhance Product Development",
-              "description": "Focus on developing new products that utilize cutting-edge active ingredients to meet diverse consumer needs.",
-              "order_index": "2",
-              "key_results": [
-                {
-                  "title": "Develop and launch 5 new skincare products",
-                  "baseline_value": 0,
-                  "target_value": 5,
-                  "unit": "products",
-                  "order_index": "1"
-                },
-                {
-                  "title": "Increase customer satisfaction scores by 35% for new products",
-                  "baseline_value": 70,
-                  "target_value": 94.5,
-                  "unit": "CSAT Score",
-                  "order_index": "2"
-                },
-                {
-                  "title": "Achieve a 50% increase in R&D efficiency",
-                  "baseline_value": 100,
-                  "target_value": 150,
-                  "unit": "R&D Projects",
-                  "order_index": "3"
-                }
-              ]
-            },
-            {
-              "title": "Optimize Sales Channels",
-              "description": "Boost sales through improved distribution strategies and enhanced customer engagement.",
-              "order_index": "3",
-              "key_results": [
-                {
-                  "title": "Increase sales from direct channels by 45%",
-                  "baseline_value": 2000000,
-                  "target_value": 2900000,
-                  "unit": "$",
-                  "order_index": "1"
-                },
-                {
-                  "title": "Reduce customer acquisition costs by 30%",
-                  "baseline_value": 100,
-                  "target_value": 70,
-                  "unit": "$ per customer",
-                  "order_index": "2"
-                },
-                {
-                  "title": "Enhance online engagement by increasing total social media interactions by 50%",
-                  "baseline_value": 50000,
-                  "target_value": 75000,
-                  "unit": "interactions",
-                  "order_index": "3"
-                }
-              ]
-            }
-          ]
-        },
-        "metadata": {
-          "objectives_count": 3,
-          "key_results_count": 9,
-          "planning_period": "H1 2026",
-          "user_role": "CEO of the company",
-          "company_name": "The Derma Co."
-        },
-        "requestId": "083e11fa-6166-441f-mk2jbrli-ca4xze6z"
-      }
-    }
-  }
-}
-[00:00:45.163] Browser LOG     🟡 Workflow Status: success
-[00:00:45.163] Browser LOG     🟡 Raw Result: {"metadata":{"company_name":"The Derma Co.","key_results_count":9,"objectives_count":3,"planning_period":"H1 2026","user_role":"CEO of the company"},"okr_plan":{"objectives":[{"description":"Increase the presence of The Derma Co. in new and existing markets to drive sales growth and enhance brand visibility.","key_results":["[Object]","[Object]","[Object]"],"order_index":"1","title":"Expand Market Reach"},{"description":"Focus on developing new products that utilize cutting-edge active ingredients to meet diverse consumer needs.","key_results":["[Object]","[Object]","[Object]"],"order_index":"2","title":"Enhance Product Development"},{"description":"Boost sales through improved distribution strategies and enhanced customer engagement.","key_results":["[Object]","[Object]","[Object]"],"order_index":"3","title":"Optimize Sales Channels"}],"strategic_narrative":"As the CEO of The Derma Co., my role aligns directly with our mission to provide scientifically-backed skincare solutions that cater to the diverse needs of our consumers. In H1 2026, my focus will be to drive exponential growth in sales by leveraging our unique formulations and product variety, ensuring that every product directly addresses consumer skin concerns while promoting our commitment to innovation and science. \n\nTo achieve these aims, I will prioritize expanding our market reach, enhancing brand visibility, and optimizing our sales channels for better customer engagement. By integrating data-driven strategies and fostering a culture of excellence and innovation, we aim to solidify our position in the skincare industry, thereby reflecting our mission in every aspect of our operations.\n\nOur OKRs for this period are designed to align closely with these priorities, focusing on market expansion, product enhancement, and customer satisfaction. These objectives are not only set to increase sales but also to elevate our brand's impact globally, ensuring that The Derma Co. continues to lead in the science-driven skincare market."},"requestId":"083e11fa-6166-441f-mk2jbrli-ca4xze6z","success":true}
-[00:00:45.164] Browser LOG     🟢 Parsed Result: {
-  "success": true,
-  "okr_plan": {
-    "strategic_narrative": "As the CEO of The Derma Co., my role aligns directly with our mission to provide scientifically-backed skincare solutions that cater to the diverse needs of our consumers. In H1 2026, my focus will be to drive exponential growth in sales by leveraging our unique formulations and product variety, ensuring that every product directly addresses consumer skin concerns while promoting our commitment to innovation and science. \n\nTo achieve these aims, I will prioritize expanding our market reach, enhancing brand visibility, and optimizing our sales channels for better customer engagement. By integrating data-driven strategies and fostering a culture of excellence and innovation, we aim to solidify our position in the skincare industry, thereby reflecting our mission in every aspect of our operations.\n\nOur OKRs for this period are designed to align closely with these priorities, focusing on market expansion, product enhancement, and customer satisfaction. These objectives are not only set to increase sales but also to elevate our brand's impact globally, ensuring that The Derma Co. continues to lead in the science-driven skincare market.",
-    "objectives": [
-      {
-        "title": "Expand Market Reach",
-        "description": "Increase the presence of The Derma Co. in new and existing markets to drive sales growth and enhance brand visibility.",
-        "order_index": "1",
-        "key_results": [
-          {
-            "title": "Increase market penetration by launching in 3 new regions",
-            "baseline_value": 0,
-            "target_value": 3,
-            "unit": "regions",
-            "order_index": "1"
-          },
-          {
-            "title": "Grow e-commerce sales by 40%",
-            "baseline_value": 1000000,
-            "target_value": 1400000,
-            "unit": "$",
-            "order_index": "2"
-          },
-          {
-            "title": "Increase the number of retail partners by 30%",
-            "baseline_value": 100,
-            "target_value": 130,
-            "unit": "partners",
-            "order_index": "3"
-          }
-        ]
-      },
-      {
-        "title": "Enhance Product Development",
-        "description": "Focus on developing new products that utilize cutting-edge active ingredients to meet diverse consumer needs.",
-        "order_index": "2",
-        "key_results": [
-          {
-            "title": "Develop and launch 5 new skincare products",
-            "baseline_value": 0,
-            "target_value": 5,
-            "unit": "products",
-            "order_index": "1"
-          },
-          {
-            "title": "Increase customer satisfaction scores by 35% for new products",
-            "baseline_value": 70,
-            "target_value": 94.5,
-            "unit": "CSAT Score",
-            "order_index": "2"
-          },
-          {
-            "title": "Achieve a 50% increase in R&D efficiency",
-            "baseline_value": 100,
-            "target_value": 150,
-            "unit": "R&D Projects",
-            "order_index": "3"
-          }
-        ]
-      },
-      {
-        "title": "Optimize Sales Channels",
-        "description": "Boost sales through improved distribution strategies and enhanced customer engagement.",
-        "order_index": "3",
-        "key_results": [
-          {
-            "title": "Increase sales from direct channels by 45%",
-            "baseline_value": 2000000,
-            "target_value": 2900000,
-            "unit": "$",
-            "order_index": "1"
-          },
-          {
-            "title": "Reduce customer acquisition costs by 30%",
-            "baseline_value": 100,
-            "target_value": 70,
-            "unit": "$ per customer",
-            "order_index": "2"
-          },
-          {
-            "title": "Enhance online engagement by increasing total social media interactions by 50%",
-            "baseline_value": 50000,
-            "target_value": 75000,
-            "unit": "interactions",
-            "order_index": "3"
-          }
-        ]
-      }
-    ]
-  },
-  "metadata": {
-    "objectives_count": 3,
-    "key_results_count": 9,
-    "planning_period": "H1 2026",
-    "user_role": "CEO of the company",
-    "company_name": "The Derma Co."
-  },
-  "requestId": "083e11fa-6166-441f-mk2jbrli-ca4xze6z"
-}
-[00:00:45.164] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives type: object
-[00:00:45.164] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives: [{"description":"Increase the presence of The Derma Co. in new and existing markets to drive sales growth and enhance brand visibility.","key_results":[{"baseline_value":0,"order_index":"1","target_value":3,"title":"Increase market penetration by launching in 3 new regions","unit":"regions"},{"baseline_value":1000000,"order_index":"2","target_value":1400000,"title":"Grow e-commerce sales by 40%","unit":"$"},{"baseline_value":100,"order_index":"3","target_value":130,"title":"Increase the number of retail partners by 30%","unit":"partners"}],"order_index":"1","title":"Expand Market Reach"},{"description":"Focus on developing new products that utilize cutting-edge active ingredients to meet diverse consumer needs.","key_results":[{"baseline_value":0,"order_index":"1","target_value":5,"title":"Develop and launch 5 new skincare products","unit":"products"},{"baseline_value":70,"order_index":"2","target_value":94.5,"title":"Increase customer satisfaction scores by 35% for new products","unit":"CSAT Score"},{"baseline_value":100,"order_index":"3","target_value":150,"title":"Achieve a 50% increase in R&D efficiency","unit":"R&D Projects"}],"order_index":"2","title":"Enhance Product Development"},{"description":"Boost sales through improved distribution strategies and enhanced customer engagement.","key_results":[{"baseline_value":2000000,"order_index":"1","target_value":2900000,"title":"Increase sales from direct channels by 45%","unit":"$"},{"baseline_value":100,"order_index":"2","target_value":70,"title":"Reduce customer acquisition costs by 30%","unit":"$ per customer"},{"baseline_value":50000,"order_index":"3","target_value":75000,"title":"Enhance online engagement by increasing total social media interactions by 50%","unit":"interactions"}],"order_index":"3","title":"Optimize Sales Channels"}]
-[00:00:45.164] Browser LOG     💾 Saving OKRs to database with payload: {"company_name":"The Derma Co.","objectives_count":3,"planning_period":"H1 2026","user_email":"leader@thedermaco.com","user_id":"83f67387-7766-4117-9539-ff2bc90bdaf4","user_name":"company","user_role":"CEO of the company"}
-[00:00:45.164] Browser LOG     🔵 Lamatic API Request: {"endpoint":"https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql","variables":"{\n  \"workflowId\": \"c2c6798f-da4c-4b86-a0c4-b9f19e957ec0\",\n  \"user_id\": \"83f67387-7766-4117-9539-ff2bc90bdaf4\",\n  \"user_email\": \"leader@thedermaco.com\",\n  \"user_name\": \"company\",\n  \"user_role\": \"CEO of the company\",\n  \"website_url\": \"https://thedermaco.com\",\n  \"company_name\": \"The Derma Co.\",\n  \"planning_period\": \"H1 2026\",\n  \"okr_plan_strategic_narrative\": \"As the CEO of The Derma Co., my role aligns directly with our mission to provide scientifically-backed skincare solutions that cater to the diverse needs of our consumers. In H1 2026, my focus will be to drive exponential growth in sales by leveraging our unique formulations and product variety, ensuring that every product directly addresses consumer skin concerns while promoting our commitment to innovation and science. \\n\\nTo achieve these aims, I will prioritize expanding our market reach, enhancing brand visibility, and optimizing our sales channels for better customer engagement. By integrating data-driven strategies and fostering a culture of excellence and innovation, we aim to solidify our position in the skincare industry, thereby reflecting our mission in every aspect of our operations.\\n\\nOur OKRs for this period are designed to align closely with these priorities, focusing on market expansion, product enhancement, and customer satisfaction. These objectives are not only set to increase sales but also to elevate our brand's impact globally, ensuring that The Derma Co. continues to lead in the science-driven skincare market.\",\n  \"okr_plan_objectives\": [\n    {\n      \"title\": \"Expand Market Reach\",\n      \"description\": \"Increase the presence of The Derma Co. in new and existing markets to drive sales growth and enhance brand visibility.\",\n      \"order_index\": \"1\",\n      \"key_results\": [\n        {\n          \"title\": \"Increase market penetration by launching in 3 new regions\",\n          \"baseline_value\": 0,\n          \"target_value\": 3,\n          \"unit\": \"regions\",\n          \"order_index\": \"1\"\n        },\n        {\n          \"title\": \"Grow e-commerce sales by 40%\",\n          \"baseline_value\": 1000000,\n          \"target_value\": 1400000,\n          \"unit\": \"$\",\n          \"order_index\": \"2\"\n        },\n        {\n          \"title\": \"Increase the number of retail partners by 30%\",\n          \"baseline_value\": 100,\n          \"target_value\": 130,\n          \"unit\": \"partners\",\n          \"order_index\": \"3\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Enhance Product Development\",\n      \"description\": \"Focus on developing new products that utilize cutting-edge active ingredients to meet diverse consumer needs.\",\n      \"order_index\": \"2\",\n      \"key_results\": [\n        {\n          \"title\": \"Develop and launch 5 new skincare products\",\n          \"baseline_value\": 0,\n          \"target_value\": 5,\n          \"unit\": \"products\",\n          \"order_index\": \"1\"\n        },\n        {\n          \"title\": \"Increase customer satisfaction scores by 35% for new products\",\n          \"baseline_value\": 70,\n          \"target_value\": 94.5,\n          \"unit\": \"CSAT Score\",\n          \"order_index\": \"2\"\n        },\n        {\n          \"title\": \"Achieve a 50% increase in R&D efficiency\",\n          \"baseline_value\": 100,\n          \"target_value\": 150,\n          \"unit\": \"R&D Projects\",\n          \"order_index\": \"3\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Optimize Sales Channels\",\n      \"description\": \"Boost sales through improved distribution strategies and enhanced customer engagement.\",\n      \"order_index\": \"3\",\n      \"key_results\": [\n        {\n          \"title\": \"Increase sales from direct channels by 45%\",\n          \"baseline_value\": 2000000,\n          \"target_value\": 2900000,\n          \"unit\": \"$\",\n          \"order_index\": \"1\"\n        },\n        {\n          \"title\": \"Reduce customer acquisition costs by 30%\",\n          \"baseline_value\": 100,\n          \"target_value\": 70,\n          \"unit\": \"$ per customer\",\n          \"order_index\": \"2\"\n        },\n        {\n          \"title\": \"Enhance online engagement by increasing total social media interactions by 50%\",\n          \"baseline_value\": 50000,\n          \"target_value\": 75000,\n          \"unit\": \"interactions\",\n          \"order_index\": \"3\"\n        }\n      ]\n    }\n  ]\n}","workflowId":"c2c6798f-da4c-4b86-a0c4-b9f19e957ec0"}
-[00:00:48.191] Browser LOG     🟢 Lamatic API Response: {
-  "data": {
-    "executeWorkflow": {
-      "status": "success",
-      "result": {
-        "success": true,
-        "message": "Leader user created and OKRs saved successfully!",
-        "okr_id": "db272dfe-697a-4d7a-9f20-00ecc633459a",
-        "user_id": "83f67387-7766-4117-9539-ff2bc90bdaf4",
-        "website_url": "https://thedermaco.com",
-        "company_name": "The Derma Co.",
-        "requestId": "7f816f10-d0dc-4df4-mk2jcchi-i5xblcwb"
-      }
-    }
-  }
-}
-[00:00:48.191] Browser LOG     🟡 Workflow Status: success
-[00:00:48.191] Browser LOG     🟡 Raw Result: {"company_name":"The Derma Co.","message":"Leader user created and OKRs saved successfully!","okr_id":"db272dfe-697a-4d7a-9f20-00ecc633459a","requestId":"7f816f10-d0dc-4df4-mk2jcchi-i5xblcwb","success":true,"user_id":"83f67387-7766-4117-9539-ff2bc90bdaf4","website_url":"https://thedermaco.com"}
-[00:00:48.191] Browser LOG     🟢 Parsed Result: {
-  "success": true,
-  "message": "Leader user created and OKRs saved successfully!",
-  "okr_id": "db272dfe-697a-4d7a-9f20-00ecc633459a",
-  "user_id": "83f67387-7766-4117-9539-ff2bc90bdaf4",
-  "website_url": "https://thedermaco.com",
-  "company_name": "The Derma Co.",
-  "requestId": "7f816f10-d0dc-4df4-mk2jcchi-i5xblcwb"
-}
-[00:00:48.191] Browser LOG     ✅ OKRs saved to database: {"company_name":"The Derma Co.","message":"Leader user created and OKRs saved successfully!","okr_id":"db272dfe-697a-4d7a-9f20-00ecc633459a","requestId":"7f816f10-d0dc-4df4-mk2jcchi-i5xblcwb","success":true,"user_id":"83f67387-7766-4117-9539-ff2bc90bdaf4","website_url":"https://thedermaco.com"}
-[00:00:48.191] Browser LOG     🎉 Database save successful! Check Supabase for user_id: 83f67387-7766-4117-9539-ff2bc90bdaf4
-[00:02:09.838] Server  LOG     [REMINDER_SETTINGS] API called
-[00:02:09.839] Server  LOG     [REMINDER_SETTINGS] Request body: {}
-[00:02:09.840] Server  LOG     [REMINDER_SETTINGS] Environment check: {}
-[00:02:10.909] Server  ERROR   [REMINDER_SETTINGS] Database error: "{\n  \"code\": \"42703\",\n  \"details\": null,\n  \"hint\": null,\n  \"message\": \"column users.user_id does not exist\"\n}"
-[00:02:11.015] Browser ERROR   Error creating schedule: {}
-[00:05:48.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:48.460] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:05:48.460] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:05:48.460] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767700981235}
-[00:05:55.492] Browser LOG     🔵 Lamatic API Request: {"endpoint":"https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql","variables":"{\n  \"workflowId\": \"8f4c3c15-6ee5-4ca6-b773-926205ded262\",\n  \"website_url\": \"https://stripe.com\"\n}","workflowId":"8f4c3c15-6ee5-4ca6-b773-926205ded262"}
-[00:06:02.301] Browser LOG     🟢 Lamatic API Response: {
-  "data": {
-    "executeWorkflow": {
-      "status": "success",
-      "result": {
-        "website_url": "https://stripe.com",
-        "company_profile": {
-          "company_name": "Stripe",
-          "industry": "Fintech",
-          "products": [
-            "Payments processing",
-            "Revenue operations management",
-            "Business model launching",
-            "Fraud prevention tools",
-            "Billing and invoicing solutions"
-          ],
-          "mission": "Our mission is to increase the GDP of the internet.",
-          "employee_count": "1000-5000",
-          "headquarters": "San Francisco, USA",
-          "founded_year": 2010,
-          "key_features": [
-            "Developer-friendly API",
-            "Global payment acceptance",
-            "Comprehensive revenue management tools",
-            "Customizable checkout experiences",
-            "Robust fraud detection mechanisms"
-          ]
-        },
-        "requestId": "02995974-0d3c-49c0-mk2jj0ep-2r3o0iyy"
-      }
-    }
-  }
-}
-[00:06:02.301] Browser LOG     🟡 Workflow Status: success
-[00:06:02.301] Browser LOG     🟡 Raw Result: {"company_profile":{"company_name":"Stripe","employee_count":"1000-5000","founded_year":2010,"headquarters":"San Francisco, USA","industry":"Fintech","key_features":["Developer-friendly API","Global payment acceptance","Comprehensive revenue management tools","Customizable checkout experiences","Robust fraud detection mechanisms"],"mission":"Our mission is to increase the GDP of the internet.","products":["Payments processing","Revenue operations management","Business model launching","Fraud prevention tools","Billing and invoicing solutions"]},"requestId":"02995974-0d3c-49c0-mk2jj0ep-2r3o0iyy","website_url":"https://stripe.com"}
-[00:06:02.301] Browser LOG     🟢 Parsed Result: {
-  "website_url": "https://stripe.com",
-  "company_profile": {
-    "company_name": "Stripe",
-    "industry": "Fintech",
-    "products": [
-      "Payments processing",
-      "Revenue operations management",
-      "Business model launching",
-      "Fraud prevention tools",
-      "Billing and invoicing solutions"
-    ],
-    "mission": "Our mission is to increase the GDP of the internet.",
-    "employee_count": "1000-5000",
-    "headquarters": "San Francisco, USA",
-    "founded_year": 2010,
-    "key_features": [
-      "Developer-friendly API",
-      "Global payment acceptance",
-      "Comprehensive revenue management tools",
-      "Customizable checkout experiences",
-      "Robust fraud detection mechanisms"
-    ]
-  },
-  "requestId": "02995974-0d3c-49c0-mk2jj0ep-2r3o0iyy"
-}
-[00:06:02.301] Browser LOG     ♻️ Retrieved existing user ID: 83f67387-7766-4117-9539-ff2bc90bdaf4
-[00:06:02.301] Browser LOG     👤 User created with persistent ID: {"email":"leader@stripe.com","role":"trainer","userId":"83f67387-7766-4117-9539-ff2bc90bdaf4"}
-[00:06:02.301] Browser LOG     🔵 Lamatic API Request: {"endpoint":"https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql","variables":"{\n  \"workflowId\": \"01e84485-b896-437d-91ce-2665329acad1\",\n  \"company_profile_company_name\": \"Stripe\",\n  \"company_profile_industry\": \"Fintech\",\n  \"company_profile_products\": [\n    \"Payments processing\",\n    \"Revenue operations management\",\n    \"Business model launching\",\n    \"Fraud prevention tools\",\n    \"Billing and invoicing solutions\"\n  ],\n  \"company_profile_mission\": \"Our mission is to increase the GDP of the internet.\",\n  \"company_profile_employee_count\": \"1000-5000\",\n  \"company_profile_headquarters\": \"San Francisco, USA\",\n  \"company_profile_founded_year\": \"2010\",\n  \"company_profile_key_features\": [\n    \"Developer-friendly API\",\n    \"Global payment acceptance\",\n    \"Comprehensive revenue management tools\",\n    \"Customizable checkout experiences\",\n    \"Robust fraud detection mechanisms\"\n  ],\n  \"user_role\": \"trainer\",\n  \"user_goals\": \"Want to increase the sales of the company\",\n  \"planning_period\": \"Q1 2026\",\n  \"website_data\": \"\"\n}","workflowId":"01e84485-b896-437d-91ce-2665329acad1"}
-[00:06:15.337] Browser LOG     🟢 Lamatic API Response: {
-  "data": {
-    "executeWorkflow": {
-      "status": "success",
-      "result": {
-        "success": true,
-        "okr_plan": {
-          "strategic_narrative": "As a trainer at Stripe, your role is pivotal in fostering the skills and knowledge that empower our sales team to effectively promote and sell our diverse array of fintech solutions. By enhancing sales competencies, you directly contribute to Stripe's mission of increasing the GDP of the internet. In Q1 2026, your focus will be on equipping our salesforce with the advanced skills needed to navigate complex client needs and leverage our advanced payment processing, revenue operations management, and fraud prevention tools more effectively. By doing so, you're ensuring that our products not only reach more potential clients but also become indispensable to their operations, thus enhancing sales and, consequently, increasing internet GDP.\\n\\nYour priorities this quarter will include developing comprehensive training programs that address both the technical aspects of our products and the broader market trends influencing client decision-making. By prioritizing skill enhancement and market understanding, your efforts will support Stripe's growth by enabling the sales team to achieve and exceed their targets, ultimately leading to increased sales and market share. This strategic focus aligns with the company's overall mission by ensuring our innovative solutions accelerate market growth and client success.\\n\\nThe OKRs established will serve as a roadmap to drive these priorities forward. By setting clear objectives and measurable key results targeting sales skill enhancement and retention, client success metrics, and broader sales goals, you will help Stripe maintain its competitive edge. Your role as a trainer becomes a key catalyst in translating Stripe's mission into tangible outcomes, such as increased client engagement, improved product adoption, and ultimately, growth in internet-related GDP.",
-          "objectives": [
-            {
-              "title": "Enhance Sales Team's Skills and Knowledge",
-              "description": "Develop and implement comprehensive training programs to enhance sales team's product knowledge and selling skills, pivotal for increasing sales of Stripe's offerings.",
-              "order_index": "1",
-              "key_results": [
-                {
-                  "title": "Increase course completion rates",
-                  "baseline_value": 60,
-                  "target_value": 85,
-                  "unit": "%",
-                  "order_index": "1"
-                },
-                {
-                  "title": "Improve post-training sales performance",
-                  "baseline_value": 15,
-                  "target_value": 20,
-                  "unit": "%",
-                  "order_index": "2"
-                },
-                {
-                  "title": "Expand knowledge assessments completion",
-                  "baseline_value": 50,
-                  "target_value": 75,
-                  "unit": "%",
-                  "order_index": "3"
-                }
-              ]
-            },
-            {
-              "title": "Boost Sales Through Targeted Training Initiatives",
-              "description": "Create and deliver specialized training modules tailored to increase sales effectiveness in high-growth verticals.",
-              "order_index": "2",
-              "key_results": [
-                {
-                  "title": "Increase sales in targeted verticals",
-                  "baseline_value": 10,
-                  "target_value": 15,
-                  "unit": "% increase in deals",
-                  "order_index": "1"
-                },
-                {
-                  "title": "Achieve high satisfaction scores for targeted training",
-                  "baseline_value": 80,
-                  "target_value": 90,
-                  "unit": "%",
-                  "order_index": "2"
-                },
-                {
-                  "title": "Enhance trainer-led workshops attendance",
-                  "baseline_value": 70,
-                  "target_value": 90,
-                  "unit": "%",
-                  "order_index": "3"
-                }
-              ]
-            },
-            {
-              "title": "Elevate Customer Engagement Through Advanced Training",
-              "description": "Implement advanced customer interaction training to improve client's experience and satisfaction with Stripe solutions, driving repeat business and referrals.",
-              "order_index": "3",
-              "key_results": [
-                {
-                  "title": "Increase customer satisfaction score",
-                  "baseline_value": 75,
-                  "target_value": 90,
-                  "unit": "%",
-                  "order_index": "1"
-                },
-                {
-                  "title": "Grow repeat business from trained sales interactions",
-                  "baseline_value": 20,
-                  "target_value": 30,
-                  "unit": "%",
-                  "order_index": "2"
-                },
-                {
-                  "title": "Increase customer training program participation",
-                  "baseline_value": 50,
-                  "target_value": 70,
-                  "unit": "%",
-                  "order_index": "3"
-                }
-              ]
-            }
-          ]
-        },
-        "metadata": {
-          "objectives_count": 3,
-          "key_results_count": 9,
-          "planning_period": "Q1 2026",
-          "user_role": "trainer",
-          "company_name": "Stripe"
-        },
-        "requestId": "f6de0cfc-8d1e-4655-mk2jj583-7rjny779"
-      }
-    }
-  }
-}
-[00:06:15.337] Browser LOG     🟡 Workflow Status: success
-[00:06:15.337] Browser LOG     🟡 Raw Result: {"metadata":{"company_name":"Stripe","key_results_count":9,"objectives_count":3,"planning_period":"Q1 2026","user_role":"trainer"},"okr_plan":{"objectives":[{"description":"Develop and implement comprehensive training programs to enhance sales team's product knowledge and selling skills, pivotal for increasing sales of Stripe's offerings.","key_results":["[Object]","[Object]","[Object]"],"order_index":"1","title":"Enhance Sales Team's Skills and Knowledge"},{"description":"Create and deliver specialized training modules tailored to increase sales effectiveness in high-growth verticals.","key_results":["[Object]","[Object]","[Object]"],"order_index":"2","title":"Boost Sales Through Targeted Training Initiatives"},{"description":"Implement advanced customer interaction training to improve client's experience and satisfaction with Stripe solutions, driving repeat business and referrals.","key_results":["[Object]","[Object]","[Object]"],"order_index":"3","title":"Elevate Customer Engagement Through Advanced Training"}],"strategic_narrative":"As a trainer at Stripe, your role is pivotal in fostering the skills and knowledge that empower our sales team to effectively promote and sell our diverse array of fintech solutions. By enhancing sales competencies, you directly contribute to Stripe's mission of increasing the GDP of the internet. In Q1 2026, your focus will be on equipping our salesforce with the advanced skills needed to navigate complex client needs and leverage our advanced payment processing, revenue operations management, and fraud prevention tools more effectively. By doing so, you're ensuring that our products not only reach more potential clients but also become indispensable to their operations, thus enhancing sales and, consequently, increasing internet GDP.\\n\\nYour priorities this quarter will include developing comprehensive training programs that address both the technical aspects of our products and the broader market trends influencing client decision-making. By prioritizing skill enhancement and market understanding, your efforts will support Stripe's growth by enabling the sales team to achieve and exceed their targets, ultimately leading to increased sales and market share. This strategic focus aligns with the company's overall mission by ensuring our innovative solutions accelerate market growth and client success.\\n\\nThe OKRs established will serve as a roadmap to drive these priorities forward. By setting clear objectives and measurable key results targeting sales skill enhancement and retention, client success metrics, and broader sales goals, you will help Stripe maintain its competitive edge. Your role as a trainer becomes a key catalyst in translating Stripe's mission into tangible outcomes, such as increased client engagement, improved product adoption, and ultimately, growth in internet-related GDP."},"requestId":"f6de0cfc-8d1e-4655-mk2jj583-7rjny779","success":true}
-[00:06:15.337] Browser LOG     🟢 Parsed Result: {
-  "success": true,
-  "okr_plan": {
-    "strategic_narrative": "As a trainer at Stripe, your role is pivotal in fostering the skills and knowledge that empower our sales team to effectively promote and sell our diverse array of fintech solutions. By enhancing sales competencies, you directly contribute to Stripe's mission of increasing the GDP of the internet. In Q1 2026, your focus will be on equipping our salesforce with the advanced skills needed to navigate complex client needs and leverage our advanced payment processing, revenue operations management, and fraud prevention tools more effectively. By doing so, you're ensuring that our products not only reach more potential clients but also become indispensable to their operations, thus enhancing sales and, consequently, increasing internet GDP.\\n\\nYour priorities this quarter will include developing comprehensive training programs that address both the technical aspects of our products and the broader market trends influencing client decision-making. By prioritizing skill enhancement and market understanding, your efforts will support Stripe's growth by enabling the sales team to achieve and exceed their targets, ultimately leading to increased sales and market share. This strategic focus aligns with the company's overall mission by ensuring our innovative solutions accelerate market growth and client success.\\n\\nThe OKRs established will serve as a roadmap to drive these priorities forward. By setting clear objectives and measurable key results targeting sales skill enhancement and retention, client success metrics, and broader sales goals, you will help Stripe maintain its competitive edge. Your role as a trainer becomes a key catalyst in translating Stripe's mission into tangible outcomes, such as increased client engagement, improved product adoption, and ultimately, growth in internet-related GDP.",
-    "objectives": [
-      {
-        "title": "Enhance Sales Team's Skills and Knowledge",
-        "description": "Develop and implement comprehensive training programs to enhance sales team's product knowledge and selling skills, pivotal for increasing sales of Stripe's offerings.",
-        "order_index": "1",
-        "key_results": [
-          {
-            "title": "Increase course completion rates",
-            "baseline_value": 60,
-            "target_value": 85,
-            "unit": "%",
-            "order_index": "1"
-          },
-          {
-            "title": "Improve post-training sales performance",
-            "baseline_value": 15,
-            "target_value": 20,
-            "unit": "%",
-            "order_index": "2"
-          },
-          {
-            "title": "Expand knowledge assessments completion",
-            "baseline_value": 50,
-            "target_value": 75,
-            "unit": "%",
-            "order_index": "3"
-          }
-        ]
-      },
-      {
-        "title": "Boost Sales Through Targeted Training Initiatives",
-        "description": "Create and deliver specialized training modules tailored to increase sales effectiveness in high-growth verticals.",
-        "order_index": "2",
-        "key_results": [
-          {
-            "title": "Increase sales in targeted verticals",
-            "baseline_value": 10,
-            "target_value": 15,
-            "unit": "% increase in deals",
-            "order_index": "1"
-          },
-          {
-            "title": "Achieve high satisfaction scores for targeted training",
-            "baseline_value": 80,
-            "target_value": 90,
-            "unit": "%",
-            "order_index": "2"
-          },
-          {
-            "title": "Enhance trainer-led workshops attendance",
-            "baseline_value": 70,
-            "target_value": 90,
-            "unit": "%",
-            "order_index": "3"
-          }
-        ]
-      },
-      {
-        "title": "Elevate Customer Engagement Through Advanced Training",
-        "description": "Implement advanced customer interaction training to improve client's experience and satisfaction with Stripe solutions, driving repeat business and referrals.",
-        "order_index": "3",
-        "key_results": [
-          {
-            "title": "Increase customer satisfaction score",
-            "baseline_value": 75,
-            "target_value": 90,
-            "unit": "%",
-            "order_index": "1"
-          },
-          {
-            "title": "Grow repeat business from trained sales interactions",
-            "baseline_value": 20,
-            "target_value": 30,
-            "unit": "%",
-            "order_index": "2"
-          },
-          {
-            "title": "Increase customer training program participation",
-            "baseline_value": 50,
-            "target_value": 70,
-            "unit": "%",
-            "order_index": "3"
-          }
-        ]
-      }
-    ]
-  },
-  "metadata": {
-    "objectives_count": 3,
-    "key_results_count": 9,
-    "planning_period": "Q1 2026",
-    "user_role": "trainer",
-    "company_name": "Stripe"
-  },
-  "requestId": "f6de0cfc-8d1e-4655-mk2jj583-7rjny779"
-}
-[00:06:15.337] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives type: object
-[00:06:15.337] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives: [{"description":"Develop and implement comprehensive training programs to enhance sales team's product knowledge and selling skills, pivotal for increasing sales of Stripe's offerings.","key_results":[{"baseline_value":60,"order_index":"1","target_value":85,"title":"Increase course completion rates","unit":"%"},{"baseline_value":15,"order_index":"2","target_value":20,"title":"Improve post-training sales performance","unit":"%"},{"baseline_value":50,"order_index":"3","target_value":75,"title":"Expand knowledge assessments completion","unit":"%"}],"order_index":"1","title":"Enhance Sales Team's Skills and Knowledge"},{"description":"Create and deliver specialized training modules tailored to increase sales effectiveness in high-growth verticals.","key_results":[{"baseline_value":10,"order_index":"1","target_value":15,"title":"Increase sales in targeted verticals","unit":"% increase in deals"},{"baseline_value":80,"order_index":"2","target_value":90,"title":"Achieve high satisfaction scores for targeted training","unit":"%"},{"baseline_value":70,"order_index":"3","target_value":90,"title":"Enhance trainer-led workshops attendance","unit":"%"}],"order_index":"2","title":"Boost Sales Through Targeted Training Initiatives"},{"description":"Implement advanced customer interaction training to improve client's experience and satisfaction with Stripe solutions, driving repeat business and referrals.","key_results":[{"baseline_value":75,"order_index":"1","target_value":90,"title":"Increase customer satisfaction score","unit":"%"},{"baseline_value":20,"order_index":"2","target_value":30,"title":"Grow repeat business from trained sales interactions","unit":"%"},{"baseline_value":50,"order_index":"3","target_value":70,"title":"Increase customer training program participation","unit":"%"}],"order_index":"3","title":"Elevate Customer Engagement Through Advanced Training"}]
-[00:06:15.337] Browser LOG     💾 Saving OKRs to database with payload: {"company_name":"Stripe","objectives_count":3,"planning_period":"Q1 2026","user_email":"leader@stripe.com","user_id":"83f67387-7766-4117-9539-ff2bc90bdaf4","user_name":"trainer","user_role":"trainer"}
-[00:06:15.337] Browser LOG     🔵 Lamatic API Request: {"endpoint":"https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql","variables":"{\n  \"workflowId\": \"c2c6798f-da4c-4b86-a0c4-b9f19e957ec0\",\n  \"user_id\": \"83f67387-7766-4117-9539-ff2bc90bdaf4\",\n  \"user_email\": \"leader@stripe.com\",\n  \"user_name\": \"trainer\",\n  \"user_role\": \"trainer\",\n  \"website_url\": \"https://stripe.com\",\n  \"company_name\": \"Stripe\",\n  \"planning_period\": \"Q1 2026\",\n  \"okr_plan_strategic_narrative\": \"As a trainer at Stripe, your role is pivotal in fostering the skills and knowledge that empower our sales team to effectively promote and sell our diverse array of fintech solutions. By enhancing sales competencies, you directly contribute to Stripe's mission of increasing the GDP of the internet. In Q1 2026, your focus will be on equipping our salesforce with the advanced skills needed to navigate complex client needs and leverage our advanced payment processing, revenue operations management, and fraud prevention tools more effectively. By doing so, you're ensuring that our products not only reach more potential clients but also become indispensable to their operations, thus enhancing sales and, consequently, increasing internet GDP.\\\\n\\\\nYour priorities this quarter will include developing comprehensive training programs that address both the technical aspects of our products and the broader market trends influencing client decision-making. By prioritizing skill enhancement and market understanding, your efforts will support Stripe's growth by enabling the sales team to achieve and exceed their targets, ultimately leading to increased sales and market share. This strategic focus aligns with the company's overall mission by ensuring our innovative solutions accelerate market growth and client success.\\\\n\\\\nThe OKRs established will serve as a roadmap to drive these priorities forward. By setting clear objectives and measurable key results targeting sales skill enhancement and retention, client success metrics, and broader sales goals, you will help Stripe maintain its competitive edge. Your role as a trainer becomes a key catalyst in translating Stripe's mission into tangible outcomes, such as increased client engagement, improved product adoption, and ultimately, growth in internet-related GDP.\",\n  \"okr_plan_objectives\": [\n    {\n      \"title\": \"Enhance Sales Team's Skills and Knowledge\",\n      \"description\": \"Develop and implement comprehensive training programs to enhance sales team's product knowledge and selling skills, pivotal for increasing sales of Stripe's offerings.\",\n      \"order_index\": \"1\",\n      \"key_results\": [\n        {\n          \"title\": \"Increase course completion rates\",\n          \"baseline_value\": 60,\n          \"target_value\": 85,\n          \"unit\": \"%\",\n          \"order_index\": \"1\"\n        },\n        {\n          \"title\": \"Improve post-training sales performance\",\n          \"baseline_value\": 15,\n          \"target_value\": 20,\n          \"unit\": \"%\",\n          \"order_index\": \"2\"\n        },\n        {\n          \"title\": \"Expand knowledge assessments completion\",\n          \"baseline_value\": 50,\n          \"target_value\": 75,\n          \"unit\": \"%\",\n          \"order_index\": \"3\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Boost Sales Through Targeted Training Initiatives\",\n      \"description\": \"Create and deliver specialized training modules tailored to increase sales effectiveness in high-growth verticals.\",\n      \"order_index\": \"2\",\n      \"key_results\": [\n        {\n          \"title\": \"Increase sales in targeted verticals\",\n          \"baseline_value\": 10,\n          \"target_value\": 15,\n          \"unit\": \"% increase in deals\",\n          \"order_index\": \"1\"\n        },\n        {\n          \"title\": \"Achieve high satisfaction scores for targeted training\",\n          \"baseline_value\": 80,\n          \"target_value\": 90,\n          \"unit\": \"%\",\n          \"order_index\": \"2\"\n        },\n        {\n          \"title\": \"Enhance trainer-led workshops attendance\",\n          \"baseline_value\": 70,\n          \"target_value\": 90,\n          \"unit\": \"%\",\n          \"order_index\": \"3\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Elevate Customer Engagement Through Advanced Training\",\n      \"description\": \"Implement advanced customer interaction training to improve client's experience and satisfaction with Stripe solutions, driving repeat business and referrals.\",\n      \"order_index\": \"3\",\n      \"key_results\": [\n        {\n          \"title\": \"Increase customer satisfaction score\",\n          \"baseline_value\": 75,\n          \"target_value\": 90,\n          \"unit\": \"%\",\n          \"order_index\": \"1\"\n        },\n        {\n          \"title\": \"Grow repeat business from trained sales interactions\",\n          \"baseline_value\": 20,\n          \"target_value\": 30,\n          \"unit\": \"%\",\n          \"order_index\": \"2\"\n        },\n        {\n          \"title\": \"Increase customer training program participation\",\n          \"baseline_value\": 50,\n          \"target_value\": 70,\n          \"unit\": \"%\",\n          \"order_index\": \"3\"\n        }\n      ]\n    }\n  ]\n}","workflowId":"c2c6798f-da4c-4b86-a0c4-b9f19e957ec0"}
-[00:06:18.089] Browser LOG     🟢 Lamatic API Response: {
-  "data": {
-    "executeWorkflow": {
-      "status": "success",
-      "result": {
-        "success": true,
-        "message": "Leader user created and OKRs saved successfully!",
-        "okr_id": "44a0e249-debe-4b1f-bf2d-c995b1a1091e",
-        "user_id": "83f67387-7766-4117-9539-ff2bc90bdaf4",
-        "website_url": "https://stripe.com",
-        "company_name": "Stripe",
-        "requestId": "dff97488-4ed9-4991-mk2jjf8k-kpkek5k4"
-      }
-    }
-  }
-}
-[00:06:18.089] Browser LOG     🟡 Workflow Status: success
-[00:06:18.089] Browser LOG     🟡 Raw Result: {"company_name":"Stripe","message":"Leader user created and OKRs saved successfully!","okr_id":"44a0e249-debe-4b1f-bf2d-c995b1a1091e","requestId":"dff97488-4ed9-4991-mk2jjf8k-kpkek5k4","success":true,"user_id":"83f67387-7766-4117-9539-ff2bc90bdaf4","website_url":"https://stripe.com"}
-[00:06:18.089] Browser LOG     🟢 Parsed Result: {
-  "success": true,
-  "message": "Leader user created and OKRs saved successfully!",
-  "okr_id": "44a0e249-debe-4b1f-bf2d-c995b1a1091e",
-  "user_id": "83f67387-7766-4117-9539-ff2bc90bdaf4",
-  "website_url": "https://stripe.com",
-  "company_name": "Stripe",
-  "requestId": "dff97488-4ed9-4991-mk2jjf8k-kpkek5k4"
-}
-[00:06:18.089] Browser LOG     ✅ OKRs saved to database: {"company_name":"Stripe","message":"Leader user created and OKRs saved successfully!","okr_id":"44a0e249-debe-4b1f-bf2d-c995b1a1091e","requestId":"dff97488-4ed9-4991-mk2jjf8k-kpkek5k4","success":true,"user_id":"83f67387-7766-4117-9539-ff2bc90bdaf4","website_url":"https://stripe.com"}
-[00:06:18.089] Browser LOG     🎉 Database save successful! Check Supabase for user_id: 83f67387-7766-4117-9539-ff2bc90bdaf4
-[00:06:21.379] Server  LOG     [REMINDER_SETTINGS] API called
-[00:06:21.380] Server  LOG     [REMINDER_SETTINGS] Request body: {}
-[00:06:21.380] Server  LOG     [REMINDER_SETTINGS] Environment check: {}
-[00:06:22.227] Server  LOG     [REMINDER_SETTINGS] Successfully updated for user: "83f67387-7766-4117-9539-ff2bc90bdaf4"
-[00:06:22.228] Server  LOG     [REMINDER_SETTINGS] Updated data: [{...}]
-[00:06:37.436] Server  LOG     [REMINDER_SETTINGS] API called
-[00:06:37.438] Server  LOG     [REMINDER_SETTINGS] Request body: {}
-[00:06:37.439] Server  LOG     [REMINDER_SETTINGS] Environment check: {}
-[00:06:37.852] Server  LOG     [REMINDER_SETTINGS] Successfully updated for user: "83f67387-7766-4117-9539-ff2bc90bdaf4"
-[00:06:37.853] Server  LOG     [REMINDER_SETTINGS] Updated data: [{...}]
-[00:20:51.599] Server  LOG      ✓ Compiled in 63ms
+[00:00:00.603] Server  LOG      ✓ Ready in 442ms
+[00:00:12.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.984] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:12.984] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/generate","route":"/generate"}
+[00:00:12.984] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/generate color: rgb(120, 120, 120) color: inherit {"dp":"/generate","o":"http://localhost:3000/generate","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704135182}
+[00:00:34.080] Browser LOG     ♻️ Retrieved existing user ID: 72dd80d8-7571-4212-8dad-1ef3fc1d8997
+[00:00:34.080] Browser LOG     👤 User created with persistent ID: {"email":"leader@www.intel.com","role":"CEO of the company","userId":"72dd80d8-7571-4212-8dad-1ef3fc1d8997"}
+[00:00:47.334] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives type: object
+[00:00:47.334] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives: [{"description":"Enhancing our market presence to drive sales growth and establish a dominant position in emerging markets.","key_results":[{"baseline_value":2000000000,"order_index":"1","target_value":2800000000,"title":"Increase international sales revenue by 40%","unit":"$"},{"baseline_value":0,"order_index":"2","target_value":5,"title":"Establish 5 new strategic partnerships in emerging markets","unit":"partnerships"},{"baseline_value":500000000,"order_index":"3","target_value":675000000,"title":"Grow market share in Asia by 35%","unit":"$"}],"order_index":"1","title":"Expand Global Market Presence"},{"description":"Accelerating innovation to create advanced products that meet future technology needs and drive sales increases.","key_results":[{"baseline_value":0,"order_index":"1","target_value":3,"title":"Launch 3 new products in the AI solutions sector","unit":"products"},{"baseline_value":100000000,"order_index":"2","target_value":130000000,"title":"Increase R&D investment by 30%","unit":"$"},{"baseline_value":400000000,"order_index":"3","target_value":580000000,"title":"Achieve 45% growth in high-performance GPU sales","unit":"$"}],"order_index":"2","title":"Drive Innovation in Product Development"},{"description":"Improving internal processes to streamline operations, reduce costs, and boost profitability.","key_results":[{"baseline_value":100,"order_index":"1","target_value":80,"title":"Reduce production costs by 20% per unit","unit":"$"},{"baseline_value":1000000,"order_index":"2","target_value":1350000,"title":"Increase supply chain efficiency by 35%","unit":"units processed"},{"baseline_value":10,"order_index":"3","target_value":7,"title":"Improve time-to-market for new products by 30%","unit":"months"}],"order_index":"3","title":"Enhance Operational Efficiency"}]
+[00:00:47.334] Browser LOG     💾 Saving OKRs to database with payload: {"company_name":"Intel Corporation","objectives_count":3,"planning_period":"H1 2026","user_email":"leader@www.intel.com","user_id":"72dd80d8-7571-4212-8dad-1ef3fc1d8997","user_name":"company","user_role":"CEO of the company"}
+[00:00:50.287] Browser LOG     ✅ OKRs saved to database: {"company_name":"Intel Corporation","message":"Leader user created and OKRs saved successfully!","okr_id":"33e783fc-9460-491d-9a8f-3914f721976e","requestId":"5118dfab-dc8b-44f1-mk2lf6rn-61xe4o11","success":true,"user_id":"72dd80d8-7571-4212-8dad-1ef3fc1d8997","website_url":"https://www.intel.com/"}
+[00:00:50.287] Browser LOG     🎉 Database save successful! Check Supabase for user_id: 72dd80d8-7571-4212-8dad-1ef3fc1d8997
+[00:00:51.769] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/edit color: rgb(120, 120, 120) color: inherit {"dp":"/edit","o":"http://localhost:3000/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704173962}
+[00:01:20.501] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704202696}
+[00:02:19.809] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:20.487] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:20.487] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/invite/invite_rb9dbrm1rjac3dcd9h886","route":"/invite/[token]"}
+[00:02:20.487] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/invite/invite_rb9dbrm1rjac3dcd9h886 color: rgb(120, 120, 120) color: inherit {"dp":"/invite/[token]","o":"http://localhost:3000/invite/invite_rb9dbrm1rjac3dcd9h886","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704262685}
+[00:02:29.298] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704271496}
+[00:04:40.103] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.109] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.113] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.114] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.120] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.121] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.122] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.122] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.124] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.126] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.127] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.128] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.130] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.132] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.133] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.134] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.135] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.135] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.136] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.136] Server  ERROR    ⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:40.138] Server  LOG      ✓ Compiled in 162ms
+[00:04:40.241] Browser ERROR   ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:40.241] Browser ERROR   ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve './team-member-dashboard'
+  4 | import { useOKR } from "@/lib/okr-context"
+  5 | import { Screen4Dashboard } from "@/components/okr/screen-4-dashboard"
+> 6 | import TeamMemberDashboard from "./team-member-dashboard"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function DashboardPage() {
+  9 |   const { leaderOKRs, currentUser } = useOKR()
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:17.360] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:17.537] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:06:17.537] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:06:17.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704499726}
+[00:06:18.869] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704500984}
+[00:06:18.869] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/generate color: rgb(120, 120, 120) color: inherit {"dp":"/generate","o":"http://localhost:3000/generate","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704501043}
+[00:06:28.283] Browser LOG     ♻️ Retrieved existing user ID: 72dd80d8-7571-4212-8dad-1ef3fc1d8997
+[00:06:28.283] Browser LOG     👤 User created with persistent ID: {"email":"leader@stripe.com","role":"trainer","userId":"72dd80d8-7571-4212-8dad-1ef3fc1d8997"}
+[00:07:00.604] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives type: object
+[00:07:00.604] Browser LOG     🔍 DEBUG - okrData.okr_plan.objectives: [{"description":"Equip the sales team with comprehensive knowledge of Stripe's suite of financial products to increase sales effectiveness.","key_results":[{"baseline_value":20,"order_index":"1","target_value":30,"title":"Conduct comprehensive training sessions on Stripe products","unit":"sessions"},{"baseline_value":70,"order_index":"2","target_value":91,"title":"Increase product knowledge test scores","unit":"% average score"},{"baseline_value":15,"order_index":"3","target_value":22,"title":"Implement role-play scenarios to improve pitching skills","unit":"scenarios"}],"order_index":"1","title":"Enhance Sales Team Expertise"},{"description":"Increase the conversion rates of sales pitches through targeted training and strategy refinement.","key_results":[{"baseline_value":25,"order_index":"1","target_value":37,"title":"Boost average sales conversion rate","unit":"%"},{"baseline_value":50,"order_index":"2","target_value":35,"title":"Reduce time to close deals","unit":"days"},{"baseline_value":60,"order_index":"3","target_value":78,"title":"Increase follow-up engagement post-training","unit":"% follow-up activity"}],"order_index":"2","title":"Improve Sales Conversion Rates"},{"description":"Introduce and train advanced selling techniques and innovative practices to enhance the team's sales approach.","key_results":[{"baseline_value":5,"order_index":"1","target_value":7,"title":"Launch advanced sales workshops","unit":"workshops"},{"baseline_value":3,"order_index":"2","target_value":5,"title":"Adopt new sales methodologies based on industry trends","unit":"methodologies"},{"baseline_value":82,"order_index":"3","target_value":95,"title":"Achieve feedback score improvement from sales team","unit":"% satisfaction"}],"order_index":"3","title":"Develop Advanced Selling Techniques"}]
+[00:07:00.604] Browser LOG     💾 Saving OKRs to database with payload: {"company_name":"Stripe","objectives_count":3,"planning_period":"H1 2026","user_email":"leader@stripe.com","user_id":"72dd80d8-7571-4212-8dad-1ef3fc1d8997","user_name":"trainer","user_role":"trainer"}
+[00:07:03.047] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/edit color: rgb(120, 120, 120) color: inherit {"dp":"/edit","o":"http://localhost:3000/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704545241}
+[00:07:03.554] Browser LOG     ✅ OKRs saved to database: {"company_name":"Stripe","message":"Leader user created and OKRs saved successfully!","okr_id":"3e1c5dea-1ca7-4d0c-baf4-4230da11490d","requestId":"41baf0b9-70f1-4fa1-mk2ln6rz-78vbztwp","success":true,"user_id":"72dd80d8-7571-4212-8dad-1ef3fc1d8997","website_url":"https://stripe.com"}
+[00:07:03.554] Browser LOG     🎉 Database save successful! Check Supabase for user_id: 72dd80d8-7571-4212-8dad-1ef3fc1d8997
+[00:07:14.680] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704556814}
+[00:11:37.206] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/edit color: rgb(120, 120, 120) color: inherit {"dp":"/edit","o":"http://localhost:3000/edit","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767704819399}

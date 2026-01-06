@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "next-themes"
+import { Providers } from "@/components/providers"
 import "./globals.css"
 
 const _inter = Inter({ subsets: ["latin"] })
@@ -34,7 +35,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          {children}
+          <Providers>{children}</Providers>
         </ThemeProvider>
         <Analytics />
       </body>
