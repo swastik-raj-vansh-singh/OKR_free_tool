@@ -4139,33 +4139,32 @@ __turbopack_context__.s([
     "saveOKRsToDatabase",
     ()=>saveOKRsToDatabase,
     "sendInvitationEmails",
-    ()=>sendInvitationEmails
+    ()=>sendInvitationEmails,
+    "sendOKRReminders",
+    ()=>sendOKRReminders
 ]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 // ============================================================================
-// Configuration
+// Configuration - Load from environment variables for security
 // ============================================================================
 const LAMATIC_CONFIG = {
-    endpoint: "https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql",
-    apiKey: "lt-3aad244c2dd0fc2cb0b551b9e840b3ef",
-    projectId: "756bacca-c2d3-4a51-8812-129b318ef010",
+    endpoint: ("TURBOPACK compile-time value", "https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql") || "",
+    apiKey: ("TURBOPACK compile-time value", "lt-3aad244c2dd0fc2cb0b551b9e840b3ef") || "",
+    projectId: ("TURBOPACK compile-time value", "756bacca-c2d3-4a51-8812-129b318ef010") || "",
     workflows: {
-        researchCompany: "8f4c3c15-6ee5-4ca6-b773-926205ded262",
-        generateOKRs: "01e84485-b896-437d-91ce-2665329acad1",
-        regenerateOKRs: "f976102d-479b-4421-a45b-00c45fd8c3c6",
-        saveOKRs: "c2c6798f-da4c-4b86-a0c4-b9f19e957ec0",
-        inviteTeam: "76982f99-ff9b-43e3-b9c5-0fafcab083b5",
-        sendInvites: "f3291ee2-e273-477f-8d57-f8862a523a4f"
+        researchCompany: ("TURBOPACK compile-time value", "8f4c3c15-6ee5-4ca6-b773-926205ded262") || "",
+        generateOKRs: ("TURBOPACK compile-time value", "01e84485-b896-437d-91ce-2665329acad1") || "",
+        regenerateOKRs: ("TURBOPACK compile-time value", "f976102d-479b-4421-a45b-00c45fd8c3c6") || "",
+        saveOKRs: ("TURBOPACK compile-time value", "c2c6798f-da4c-4b86-a0c4-b9f19e957ec0") || "",
+        inviteTeam: ("TURBOPACK compile-time value", "76982f99-ff9b-43e3-b9c5-0fafcab083b5") || "",
+        sendInvites: ("TURBOPACK compile-time value", "f3291ee2-e273-477f-8d57-f8862a523a4f") || "",
+        sendReminders: ("TURBOPACK compile-time value", "f9ef7658-d7fa-4df5-9e16-119f0ec89fcb") || ""
     }
 };
 // ============================================================================
 // GraphQL Client Helpers
 // ============================================================================
 async function fetchLamaticAPI(query, variables) {
-    console.log('🔵 Lamatic API Request:', {
-        endpoint: LAMATIC_CONFIG.endpoint,
-        workflowId: variables.workflowId,
-        variables: JSON.stringify(variables, null, 2)
-    });
     const response = await fetch(LAMATIC_CONFIG.endpoint, {
         method: "POST",
         headers: {
@@ -4180,32 +4179,24 @@ async function fetchLamaticAPI(query, variables) {
     });
     if (!response.ok) {
         const errorText = await response.text();
-        console.error('🔴 Lamatic API Error Response:', errorText);
-        throw new Error(`Lamatic API error: ${response.status} ${response.statusText} - ${errorText}`);
+        throw new Error(`Lamatic API error: ${response.status} ${response.statusText}`);
     }
     const data = await response.json();
-    console.log('🟢 Lamatic API Response:', JSON.stringify(data, null, 2));
     if (data.errors) {
-        console.error('🔴 GraphQL Errors:', data.errors);
         throw new Error(`GraphQL error: ${JSON.stringify(data.errors)}`);
     }
     if (!data.data?.executeWorkflow) {
-        console.error('🔴 Invalid response structure:', data);
         throw new Error("Invalid response from Lamatic API");
     }
     const { status, result } = data.data.executeWorkflow;
-    console.log('🟡 Workflow Status:', status);
-    console.log('🟡 Raw Result:', result);
     if (status !== "success" && status !== "completed") {
         throw new Error(`Workflow execution failed with status: ${status}`);
     }
     // Parse the result string if it's JSON
     try {
         const parsed = typeof result === "string" ? JSON.parse(result) : result;
-        console.log('🟢 Parsed Result:', JSON.stringify(parsed, null, 2));
         return parsed;
     } catch (e) {
-        console.error('🔴 Failed to parse result:', e);
         return result;
     }
 }
@@ -4454,6 +4445,29 @@ async function sendInvitationEmails(input) {
         leader_email: input.leader_email,
         company_name: input.company_name,
         planning_period: input.planning_period
+    };
+    return await fetchLamaticAPI(query, variables);
+}
+async function sendOKRReminders() {
+    const query = `
+    query ExecuteWorkflow(
+      $workflowId: String!
+      $trigger_date: String
+    ) {
+      executeWorkflow(
+        workflowId: $workflowId
+        payload: {
+          trigger_date: $trigger_date
+        }
+      ) {
+        status
+        result
+      }
+    }
+  `;
+    const variables = {
+        workflowId: LAMATIC_CONFIG.workflows.sendReminders,
+        trigger_date: new Date().toISOString()
     };
     return await fetchLamaticAPI(query, variables);
 }
@@ -9358,7 +9372,7 @@ var _s = __turbopack_context__.k.signature();
 const generateId = ()=>Math.random().toString(36).substring(2, 9);
 function Screen4Dashboard() {
     _s();
-    const { leaderOKRs, setLeaderOKRs, companyProfile, weeklyUpdates, addWeeklyUpdate, updateSchedules, addUpdateSchedule, setToastMessage, setCurrentScreen, isLoading, setIsLoading, invites, shareableSummary, planningPeriod } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"])();
+    const { currentUser, leaderOKRs, setLeaderOKRs, companyProfile, weeklyUpdates, addWeeklyUpdate, updateSchedules, addUpdateSchedule, setToastMessage, setCurrentScreen, isLoading, setIsLoading, invites, shareableSummary, planningPeriod } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"])();
     const [showUpdateModal, setShowUpdateModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showScheduleModal, setShowScheduleModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showAgentModal, setShowAgentModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -9439,23 +9453,50 @@ function Screen4Dashboard() {
         setToastMessage("Update saved.");
     };
     const handleCreateSchedule = async ()=>{
+        if (!currentUser?.userId) {
+            setToastMessage("User not authenticated. Please log in.");
+            return;
+        }
         setIsLoading(true);
-        // Simulate API call: POST /api/v1/updateSchedules
-        await new Promise((resolve)=>setTimeout(resolve, 1000));
-        const newSchedule = {
-            scheduleId: generateId(),
-            planId: "plan-1",
-            name: scheduleForm.name,
-            cadence: scheduleForm.cadence,
-            dayOfWeek: scheduleForm.dayOfWeek,
-            timeOfDay: scheduleForm.timeOfDay,
-            participants: [],
-            nextRunAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString()
-        };
-        addUpdateSchedule(newSchedule);
-        setIsLoading(false);
-        setShowScheduleModal(false);
-        setToastMessage(`Update schedule active — next run ${new Date(newSchedule.nextRunAt).toLocaleDateString()}`);
+        try {
+            // Call API to save reminder settings to database
+            const response = await fetch("/api/user/reminder-settings", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    user_id: currentUser.userId,
+                    reminder_enabled: true,
+                    reminder_frequency: scheduleForm.cadence,
+                    reminder_day: scheduleForm.dayOfWeek,
+                    reminder_time: `${scheduleForm.timeOfDay}:00`
+                })
+            });
+            if (!response.ok) {
+                throw new Error("Failed to save reminder settings");
+            }
+            const result = await response.json();
+            // Create local schedule object for UI
+            const newSchedule = {
+                scheduleId: generateId(),
+                planId: "plan-1",
+                name: scheduleForm.name,
+                cadence: scheduleForm.cadence,
+                dayOfWeek: scheduleForm.dayOfWeek,
+                timeOfDay: scheduleForm.timeOfDay,
+                participants: [],
+                nextRunAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString()
+            };
+            addUpdateSchedule(newSchedule);
+            setIsLoading(false);
+            setShowScheduleModal(false);
+            setToastMessage(`Update schedule active — next run ${new Date(newSchedule.nextRunAt).toLocaleDateString()}`);
+        } catch (error) {
+            console.error("Error creating schedule:", error);
+            setIsLoading(false);
+            setToastMessage("Failed to create schedule. Please try again.");
+        }
     };
     const handleDeployAgent = async ()=>{
         if (!agentForm.agentName || !agentForm.dataSource) return;
@@ -9624,7 +9665,7 @@ function Screen4Dashboard() {
                                 children: "Plan vs. Actuals Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 362,
+                                lineNumber: 393,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9637,13 +9678,13 @@ function Screen4Dashboard() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 363,
+                                lineNumber: 394,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 361,
+                        lineNumber: 392,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9657,25 +9698,25 @@ function Screen4Dashboard() {
                                     className: "w-4 h-4 mr-2"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 369,
+                                    lineNumber: 400,
                                     columnNumber: 13
                                 }, this),
                                 "Back to Edit"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 368,
+                            lineNumber: 399,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 367,
+                        lineNumber: 398,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 360,
+                lineNumber: 391,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9696,7 +9737,7 @@ function Screen4Dashboard() {
                                                     children: "Overall Progress"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 381,
+                                                    lineNumber: 412,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9707,13 +9748,13 @@ function Screen4Dashboard() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 382,
+                                                    lineNumber: 413,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 380,
+                                            lineNumber: 411,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9722,18 +9763,18 @@ function Screen4Dashboard() {
                                                 className: "w-6 h-6 text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 385,
+                                                lineNumber: 416,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 384,
+                                            lineNumber: 415,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 379,
+                                    lineNumber: 410,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
@@ -9741,18 +9782,18 @@ function Screen4Dashboard() {
                                     className: "mt-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 388,
+                                    lineNumber: 419,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 378,
+                            lineNumber: 409,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 377,
+                        lineNumber: 408,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -9770,7 +9811,7 @@ function Screen4Dashboard() {
                                                     children: "Team Members"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 395,
+                                                    lineNumber: 426,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9778,13 +9819,13 @@ function Screen4Dashboard() {
                                                     children: invites.length || 0
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 396,
+                                                    lineNumber: 427,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 394,
+                                            lineNumber: 425,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9793,18 +9834,18 @@ function Screen4Dashboard() {
                                                 className: "w-6 h-6 text-accent"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 399,
+                                                lineNumber: 430,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 398,
+                                            lineNumber: 429,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 393,
+                                    lineNumber: 424,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9815,18 +9856,18 @@ function Screen4Dashboard() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 402,
+                                    lineNumber: 433,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 392,
+                            lineNumber: 423,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 391,
+                        lineNumber: 422,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -9844,7 +9885,7 @@ function Screen4Dashboard() {
                                                     children: "Updates This Week"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 411,
+                                                    lineNumber: 442,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9852,13 +9893,13 @@ function Screen4Dashboard() {
                                                     children: weeklyUpdates.length
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 412,
+                                                    lineNumber: 443,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 410,
+                                            lineNumber: 441,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9867,18 +9908,18 @@ function Screen4Dashboard() {
                                                 className: "w-6 h-6 text-chart-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 415,
+                                                lineNumber: 446,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 414,
+                                            lineNumber: 445,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 409,
+                                    lineNumber: 440,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9886,24 +9927,24 @@ function Screen4Dashboard() {
                                     children: updateSchedules.length > 0 ? `Next scheduled: ${updateSchedules[0].dayOfWeek}` : "No schedule set"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 418,
+                                    lineNumber: 449,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 408,
+                            lineNumber: 439,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 407,
+                        lineNumber: 438,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 376,
+                lineNumber: 407,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tabs"], {
@@ -9917,7 +9958,7 @@ function Screen4Dashboard() {
                                 children: "Objectives"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 428,
+                                lineNumber: 459,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
@@ -9925,13 +9966,13 @@ function Screen4Dashboard() {
                                 children: "Activity Feed"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 429,
+                                lineNumber: 460,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 427,
+                        lineNumber: 458,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -9956,7 +9997,7 @@ function Screen4Dashboard() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 438,
+                                                            lineNumber: 469,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -9964,13 +10005,13 @@ function Screen4Dashboard() {
                                                             children: objective.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 439,
+                                                            lineNumber: 470,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 437,
+                                                    lineNumber: 468,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9984,7 +10025,7 @@ function Screen4Dashboard() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 442,
+                                                            lineNumber: 473,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
@@ -9992,24 +10033,24 @@ function Screen4Dashboard() {
                                                             className: "w-24"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 443,
+                                                            lineNumber: 474,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 441,
+                                                    lineNumber: 472,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 436,
+                                            lineNumber: 467,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 435,
+                                        lineNumber: 466,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -10029,7 +10070,7 @@ function Screen4Dashboard() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 458,
+                                                            lineNumber: 489,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10040,7 +10081,7 @@ function Screen4Dashboard() {
                                                                     children: kr.text
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 460,
+                                                                    lineNumber: 491,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10057,7 +10098,7 @@ function Screen4Dashboard() {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 462,
+                                                                            lineNumber: 493,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
@@ -10065,19 +10106,19 @@ function Screen4Dashboard() {
                                                                             className: "w-32 h-1.5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 465,
+                                                                            lineNumber: 496,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 461,
+                                                                    lineNumber: 492,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 459,
+                                                            lineNumber: 490,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10091,14 +10132,14 @@ function Screen4Dashboard() {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 471,
+                                                                            lineNumber: 502,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         "On track"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 470,
+                                                                    lineNumber: 501,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 status === "at-risk" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -10109,14 +10150,14 @@ function Screen4Dashboard() {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 477,
+                                                                            lineNumber: 508,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         "At risk"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 476,
+                                                                    lineNumber: 507,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 status === "off-track" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -10127,14 +10168,14 @@ function Screen4Dashboard() {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                            lineNumber: 483,
+                                                                            lineNumber: 514,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         "Off track"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 482,
+                                                                    lineNumber: 513,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10144,41 +10185,41 @@ function Screen4Dashboard() {
                                                                     children: "Update"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 487,
+                                                                    lineNumber: 518,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 468,
+                                                            lineNumber: 499,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, kr.krId, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 454,
+                                                    lineNumber: 485,
                                                     columnNumber: 23
                                                 }, this);
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 448,
+                                            lineNumber: 479,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 447,
+                                        lineNumber: 478,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, objective.objectiveId, true, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 434,
+                                lineNumber: 465,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 432,
+                        lineNumber: 463,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -10199,12 +10240,12 @@ function Screen4Dashboard() {
                                                         className: "w-4 h-4 text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 512,
+                                                        lineNumber: 543,
                                                         columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 511,
+                                                    lineNumber: 542,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10218,13 +10259,13 @@ function Screen4Dashboard() {
                                                                     children: update.actualValue
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 516,
+                                                                    lineNumber: 547,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 515,
+                                                            lineNumber: 546,
                                                             columnNumber: 25
                                                         }, this),
                                                         update.notes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10232,7 +10273,7 @@ function Screen4Dashboard() {
                                                             children: update.notes
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 518,
+                                                            lineNumber: 549,
                                                             columnNumber: 42
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10240,24 +10281,24 @@ function Screen4Dashboard() {
                                                             children: new Date(update.createdAt).toLocaleString()
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 519,
+                                                            lineNumber: 550,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 514,
+                                                    lineNumber: 545,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, update.updateId, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 510,
+                                            lineNumber: 541,
                                             columnNumber: 21
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 508,
+                                    lineNumber: 539,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center py-8 text-muted-foreground",
@@ -10266,41 +10307,41 @@ function Screen4Dashboard() {
                                             className: "w-8 h-8 mx-auto mb-2 opacity-50"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 528,
+                                            lineNumber: 559,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "No updates yet. Start tracking progress by updating your key results."
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 529,
+                                            lineNumber: 560,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 527,
+                                    lineNumber: 558,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 506,
+                                lineNumber: 537,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 505,
+                            lineNumber: 536,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 504,
+                        lineNumber: 535,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 426,
+                lineNumber: 457,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10314,14 +10355,14 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 540,
+                                lineNumber: 571,
                                 columnNumber: 11
                             }, this),
                             "Schedule Updates"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 539,
+                        lineNumber: 570,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10331,14 +10372,14 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 544,
+                                lineNumber: 575,
                                 columnNumber: 11
                             }, this),
                             "Copy Weekly Update"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 543,
+                        lineNumber: 574,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10348,14 +10389,14 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 548,
+                                lineNumber: 579,
                                 columnNumber: 11
                             }, this),
                             "Post to Slack"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 547,
+                        lineNumber: 578,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10366,14 +10407,14 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 552,
+                                lineNumber: 583,
                                 columnNumber: 11
                             }, this),
                             "Share Dashboard Link"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 551,
+                        lineNumber: 582,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
@@ -10389,19 +10430,19 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 558,
+                                            lineNumber: 589,
                                             columnNumber: 15
                                         }, this),
                                         "Export"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 557,
+                                    lineNumber: 588,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 556,
+                                lineNumber: 587,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -10412,12 +10453,12 @@ function Screen4Dashboard() {
                                         children: "Export Format"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 563,
+                                        lineNumber: 594,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 564,
+                                        lineNumber: 595,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -10427,14 +10468,14 @@ function Screen4Dashboard() {
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 566,
+                                                lineNumber: 597,
                                                 columnNumber: 15
                                             }, this),
                                             "Markdown (.md)"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 565,
+                                        lineNumber: 596,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -10444,14 +10485,14 @@ function Screen4Dashboard() {
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 570,
+                                                lineNumber: 601,
                                                 columnNumber: 15
                                             }, this),
                                             "CSV Spreadsheet (.csv)"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 569,
+                                        lineNumber: 600,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -10461,19 +10502,19 @@ function Screen4Dashboard() {
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 574,
+                                                lineNumber: 605,
                                                 columnNumber: 15
                                             }, this),
                                             "JSON Data (.json)"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 573,
+                                        lineNumber: 604,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 577,
+                                        lineNumber: 608,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -10484,26 +10525,26 @@ function Screen4Dashboard() {
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 579,
+                                                lineNumber: 610,
                                                 columnNumber: 15
                                             }, this),
                                             "PDF Document (Coming Soon)"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 578,
+                                        lineNumber: 609,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 562,
+                                lineNumber: 593,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 555,
+                        lineNumber: 586,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10514,20 +10555,20 @@ function Screen4Dashboard() {
                                 className: "w-4 h-4 mr-2"
                             }, void 0, false, {
                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                lineNumber: 588,
+                                lineNumber: 619,
                                 columnNumber: 11
                             }, this),
                             "Deploy Agent to Auto-Track"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                        lineNumber: 584,
+                        lineNumber: 615,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 538,
+                lineNumber: 569,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -10541,20 +10582,20 @@ function Screen4Dashboard() {
                                     children: "Update Progress"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 597,
+                                    lineNumber: 628,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
                                     children: selectedKR?.text
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 598,
+                                    lineNumber: 629,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 596,
+                            lineNumber: 627,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10567,7 +10608,7 @@ function Screen4Dashboard() {
                                             children: "Actual Value"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 602,
+                                            lineNumber: 633,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -10580,13 +10621,13 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 603,
+                                            lineNumber: 634,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 601,
+                                    lineNumber: 632,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10596,7 +10637,7 @@ function Screen4Dashboard() {
                                             children: "Notes"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 611,
+                                            lineNumber: 642,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -10609,13 +10650,13 @@ function Screen4Dashboard() {
                                             rows: 3
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 612,
+                                            lineNumber: 643,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 610,
+                                    lineNumber: 641,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10625,7 +10666,7 @@ function Screen4Dashboard() {
                                             children: "Evidence Link (optional)"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 620,
+                                            lineNumber: 651,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -10638,19 +10679,19 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 621,
+                                            lineNumber: 652,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 619,
+                                    lineNumber: 650,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 600,
+                            lineNumber: 631,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -10661,7 +10702,7 @@ function Screen4Dashboard() {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 630,
+                                    lineNumber: 661,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10672,31 +10713,31 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4 mr-2 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 634,
+                                            lineNumber: 665,
                                             columnNumber: 28
                                         }, this) : null,
                                         "Save Update"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 633,
+                                    lineNumber: 664,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 629,
+                            lineNumber: 660,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                    lineNumber: 595,
+                    lineNumber: 626,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 594,
+                lineNumber: 625,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -10710,20 +10751,20 @@ function Screen4Dashboard() {
                                     children: "Schedule Updates"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 645,
+                                    lineNumber: 676,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
                                     children: "Set up recurring reminders for your team to update progress."
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 646,
+                                    lineNumber: 677,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 644,
+                            lineNumber: 675,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10736,7 +10777,7 @@ function Screen4Dashboard() {
                                             children: "Schedule Name"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 650,
+                                            lineNumber: 681,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -10747,13 +10788,13 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 651,
+                                            lineNumber: 682,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 649,
+                                    lineNumber: 680,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10766,7 +10807,7 @@ function Screen4Dashboard() {
                                                     children: "Cadence"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 658,
+                                                    lineNumber: 689,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -10779,12 +10820,12 @@ function Screen4Dashboard() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                lineNumber: 664,
+                                                                lineNumber: 695,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 663,
+                                                            lineNumber: 694,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -10794,7 +10835,7 @@ function Screen4Dashboard() {
                                                                     children: "Weekly"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 667,
+                                                                    lineNumber: 698,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10802,7 +10843,7 @@ function Screen4Dashboard() {
                                                                     children: "Bi-weekly"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 668,
+                                                                    lineNumber: 699,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10810,25 +10851,25 @@ function Screen4Dashboard() {
                                                                     children: "Monthly"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 669,
+                                                                    lineNumber: 700,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 666,
+                                                            lineNumber: 697,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 659,
+                                                    lineNumber: 690,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 657,
+                                            lineNumber: 688,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10838,7 +10879,7 @@ function Screen4Dashboard() {
                                                     children: "Day"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 674,
+                                                    lineNumber: 705,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -10851,12 +10892,12 @@ function Screen4Dashboard() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
                                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                lineNumber: 680,
+                                                                lineNumber: 711,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 679,
+                                                            lineNumber: 710,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -10866,7 +10907,7 @@ function Screen4Dashboard() {
                                                                     children: "Monday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 683,
+                                                                    lineNumber: 714,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10874,7 +10915,7 @@ function Screen4Dashboard() {
                                                                     children: "Tuesday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 684,
+                                                                    lineNumber: 715,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10882,7 +10923,7 @@ function Screen4Dashboard() {
                                                                     children: "Wednesday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 685,
+                                                                    lineNumber: 716,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10890,7 +10931,7 @@ function Screen4Dashboard() {
                                                                     children: "Thursday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 686,
+                                                                    lineNumber: 717,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -10898,37 +10939,37 @@ function Screen4Dashboard() {
                                                                     children: "Friday"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                                    lineNumber: 687,
+                                                                    lineNumber: 718,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 682,
+                                                            lineNumber: 713,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 675,
+                                                    lineNumber: 706,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 673,
+                                            lineNumber: 704,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 656,
+                                    lineNumber: 687,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 648,
+                            lineNumber: 679,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -10939,7 +10980,7 @@ function Screen4Dashboard() {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 694,
+                                    lineNumber: 725,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -10950,31 +10991,31 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4 mr-2 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 698,
+                                            lineNumber: 729,
                                             columnNumber: 28
                                         }, this) : null,
                                         "Create Schedule"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 697,
+                                    lineNumber: 728,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 693,
+                            lineNumber: 724,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                    lineNumber: 643,
+                    lineNumber: 674,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 642,
+                lineNumber: 673,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -10990,12 +11031,12 @@ function Screen4Dashboard() {
                                         className: "w-8 h-8 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 710,
+                                        lineNumber: 741,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 709,
+                                    lineNumber: 740,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
@@ -11003,7 +11044,7 @@ function Screen4Dashboard() {
                                     children: "Deploy Lamatic Agent"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 712,
+                                    lineNumber: 743,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -11011,13 +11052,13 @@ function Screen4Dashboard() {
                                     children: "Automatically track KR progress by connecting to your data sources."
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 713,
+                                    lineNumber: 744,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 708,
+                            lineNumber: 739,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11030,7 +11071,7 @@ function Screen4Dashboard() {
                                             children: "Agent Name"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 719,
+                                            lineNumber: 750,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -11042,13 +11083,13 @@ function Screen4Dashboard() {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 720,
+                                            lineNumber: 751,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 718,
+                                    lineNumber: 749,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11058,7 +11099,7 @@ function Screen4Dashboard() {
                                             children: "Data Source"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 727,
+                                            lineNumber: 758,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -11073,12 +11114,12 @@ function Screen4Dashboard() {
                                                         placeholder: "Select a connector"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 733,
+                                                        lineNumber: 764,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 732,
+                                                    lineNumber: 763,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -11088,7 +11129,7 @@ function Screen4Dashboard() {
                                                             children: "Google Analytics"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 736,
+                                                            lineNumber: 767,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -11096,7 +11137,7 @@ function Screen4Dashboard() {
                                                             children: "HubSpot"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 737,
+                                                            lineNumber: 768,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -11104,7 +11145,7 @@ function Screen4Dashboard() {
                                                             children: "Salesforce"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 738,
+                                                            lineNumber: 769,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -11112,7 +11153,7 @@ function Screen4Dashboard() {
                                                             children: "Slack"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 739,
+                                                            lineNumber: 770,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -11120,25 +11161,25 @@ function Screen4Dashboard() {
                                                             children: "Snowflake"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 740,
+                                                            lineNumber: 771,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 735,
+                                                    lineNumber: 766,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 728,
+                                            lineNumber: 759,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 726,
+                                    lineNumber: 757,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11150,7 +11191,7 @@ function Screen4Dashboard() {
                                                 className: "w-5 h-5 text-accent shrink-0 mt-0.5"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 746,
+                                                lineNumber: 777,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11160,7 +11201,7 @@ function Screen4Dashboard() {
                                                         children: "Powered by Lamatic"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 748,
+                                                        lineNumber: 779,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -11168,30 +11209,30 @@ function Screen4Dashboard() {
                                                         children: "Your agent will poll data every 15 minutes and automatically update your KR actuals."
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 749,
+                                                        lineNumber: 780,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                lineNumber: 747,
+                                                lineNumber: 778,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 745,
+                                        lineNumber: 776,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 744,
+                                    lineNumber: 775,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 717,
+                            lineNumber: 748,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -11202,7 +11243,7 @@ function Screen4Dashboard() {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 757,
+                                    lineNumber: 788,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -11214,37 +11255,37 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4 mr-2 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 765,
+                                            lineNumber: 796,
                                             columnNumber: 28
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
                                             className: "w-4 h-4 mr-2"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 765,
+                                            lineNumber: 796,
                                             columnNumber: 80
                                         }, this),
                                         "Deploy Agent"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 760,
+                                    lineNumber: 791,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 756,
+                            lineNumber: 787,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                    lineNumber: 707,
+                    lineNumber: 738,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 706,
+                lineNumber: 737,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -11260,12 +11301,12 @@ function Screen4Dashboard() {
                                         className: "w-8 h-8 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                        lineNumber: 777,
+                                        lineNumber: 808,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 776,
+                                    lineNumber: 807,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
@@ -11273,7 +11314,7 @@ function Screen4Dashboard() {
                                     children: "Share Dashboard"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 779,
+                                    lineNumber: 810,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -11281,13 +11322,13 @@ function Screen4Dashboard() {
                                     children: "Share this dashboard with stakeholders for read-only access to your OKR progress."
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 780,
+                                    lineNumber: 811,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 775,
+                            lineNumber: 806,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11301,7 +11342,7 @@ function Screen4Dashboard() {
                                             children: "Shareable Link"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 786,
+                                            lineNumber: 817,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11313,7 +11354,7 @@ function Screen4Dashboard() {
                                                     className: "font-mono text-sm"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 788,
+                                                    lineNumber: 819,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -11328,24 +11369,24 @@ function Screen4Dashboard() {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                        lineNumber: 802,
+                                                        lineNumber: 833,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 793,
+                                                    lineNumber: 824,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 787,
+                                            lineNumber: 818,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 785,
+                                    lineNumber: 816,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11356,7 +11397,7 @@ function Screen4Dashboard() {
                                             children: "Access Details"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 807,
+                                            lineNumber: 838,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -11369,20 +11410,20 @@ function Screen4Dashboard() {
                                                             className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 810,
+                                                            lineNumber: 841,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Read-only access to all objectives and key results"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 811,
+                                                            lineNumber: 842,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 809,
+                                                    lineNumber: 840,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -11392,20 +11433,20 @@ function Screen4Dashboard() {
                                                             className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 814,
+                                                            lineNumber: 845,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Real-time progress updates visible to viewers"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 815,
+                                                            lineNumber: 846,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 813,
+                                                    lineNumber: 844,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -11415,38 +11456,38 @@ function Screen4Dashboard() {
                                                             className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 818,
+                                                            lineNumber: 849,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Link never expires and can be shared multiple times"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                            lineNumber: 819,
+                                                            lineNumber: 850,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                                    lineNumber: 817,
+                                                    lineNumber: 848,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 808,
+                                            lineNumber: 839,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 806,
+                                    lineNumber: 837,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 784,
+                            lineNumber: 815,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -11457,7 +11498,7 @@ function Screen4Dashboard() {
                                     children: "Close"
                                 }, void 0, false, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 825,
+                                    lineNumber: 856,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -11471,41 +11512,41 @@ function Screen4Dashboard() {
                                             className: "w-4 h-4 mr-2"
                                         }, void 0, false, {
                                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                            lineNumber: 835,
+                                            lineNumber: 866,
                                             columnNumber: 15
                                         }, this),
                                         "Copy Link"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                                    lineNumber: 828,
+                                    lineNumber: 859,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                            lineNumber: 824,
+                            lineNumber: 855,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                    lineNumber: 774,
+                    lineNumber: 805,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-                lineNumber: 773,
+                lineNumber: 804,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/okr/screen-4-dashboard.tsx",
-        lineNumber: 358,
+        lineNumber: 389,
         columnNumber: 5
     }, this);
 }
-_s(Screen4Dashboard, "e09K7qSf2hVBruuQUPJgOekOUHE=", false, function() {
+_s(Screen4Dashboard, "/n54Dc4U/bsS3MaHUq2YD7gdx5Y=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$okr$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useOKR"]
     ];

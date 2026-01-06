@@ -74,6 +74,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../app/api/cron/send-okr-reminders/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/cron/send-okr-reminders">> = Specific
+  const handler = {} as typeof import("../../../app/api/cron/send-okr-reminders/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/api/invite/[token]/route.ts
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/invite/[token]">> = Specific
@@ -96,6 +105,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/okr/[userId]">> = Specific
   const handler = {} as typeof import("../../../app/api/okr/[userId]/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/api/user/reminder-settings/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/user/reminder-settings">> = Specific
+  const handler = {} as typeof import("../../../app/api/user/reminder-settings/route.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
