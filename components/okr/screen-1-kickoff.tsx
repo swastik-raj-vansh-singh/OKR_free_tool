@@ -192,11 +192,8 @@ export function Screen1Kickoff() {
         user_role: formData.roleTitle,
         user_goals: formData.goalSummary,
         planning_period: formData.planningPeriod,
-        website_data: "", // Optional additional context
+        website_data: companyData.website_data || "", // Raw markdown from Firecrawl
       })
-
-      console.log('🔍 DEBUG - okrData.okr_plan.objectives type:', typeof okrData.okr_plan.objectives)
-      console.log('🔍 DEBUG - okrData.okr_plan.objectives:', okrData.okr_plan.objectives)
 
       // Transform and store results
       const objectives = transformToObjectives(okrData.okr_plan.objectives)

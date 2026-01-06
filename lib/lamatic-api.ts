@@ -41,6 +41,7 @@ export interface LamaticOKRPlan {
 export interface ResearchCompanyResponse {
   website_url: string
   company_profile: LamaticCompanyProfile
+  website_data: string  // Raw markdown content from Firecrawl
 }
 
 export interface GenerateOKRsResponse {
@@ -166,6 +167,7 @@ export interface SendInvitesResponse {
     sent_at?: string
     note?: string
   }>
+
 }
 
 export interface SendRemindersResponse {
