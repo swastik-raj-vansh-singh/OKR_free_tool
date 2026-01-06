@@ -168,21 +168,28 @@ export interface SendInvitesResponse {
   }>
 }
 
+export interface SendRemindersResponse {
+  success: boolean
+  message: string
+  sent_count: number
+}
+
 // ============================================================================
-// Configuration
+// Configuration - Load from environment variables for security
 // ============================================================================
 
 const LAMATIC_CONFIG = {
-  endpoint: "https://sandbox566-freetoolsokrautopilot809.lamatic.dev/graphql",
-  apiKey: "lt-3aad244c2dd0fc2cb0b551b9e840b3ef",
-  projectId: "756bacca-c2d3-4a51-8812-129b318ef010",
+  endpoint: process.env.NEXT_PUBLIC_LAMATIC_ENDPOINT || "",
+  apiKey: process.env.NEXT_PUBLIC_LAMATIC_API_KEY || "",
+  projectId: process.env.NEXT_PUBLIC_LAMATIC_PROJECT_ID || "",
   workflows: {
-    researchCompany: "8f4c3c15-6ee5-4ca6-b773-926205ded262",
-    generateOKRs: "01e84485-b896-437d-91ce-2665329acad1",
-    regenerateOKRs: "f976102d-479b-4421-a45b-00c45fd8c3c6",
-    saveOKRs: "c2c6798f-da4c-4b86-a0c4-b9f19e957ec0",
-    inviteTeam: "76982f99-ff9b-43e3-b9c5-0fafcab083b5",
-    sendInvites: "f3291ee2-e273-477f-8d57-f8862a523a4f",
+    researchCompany: process.env.NEXT_PUBLIC_LAMATIC_WORKFLOW_RESEARCH_COMPANY || "",
+    generateOKRs: process.env.NEXT_PUBLIC_LAMATIC_WORKFLOW_GENERATE_OKRS || "",
+    regenerateOKRs: process.env.NEXT_PUBLIC_LAMATIC_WORKFLOW_REGENERATE_OKRS || "",
+    saveOKRs: process.env.NEXT_PUBLIC_LAMATIC_WORKFLOW_SAVE_OKRS || "",
+    inviteTeam: process.env.NEXT_PUBLIC_LAMATIC_WORKFLOW_INVITE_TEAM || "",
+    sendInvites: process.env.NEXT_PUBLIC_LAMATIC_WORKFLOW_SEND_INVITES || "",
+    sendReminders: process.env.NEXT_PUBLIC_LAMATIC_WORKFLOW_SEND_REMINDERS || "",
   },
 }
 
@@ -191,12 +198,6 @@ const LAMATIC_CONFIG = {
 // ============================================================================
 
 async function fetchLamaticAPI(query: string, variables: Record<string, unknown>) {
-  console.log('🔵 Lamatic API Request:', {
-    endpoint: LAMATIC_CONFIG.endpoint,
-    workflowId: variables.workflowId,
-    variables: JSON.stringify(variables, null, 2)
-  })
-
   const response = await fetch(LAMATIC_CONFIG.endpoint, {
     method: "POST",
     headers: {
@@ -209,26 +210,20 @@ async function fetchLamaticAPI(query: string, variables: Record<string, unknown>
 
   if (!response.ok) {
     const errorText = await response.text()
-    console.error('🔴 Lamatic API Error Response:', errorText)
-    throw new Error(`Lamatic API error: ${response.status} ${response.statusText} - ${errorText}`)
+    throw new Error(`Lamatic API error: ${response.status} ${response.statusText}`)
   }
 
   const data = await response.json()
-  console.log('🟢 Lamatic API Response:', JSON.stringify(data, null, 2))
 
   if (data.errors) {
-    console.error('🔴 GraphQL Errors:', data.errors)
     throw new Error(`GraphQL error: ${JSON.stringify(data.errors)}`)
   }
 
   if (!data.data?.executeWorkflow) {
-    console.error('🔴 Invalid response structure:', data)
     throw new Error("Invalid response from Lamatic API")
   }
 
   const { status, result } = data.data.executeWorkflow
-  console.log('🟡 Workflow Status:', status)
-  console.log('🟡 Raw Result:', result)
 
   if (status !== "success" && status !== "completed") {
     throw new Error(`Workflow execution failed with status: ${status}`)
@@ -237,10 +232,8 @@ async function fetchLamaticAPI(query: string, variables: Record<string, unknown>
   // Parse the result string if it's JSON
   try {
     const parsed = typeof result === "string" ? JSON.parse(result) : result
-    console.log('🟢 Parsed Result:', JSON.stringify(parsed, null, 2))
     return parsed
   } catch (e) {
-    console.error('🔴 Failed to parse result:', e)
     return result
   }
 }
@@ -536,6 +529,36 @@ export async function sendInvitationEmails(input: SendInvitesInput): Promise<Sen
     leader_email: input.leader_email,
     company_name: input.company_name,
     planning_period: input.planning_period,
+  }
+
+  return await fetchLamaticAPI(query, variables)
+}
+
+/**
+ * Flow 7: Send OKR Reminders
+ * Triggers scheduled reminder emails to users based on their reminder settings
+ */
+export async function sendOKRReminders(): Promise<SendRemindersResponse> {
+  const query = `
+    query ExecuteWorkflow(
+      $workflowId: String!
+      $trigger_date: String
+    ) {
+      executeWorkflow(
+        workflowId: $workflowId
+        payload: {
+          trigger_date: $trigger_date
+        }
+      ) {
+        status
+        result
+      }
+    }
+  `
+
+  const variables = {
+    workflowId: LAMATIC_CONFIG.workflows.sendReminders,
+    trigger_date: new Date().toISOString(),
   }
 
   return await fetchLamaticAPI(query, variables)

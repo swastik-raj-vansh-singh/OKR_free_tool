@@ -53,6 +53,7 @@ const generateId = () => Math.random().toString(36).substring(2, 9)
 
 export function Screen4Dashboard() {
   const {
+    currentUser,
     leaderOKRs,
     setLeaderOKRs,
     companyProfile,
@@ -169,26 +170,56 @@ export function Screen4Dashboard() {
   }
 
   const handleCreateSchedule = async () => {
-    setIsLoading(true)
-
-    // Simulate API call: POST /api/v1/updateSchedules
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    const newSchedule: UpdateSchedule = {
-      scheduleId: generateId(),
-      planId: "plan-1",
-      name: scheduleForm.name,
-      cadence: scheduleForm.cadence as "weekly" | "biweekly" | "monthly",
-      dayOfWeek: scheduleForm.dayOfWeek,
-      timeOfDay: scheduleForm.timeOfDay,
-      participants: [],
-      nextRunAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+    if (!currentUser?.userId) {
+      setToastMessage("User not authenticated. Please log in.")
+      return
     }
 
-    addUpdateSchedule(newSchedule)
-    setIsLoading(false)
-    setShowScheduleModal(false)
-    setToastMessage(`Update schedule active — next run ${new Date(newSchedule.nextRunAt).toLocaleDateString()}`)
+    setIsLoading(true)
+
+    try {
+      // Call API to save reminder settings to database
+      const response = await fetch("/api/user/reminder-settings", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          user_id: currentUser.userId,
+          reminder_enabled: true,
+          reminder_frequency: scheduleForm.cadence,
+          reminder_day: scheduleForm.dayOfWeek,
+          reminder_time: `${scheduleForm.timeOfDay}:00`, // Convert "09:00" to "09:00:00"
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to save reminder settings")
+      }
+
+      const result = await response.json()
+
+      // Create local schedule object for UI
+      const newSchedule: UpdateSchedule = {
+        scheduleId: generateId(),
+        planId: "plan-1",
+        name: scheduleForm.name,
+        cadence: scheduleForm.cadence as "weekly" | "biweekly" | "monthly",
+        dayOfWeek: scheduleForm.dayOfWeek,
+        timeOfDay: scheduleForm.timeOfDay,
+        participants: [],
+        nextRunAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+      }
+
+      addUpdateSchedule(newSchedule)
+      setIsLoading(false)
+      setShowScheduleModal(false)
+      setToastMessage(`Update schedule active — next run ${new Date(newSchedule.nextRunAt).toLocaleDateString()}`)
+    } catch (error) {
+      console.error("Error creating schedule:", error)
+      setIsLoading(false)
+      setToastMessage("Failed to create schedule. Please try again.")
+    }
   }
 
   const handleDeployAgent = async () => {
