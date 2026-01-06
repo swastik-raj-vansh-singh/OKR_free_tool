@@ -210,7 +210,14 @@ async function fetchLamaticAPI(query: string, variables: Record<string, unknown>
 
   if (!response.ok) {
     const errorText = await response.text()
-    throw new Error(`Lamatic API error: ${response.status} ${response.statusText}`)
+    throw new Error(`Lamatic API error: ${response.status} ${response.statusText} - ${errorText.substring(0, 200)}`)
+  }
+
+  // Check if response is JSON before parsing
+  const contentType = response.headers.get("content-type")
+  if (!contentType || !contentType.includes("application/json")) {
+    const text = await response.text()
+    throw new Error(`Expected JSON response but got: ${text.substring(0, 200)}`)
   }
 
   const data = await response.json()

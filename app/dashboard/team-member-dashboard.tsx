@@ -93,9 +93,17 @@ export default function DashboardPage() {
 
         // Fetch user's OKR data
         const response = await fetch(`/api/okr/${userId}`)
+
+        // Check if response is OK before parsing JSON
+        if (!response.ok) {
+          setError("Failed to load your OKRs")
+          setLoading(false)
+          return
+        }
+
         const data = await response.json()
 
-        if (!response.ok || !data.success) {
+        if (!data.success) {
           setError(data.error || "Failed to load your OKRs")
           setLoading(false)
           return
