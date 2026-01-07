@@ -1,8 +1,8 @@
 "use client"
 
 import type React from "react"
-import { useState, useRef } from "react"
-import { useRouter } from "next/navigation"
+import { useState, useRef, useEffect } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 import { useOKR } from "@/lib/okr-context"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -27,6 +27,8 @@ import {
 import type { Objective, CompanyProfile } from "@/lib/types"
 import { researchCompany, generateLeaderOKRs, regenerateOKRsFromSummary, saveOKRsToDatabase, type LamaticObjective } from "@/lib/lamatic-api"
 import { LoadingWithFacts } from "./loading-with-facts"
+import { useAuth } from "@/lib/auth-context"
+import { supabase } from "@/lib/supabase"
 
 const generateId = () => Math.random().toString(36).substring(2, 9)
 
@@ -74,6 +76,8 @@ const getPersistentUserId = (): string => {
 
 export function Screen1Kickoff() {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const { user: authUser, supabaseUser, loading: authLoading, signInWithGoogle, refreshUser } = useAuth()
   const {
     setCompanyProfile,
     companyProfile,
@@ -106,6 +110,108 @@ export function Screen1Kickoff() {
   const [openPopoverId, setOpenPopoverId] = useState<string | null>(null)
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null)
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null)
+  const [hasLoadedExistingData, setHasLoadedExistingData] = useState(false)
+  const [authError, setAuthError] = useState<string | null>(null)
+
+  // Check for auth error in URL params
+  useEffect(() => {
+    const error = searchParams.get('error')
+    if (error) {
+      setAuthError(decodeURIComponent(error))
+      // Clear error from URL
+      router.replace('/generate', { scroll: false })
+    }
+  }, [searchParams, router])
+
+  // Refresh user data after successful auth
+  useEffect(() => {
+    if (supabaseUser && !authLoading) {
+      refreshUser()
+    }
+  }, [supabaseUser?.id, authLoading, refreshUser])
+
+  // Load existing OKR data when user is authenticated
+  useEffect(() => {
+    const loadExistingOKRs = async () => {
+      if (authLoading || !supabaseUser || hasLoadedExistingData) return
+
+      try {
+        // Fetch user's most recent OKR generation
+        const { data: okrData, error } = await supabase
+          .from('okr_generations')
+          .select('*')
+          .eq('user_id', supabaseUser.id)
+          .order('created_at', { ascending: false })
+          .limit(1)
+          .single()
+
+        if (error || !okrData) {
+          console.log('No existing OKRs found for user')
+          setHasLoadedExistingData(true)
+          return
+        }
+
+        // Fetch user profile
+        const { data: userData } = await supabase
+          .from('users')
+          .select('*')
+          .eq('id', supabaseUser.id)
+          .single()
+
+        // Load OKRs into context
+        if (okrData.okrs && Array.isArray(okrData.okrs)) {
+          const objectives = transformToObjectives(okrData.okrs as LamaticObjective[])
+          setLeaderOKRs(objectives)
+        } else if (typeof okrData.okrs === 'string') {
+          const parsed = JSON.parse(okrData.okrs)
+          const objectives = transformToObjectives(parsed)
+          setLeaderOKRs(objectives)
+        }
+
+        // Load company profile
+        if (okrData.website_url) {
+          const domain = okrData.website_url.replace(/^https?:\/\//, "").replace(/\/$/, "")
+          setCompanyProfile({
+            domain,
+            name: okrData.company_name || "",
+            industry: "",
+            size: "",
+            publicNotes: "",
+          })
+        }
+
+        // Load planning period and summary
+        setPlanningPeriod(okrData.planning_period || "")
+        if (okrData.strategic_narrative) {
+          setShareableSummary({
+            title: `${okrData.planning_period || 'OKR'} Strategic Priorities — ${userData?.role || 'Leader'}, ${okrData.company_name || ''}`,
+            text: okrData.strategic_narrative,
+            shortlink: `https://lmtc.ai/s/${generateId()}`,
+          })
+        }
+
+        // Set current user
+        if (userData || supabaseUser) {
+          setCurrentUser({
+            userId: userData?.id || supabaseUser!.id,
+            name: userData?.name || supabaseUser?.user_metadata?.full_name || supabaseUser?.user_metadata?.name || "",
+            email: userData?.email || supabaseUser?.email || "",
+            role: userData?.role || "",
+            companyDomain: okrData.website_url?.replace(/^https?:\/\//, "").replace(/\/$/, "") || "",
+          })
+        }
+
+        setHasLoadedExistingData(true)
+        setToastMessage("Loaded your existing OKRs!")
+      } catch (error) {
+        console.error('Error loading existing OKRs:', error)
+        setHasLoadedExistingData(true)
+      }
+    }
+
+    loadExistingOKRs()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [supabaseUser?.id, authLoading, hasLoadedExistingData])
 
   const isFormValid =
     formData.companyWebsite.length > 0 &&
@@ -169,20 +275,63 @@ export function Screen1Kickoff() {
       setCompanyProfile(profile)
       setPlanningPeriod(formData.planningPeriod)
 
-      // Set current user with PERSISTENT ID
-      // This ensures the same user gets the same ID across multiple OKR generations
-      const persistentUserId = getPersistentUserId()
+      // REQUIRE authentication - use real Google email and name
+      if (!supabaseUser || !supabaseUser.email) {
+        setToastMessage("Please sign in with Google to create OKRs")
+        setIsLoading(false)
+        return
+      }
+
+      // Get real email and name from Supabase Auth (directly from Google)
+      const userId = supabaseUser.id
+      const userEmail = supabaseUser.email // Real email from Google OAuth
+      
+      // Validate that we have a REAL email (not a fake one)
+      if (!userEmail || !userEmail.includes('@') || userEmail.includes('leader@')) {
+        console.error('❌ CRITICAL ERROR: Invalid or fake email detected:', userEmail)
+        setToastMessage("Authentication error: Invalid email. Please sign out and sign in again with Google.")
+        setIsLoading(false)
+        return
+      }
+      
+      const userName = supabaseUser.user_metadata?.full_name || 
+                       supabaseUser.user_metadata?.name || 
+                       supabaseUser.user_metadata?.display_name ||
+                       userEmail.split('@')[0] || 
+                       "User"
+      
+      console.log('✅ Using authenticated user data from Google:', {
+        id: userId,
+        email: userEmail,
+        name: userName,
+        metadata: supabaseUser.user_metadata,
+        email_is_valid: userEmail.includes('@') && !userEmail.includes('leader@')
+      })
+
+      // Double-check email is valid before creating user object
+      if (!userEmail || userEmail.includes('leader@') || !userEmail.includes('@gmail.com') && !userEmail.includes('@')) {
+        console.error('❌ BLOCKED: Attempted to create user with invalid email:', userEmail)
+        setToastMessage("Invalid email detected. Please sign out and sign in with your Google account.")
+        setIsLoading(false)
+        return
+      }
+
       const newUser = {
-        userId: persistentUserId,
-        name: formData.roleTitle.split(" ").pop() || "Leader",
-        email: `leader@${domain}`,
+        userId,
+        name: userName,
+        email: userEmail, // Real Google email - validated
         role: formData.roleTitle,
         companyDomain: domain,
       }
-      console.log('👤 User created with persistent ID:', {
+      console.log('👤 User object created with VALIDATED Google data:', {
         userId: newUser.userId,
         email: newUser.email,
+        name: newUser.name,
         role: newUser.role,
+        source: 'Google OAuth',
+        email_validated: true,
+        contains_at: newUser.email.includes('@'),
+        not_fake: !newUser.email.includes('leader@')
       })
       setCurrentUser(newUser)
 
@@ -209,11 +358,26 @@ export function Screen1Kickoff() {
       setIsLoading(false) // Stop loading immediately to show OKRs
 
       // STEP 3: Save OKRs to database (Flow 4) - Run in background, non-blocking
+      // TRIPLE CHECK: Ensure we're using the REAL Google email from supabaseUser
+      const finalEmail = supabaseUser.email! // Get fresh from auth state
+      const finalName = supabaseUser.user_metadata?.full_name || 
+                        supabaseUser.user_metadata?.name || 
+                        supabaseUser.user_metadata?.display_name ||
+                        finalEmail.split('@')[0]
+      
+      // CRITICAL VALIDATION: Block any fake emails
+      if (!finalEmail || finalEmail.includes('leader@') || !finalEmail.includes('@')) {
+        console.error('❌ CRITICAL: Fake email detected at save stage:', finalEmail)
+        setToastMessage("Critical error: Invalid email. Please refresh and sign in again.")
+        setIsLoading(false)
+        return
+      }
+      
       const savePayload = {
-        user_id: newUser.userId,
-        user_email: newUser.email,
-        user_name: newUser.name,
-        user_role: newUser.role,
+        user_id: supabaseUser.id, // Always use fresh auth ID
+        user_email: finalEmail, // Always use fresh auth email
+        user_name: finalName, // Always use fresh auth name
+        user_role: formData.roleTitle,
         website_url: websiteUrl,
         company_name: profile.name,
         planning_period: formData.planningPeriod,
@@ -222,7 +386,8 @@ export function Screen1Kickoff() {
           objectives: okrData.okr_plan.objectives, // Send as array, not stringified
         },
       }
-      console.log('💾 Saving OKRs to database with payload:', {
+      
+      console.log('💾 FINAL VALIDATION - Saving to database:', {
         user_id: savePayload.user_id,
         user_email: savePayload.user_email,
         user_name: savePayload.user_name,
@@ -230,19 +395,38 @@ export function Screen1Kickoff() {
         company_name: savePayload.company_name,
         planning_period: savePayload.planning_period,
         objectives_count: okrData.okr_plan.objectives.length,
+        // Validation checks
+        email_has_at: savePayload.user_email.includes('@'),
+        email_not_fake: !savePayload.user_email.includes('leader@'),
+        email_from_google: supabaseUser.app_metadata?.provider === 'google',
+        full_auth_data: {
+          provider: supabaseUser.app_metadata?.provider,
+          email_verified: supabaseUser.email_confirmed_at ? true : false,
+          created_at: supabaseUser.created_at
+        }
       })
+      
+      // Final safety check before sending to API
+      if (savePayload.user_email.includes('leader@') || !savePayload.user_email.includes('@')) {
+        console.error('❌ BLOCKED AT FINAL STAGE: Fake email detected:', savePayload.user_email)
+        setToastMessage("Error: Invalid email detected. Please contact support.")
+        return
+      }
 
       saveOKRsToDatabase(savePayload)
         .then((saveResult) => {
-          console.log('✅ OKRs saved to database:', saveResult)
+          console.log('✅ Database save response:', saveResult)
           if (saveResult.success) {
-            console.log('🎉 Database save successful! Check Supabase for user_id:', newUser.userId)
+            console.log('🎉 SUCCESS! Saved with email:', savePayload.user_email, 'user_id:', savePayload.user_id)
+            console.log('📧 Go check Supabase users table for email:', savePayload.user_email)
           } else {
             console.error('❌ Database save failed:', saveResult.message)
+            console.error('Failed payload:', savePayload)
           }
         })
         .catch((saveError) => {
-          console.error('⚠️ Failed to save OKRs to database:', saveError)
+          console.error('⚠️ Exception during database save:', saveError)
+          console.error('Failed payload:', savePayload)
           // Silent failure - don't disrupt user experience
         })
 
@@ -301,7 +485,26 @@ export function Screen1Kickoff() {
 
       // STEP 4: Save regenerated OKRs to database (Flow 4)
       // Run this in the background after showing success to the user
-      if (currentUser && planningPeriod) {
+      if (!supabaseUser || !supabaseUser.email) {
+        console.error('❌ Cannot save: User not authenticated')
+        return
+      }
+
+      // CRITICAL: Always get email directly from supabaseUser (fresh Google auth data)
+      const realEmail = supabaseUser.email
+      const realName = supabaseUser.user_metadata?.full_name || 
+                       supabaseUser.user_metadata?.name || 
+                       supabaseUser.user_metadata?.display_name ||
+                       realEmail.split('@')[0]
+      
+      // VALIDATION: Block fake emails
+      if (!realEmail || realEmail.includes('leader@') || !realEmail.includes('@')) {
+        console.error('❌ BLOCKED: Invalid email at regeneration stage:', realEmail)
+        setToastMessage("Error: Invalid email. Please sign out and sign in again.")
+        return
+      }
+
+      if (planningPeriod) {
         console.log('💾 Saving regenerated OKRs to database...')
         // Ensure website URL has https:// prefix for consistency
         let websiteUrl = companyProfile.domain
@@ -310,10 +513,10 @@ export function Screen1Kickoff() {
         }
 
         const savePayload = {
-          user_id: currentUser.userId,
-          user_email: currentUser.email,
-          user_name: currentUser.name,
-          user_role: currentUser.role,
+          user_id: supabaseUser.id, // Real Supabase Auth ID
+          user_email: realEmail, // Real Google email - ALWAYS from supabaseUser
+          user_name: realName, // Real Google name - ALWAYS from supabaseUser
+          user_role: currentUser?.role || formData.roleTitle,
           website_url: websiteUrl,
           company_name: companyProfile.name,
           planning_period: planningPeriod,
@@ -323,26 +526,40 @@ export function Screen1Kickoff() {
           },
         }
 
-        console.log('📤 Payload for regenerated OKRs:', {
+        console.log('📤 Payload for regenerated OKRs (VALIDATED):', {
           user_id: savePayload.user_id,
           user_email: savePayload.user_email,
+          user_name: savePayload.user_name,
           company_name: savePayload.company_name,
           planning_period: savePayload.planning_period,
           objectives_count: okrData.okr_plan.objectives.length,
           narrative_preview: editedSummaryText.substring(0, 100) + '...',
+          // Validation
+          email_valid: savePayload.user_email.includes('@') && !savePayload.user_email.includes('leader@'),
+          source: 'Google OAuth (regeneration)'
         })
+        
+        // Final check before sending
+        if (savePayload.user_email.includes('leader@') || !savePayload.user_email.includes('@')) {
+          console.error('❌ FINAL BLOCK: Fake email detected in regeneration:', savePayload.user_email)
+          setToastMessage("Error: Invalid email detected")
+          return
+        }
 
         saveOKRsToDatabase(savePayload)
           .then((saveResult) => {
-            console.log('✅ Regenerated OKRs saved to database:', saveResult)
+            console.log('✅ Regenerated OKRs save response:', saveResult)
             if (saveResult.success) {
-              console.log('🎉 Database update successful! User ID:', currentUser.userId)
+              console.log('🎉 Regeneration saved! Email:', savePayload.user_email, 'User ID:', savePayload.user_id)
+              console.log('📧 Check Supabase for email:', savePayload.user_email)
             } else {
-              console.error('❌ Database save failed:', saveResult.message)
+              console.error('❌ Regeneration save failed:', saveResult.message)
+              console.error('Failed payload:', savePayload)
             }
           })
           .catch((saveError) => {
-            console.error('⚠️ Failed to save regenerated OKRs to database:', saveError)
+            console.error('⚠️ Failed to save regenerated OKRs:', saveError)
+            console.error('Failed payload:', savePayload)
             // Silent failure - don't disrupt user experience
           })
       } else {
@@ -464,8 +681,36 @@ export function Screen1Kickoff() {
         <LoadingWithFacts message="Analyzing and generating OKRs..." />
       )}
 
+      {/* Show login prompt if not authenticated */}
+      {!authLoading && !supabaseUser && !hasGenerated && (
+        <Card className="border-border/50 bg-card/50 backdrop-blur">
+          <CardHeader className="text-center pb-2">
+            <CardTitle className="text-2xl">Sign in to Continue</CardTitle>
+            <CardDescription>
+              Please sign in with Google to create and save your OKRs
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="pt-6 space-y-4">
+            {authError && (
+              <div className="p-3 rounded-lg bg-destructive/10 border border-destructive/20 text-destructive text-sm">
+                {authError}
+              </div>
+            )}
+            <Button 
+              onClick={() => {
+                setAuthError(null)
+                signInWithGoogle()
+              }} 
+              className="w-full h-12 text-base"
+            >
+              Sign in with Google
+            </Button>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Intake Form - only show when not loading and not generated */}
-      {!isLoading && !hasGenerated && (
+      {!isLoading && !hasGenerated && supabaseUser && (
         <Card className="border-border/50 bg-card/50 backdrop-blur">
           <CardHeader className="text-center pb-2">
             <div className="mx-auto p-3 rounded-xl bg-[#DC2626]/10 w-fit mb-4">

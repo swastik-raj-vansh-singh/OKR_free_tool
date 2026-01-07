@@ -2,12 +2,13 @@
 
 import { useState, useEffect } from "react"
 import { useOKR } from "@/lib/okr-context"
+import { useAuth } from "@/lib/auth-context"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator, DropdownMenuLabel } from "@/components/ui/dropdown-menu"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Layers, ChevronDown, HelpCircle, Palette, Moon, Sun } from "lucide-react"
+import { Layers, ChevronDown, HelpCircle, Palette, Moon, Sun, LogOut, LogIn } from "lucide-react"
 import { useTheme } from "next-themes"
 
 // Custom SVG Icons to avoid AI-generated look
@@ -102,6 +103,7 @@ const themes: Record<Theme, { name: string; primary: string; primaryOklch: strin
 
 export function AppHeader() {
   const { companyProfile, currentUser, currentScreen } = useOKR()
+  const { user: authUser, supabaseUser, loading: authLoading, signInWithGoogle, signOut } = useAuth()
   const [showHelp, setShowHelp] = useState(false)
   const [currentTheme, setCurrentTheme] = useState<Theme>("default")
   const { theme, setTheme } = useTheme()
@@ -258,29 +260,59 @@ export function AppHeader() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          {/* User Menu */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="gap-2">
-                <Avatar className="w-6 h-6">
-                  <AvatarFallback className="text-xs bg-[#DC2626]/10 text-[#DC2626]">
-                    {currentUser?.name?.charAt(0) || "U"}
-                  </AvatarFallback>
-                </Avatar>
-                <span className="text-sm hidden sm:inline">{currentUser?.name || "User"}</span>
-                <ChevronDown className="w-3 h-3 text-muted-foreground" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem>Settings</DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setShowHelp(true)}>
-                <HelpCircle className="w-4 h-4 mr-2" />
-                Help & Support
-              </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Sign out</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          {/* User Menu - Show user if either authUser or supabaseUser exists */}
+          {(authUser || supabaseUser) ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="sm" className="gap-2">
+                  <Avatar className="w-6 h-6">
+                    <AvatarFallback className="text-xs bg-[#DC2626]/10 text-[#DC2626]">
+                      {(authUser?.name || supabaseUser?.user_metadata?.full_name || supabaseUser?.user_metadata?.name || supabaseUser?.email || "U").charAt(0).toUpperCase()}
+                    </AvatarFallback>
+                  </Avatar>
+                  <span className="text-sm hidden sm:inline">
+                    {authUser?.name || supabaseUser?.user_metadata?.full_name || supabaseUser?.user_metadata?.name || supabaseUser?.email?.split("@")[0] || "User"}
+                  </span>
+                  <ChevronDown className="w-3 h-3 text-muted-foreground" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuLabel>
+                  <div className="flex flex-col space-y-1">
+                    <p className="text-sm font-medium">
+                      {authUser?.name || supabaseUser?.user_metadata?.full_name || supabaseUser?.user_metadata?.name || "User"}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {authUser?.email || supabaseUser?.email}
+                    </p>
+                  </div>
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>Settings</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setShowHelp(true)}>
+                  <HelpCircle className="w-4 h-4 mr-2" />
+                  Help & Support
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem 
+                  onSelect={(e) => {
+                    e.preventDefault() // Prevent menu from closing immediately
+                    console.log('🚪 Sign out menu item clicked')
+                    signOut()
+                  }}
+                  className="cursor-pointer text-destructive focus:text-destructive"
+                >
+                  <LogOut className="w-4 h-4 mr-2" />
+                  Sign out
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <Button variant="default" size="sm" onClick={signInWithGoogle} className="gap-2">
+              <LogIn className="w-4 h-4" />
+              <span className="hidden sm:inline">Sign in with Google</span>
+            </Button>
+          )}
         </div>
       </div>
 

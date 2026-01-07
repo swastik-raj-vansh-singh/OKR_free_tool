@@ -10,7 +10,16 @@ import type { InvitationData } from './types'
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  auth: {
+    // Use implicit flow for client-side apps (simpler, no PKCE verifier issues)
+    // The hash tokens (#access_token=...) will be auto-detected and stripped
+    flowType: 'implicit',
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: true
+  }
+})
 
 // ============================================================================
 // Invitation Helper Functions
@@ -21,6 +30,8 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey)
  */
 export async function validateInvitationToken(token: string): Promise<InvitationData | null> {
   try {
+    console.log('🔍 Validating invitation token:', token)
+    
     // Fetch user by invitation token
     const { data: user, error: userError } = await supabase
       .from('users')
@@ -28,27 +39,53 @@ export async function validateInvitationToken(token: string): Promise<Invitation
       .eq('invitation_token', token)
       .single()
 
-    if (userError || !user) {
-      console.error('User not found for token:', token)
+    if (userError) {
+      console.error('❌ Error fetching user for token:', userError.message, userError.code)
+      console.error('Token was:', token)
       return null
     }
+    
+    if (!user) {
+      console.error('❌ No user found for token:', token)
+      return null
+    }
+    
+    console.log('✅ Found user:', { id: user.id, email: user.email, role: user.role })
 
     // Check if invitation is already accepted
     if (user.invitation_accepted_at) {
+      console.error('❌ Invitation already accepted at:', user.invitation_accepted_at)
       return null
     }
 
-    // Fetch user's OKRs
-    const { data: okr, error: okrError } = await supabase
+    // Fetch user's OKRs - try with is_draft first, then without
+    let { data: okr, error: okrError } = await supabase
       .from('okr_generations')
       .select('*')
       .eq('user_id', user.id)
       .eq('is_draft', true)
       .single()
 
+    // If no draft OKR found, try to get any OKR for this user
     if (okrError || !okr) {
-      console.error('OKR not found for user:', user.id)
-      return null
+      console.log('⚠️ No draft OKR found, trying to fetch any OKR for user...')
+      const { data: anyOkr, error: anyOkrError } = await supabase
+        .from('okr_generations')
+        .select('*')
+        .eq('user_id', user.id)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .single()
+      
+      if (anyOkrError || !anyOkr) {
+        console.error('❌ No OKR found for user:', user.id, anyOkrError?.message)
+        return null
+      }
+      
+      console.log('✅ Found OKR (non-draft):', anyOkr.id)
+      okr = anyOkr
+    } else {
+      console.log('✅ Found draft OKR:', okr.id)
     }
 
     // Fetch leader info (optional)

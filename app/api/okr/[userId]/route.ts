@@ -1,6 +1,7 @@
 /**
  * API Route: GET /api/okr/[userId]
  * Fetches OKR data for a specific user
+ * Now supports both authenticated users and legacy user IDs
  */
 
 import { NextRequest, NextResponse } from 'next/server'
@@ -20,15 +21,31 @@ export async function GET(
       )
     }
 
+    // Try to get authenticated user from session
+    const authHeader = request.headers.get('authorization')
+    let authenticatedUserId: string | null = null
+
+    if (authHeader) {
+      // If authorization header is provided, verify the session
+      const token = authHeader.replace('Bearer ', '')
+      const { data: { user } } = await supabase.auth.getUser(token)
+      if (user) {
+        authenticatedUserId = user.id
+      }
+    }
+
+    // Use authenticated user ID if available, otherwise use provided userId
+    const targetUserId = authenticatedUserId || userId
+
     // Fetch user info first
     const { data: user, error: userError } = await supabase
       .from('users')
       .select('*')
-      .eq('id', userId)
+      .eq('id', targetUserId)
       .single()
 
     if (userError || !user) {
-      console.error('User not found:', userId, userError)
+      console.error('User not found:', targetUserId, userError)
       return NextResponse.json(
         { error: 'User not found' },
         { status: 404 }
@@ -39,13 +56,13 @@ export async function GET(
     const { data: okr, error: okrError } = await supabase
       .from('okr_generations')
       .select('*')
-      .eq('user_id', userId)
+      .eq('user_id', targetUserId)
       .order('created_at', { ascending: false })
       .limit(1)
       .single()
 
     if (okrError || !okr) {
-      console.error('OKR not found for user:', userId, okrError)
+      console.error('OKR not found for user:', targetUserId, okrError)
       return NextResponse.json(
         { error: 'OKR not found for user' },
         { status: 404 }
