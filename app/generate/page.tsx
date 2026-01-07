@@ -1,4 +1,17 @@
+import { Suspense } from "react"
 import { Screen1Kickoff } from "@/components/okr/screen-1-kickoff"
+import { Loader2 } from "lucide-react"
+
+function LoadingFallback() {
+  return (
+    <div className="flex items-center justify-center py-20">
+      <div className="text-center space-y-4">
+        <Loader2 className="w-12 h-12 animate-spin text-primary mx-auto" />
+        <p className="text-muted-foreground">Loading...</p>
+      </div>
+    </div>
+  )
+}
 
 export default function GeneratePage() {
   return (
@@ -11,7 +24,9 @@ export default function GeneratePage() {
           </p>
         </div>
 
-        <Screen1Kickoff />
+        <Suspense fallback={<LoadingFallback />}>
+          <Screen1Kickoff />
+        </Suspense>
       </div>
     </main>
   )
